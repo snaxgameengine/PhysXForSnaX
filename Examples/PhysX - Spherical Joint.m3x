@@ -1,0 +1,2926 @@
+<?xml version="1.0"?>
+<Document startclassid="{71C2439B-2172-4C49-BD8B-1B0D7C1104CA}" version="1.2.2.0">
+  <Class name="Default" id="{71C2439B-2172-4C49-BD8B-1B0D7C1104CA}" startchipid="{A83A24F5-709B-4C93-BC69-449CABB295E5}" version="1.0.0.0">
+    <Inheritance/>
+    <Chips>
+      <Chip chipid="{F0627820-22E6-4558-9362-BEBAD25D1AD6}" type="{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}" name="Start Your Project Here!" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{91ECF4EA-9E47-49E2-8774-B9781DF887A6}"/>
+          <Connection conn="0" subconn="1" chipid="{35BB672C-ADB3-441B-AAC4-A252C7BEA4A4}"/>
+          <Connection conn="0" subconn="2" chipid="{348F9512-5C59-42BE-B4AA-0A773CFDC70E}"/>
+          <Connection conn="0" subconn="3" chipid="{B35BB2EC-CD49-458C-92E1-CBD5D7BD90B3}"/>
+        </Connections>
+        <ChipData/>
+      </Chip>
+      <Chip chipid="{166B010D-9B26-4094-B97D-25D85C819930}" type="{456D654D-A3BF-40DA-AE84-CF20BF2ACE40}" name="PhysX Rigid Dynamic" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{A49B7F9C-B680-4F46-9F35-22DC25A46A77}"/>
+          <Connection conn="1" subconn="0" chipid="{FDAD06FF-5DE9-439F-9C4E-C2F860EECECD}"/>
+          <Connection conn="2" subconn="0" chipid="{0A9060CA-7C01-498D-94B2-EA8E97878DA9}"/>
+          <Connection conn="4" subconn="0" chipid="{37697BCA-D1A8-47A7-8FAA-8BAB24E3D452}"/>
+        </Connections>
+        <ChipData>
+          <Data id="linearDamping">0.100000001</Data>
+          <Data id="angularDamping">0.100000001</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{A49B7F9C-B680-4F46-9F35-22DC25A46A77}" type="{7BAD6997-690D-48D1-A453-1F6030C36515}" name="PhysX Scene" refreshmode="function">
+        <Connections/>
+        <ChipData/>
+      </Chip>
+      <Chip chipid="{FDAD06FF-5DE9-439F-9C4E-C2F860EECECD}" type="{01466AAB-80E4-447C-9662-089B79485231}" name="Matrix" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{0A9060CA-7C01-498D-94B2-EA8E97878DA9}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Value" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="value">10</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{37697BCA-D1A8-47A7-8FAA-8BAB24E3D452}" type="{14842055-49EE-47E1-86E2-F232EBD90B02}" name="Box" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="type">1</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{35BB672C-ADB3-441B-AAC4-A252C7BEA4A4}" type="{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}" name="One Time" refreshmode="once">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{166B010D-9B26-4094-B97D-25D85C819930}"/>
+          <Connection conn="0" subconn="1" chipid="{F4BB2932-87F6-402C-A2A7-BEACBB564083}"/>
+        </Connections>
+        <ChipData/>
+      </Chip>
+      <Chip chipid="{F4BB2932-87F6-402C-A2A7-BEACBB564083}" type="{8E040D27-AC2F-4142-B3A8-157AC0BAE050}" name="PhysX Spherical Joint" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{166B010D-9B26-4094-B97D-25D85C819930}"/>
+          <Connection conn="2" subconn="0" chipid="{9CDAB9BF-0B53-41F0-A697-871F05FCCF27}"/>
+        </Connections>
+        <ChipData>
+          <Data id="limitEnable">true</Data>
+          <Data id="yLimitAngle">1</Data>
+          <Data id="zLimitAngle">1</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{9CDAB9BF-0B53-41F0-A697-871F05FCCF27}" type="{01466AAB-80E4-447C-9662-089B79485231}" name="Matrix" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="matrix">0 1 0 0 -1 0 0 0 0 0 1 0 0 1 0 1</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{CE43AF99-D280-40BE-A78F-A60F443CB090}" type="{8348DEC5-8EA4-481A-9E41-32F814DFEE29}" name="Simulate" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{79EE3B13-D485-4D08-B4B3-0B73B3F25A66}"/>
+        </Connections>
+        <ChipData>
+          <Data id="cmd">1</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{79EE3B13-D485-4D08-B4B3-0B73B3F25A66}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="PhysX Scene" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="original">{A49B7F9C-B680-4F46-9F35-22DC25A46A77}</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{B35BB2EC-CD49-458C-92E1-CBD5D7BD90B3}" type="{8348DEC5-8EA4-481A-9E41-32F814DFEE29}" name="Render Debug Geometry" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{9782CED8-2DC1-4629-91C3-628239546E69}"/>
+        </Connections>
+        <ChipData>
+          <Data id="cmd">3</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{970C3228-C1D2-422B-8427-9D80B690247F}" type="{8348DEC5-8EA4-481A-9E41-32F814DFEE29}" name="Fetch Results" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{79EE3B13-D485-4D08-B4B3-0B73B3F25A66}"/>
+        </Connections>
+        <ChipData>
+          <Data id="cmd">2</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{2407DFCE-7E2C-4C25-A086-49D8F6A0D03D}" type="{8348DEC5-8EA4-481A-9E41-32F814DFEE29}" name="Add Local Force at Local Position" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{38C8FB87-0FEC-4AE9-B1C1-2EC29DB608C1}"/>
+          <Connection conn="1" subconn="0" chipid="{1033399C-C626-4511-B322-E18D32724000}"/>
+        </Connections>
+        <ChipData>
+          <Data id="cmd">503</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{38C8FB87-0FEC-4AE9-B1C1-2EC29DB608C1}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="PhysX Rigid Dynamic" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="original">{166B010D-9B26-4094-B97D-25D85C819930}</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{1033399C-C626-4511-B322-E18D32724000}" type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" name="Vector" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="vector">50 0 0 1</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{91ECF4EA-9E47-49E2-8774-B9781DF887A6}" type="{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}" name="Caller" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{0BBDBD48-8B19-4B75-AA77-D630006F72DC}"/>
+          <Connection conn="0" subconn="1" chipid="{85C4DCE6-1235-4158-BFEC-5806A2BDA296}"/>
+        </Connections>
+        <ChipData/>
+      </Chip>
+      <Chip chipid="{348F9512-5C59-42BE-B4AA-0A773CFDC70E}" type="{4221CFFF-DEBE-4E70-9787-CF6543C4D9E3}" name="If/Else" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{ADE2EAFA-3F6A-43CE-AF82-286F30CC5902}"/>
+          <Connection conn="1" subconn="0" chipid="{CE43AF99-D280-40BE-A78F-A60F443CB090}"/>
+          <Connection conn="1" subconn="1" chipid="{970C3228-C1D2-422B-8427-9D80B690247F}"/>
+        </Connections>
+        <ChipData/>
+      </Chip>
+      <Chip chipid="{ADE2EAFA-3F6A-43CE-AF82-286F30CC5902}" type="{388C1557-310F-4284-B29B-8F8ED1EA95D3}" name="Is Running?" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{79EE3B13-D485-4D08-B4B3-0B73B3F25A66}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="cmd">2</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{9782CED8-2DC1-4629-91C3-628239546E69}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="PhysX Scene" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="original">{A49B7F9C-B680-4F46-9F35-22DC25A46A77}</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{AABBB7D4-7A7C-406C-A01F-CC407E34FF57}" type="{8348DEC5-8EA4-481A-9E41-32F814DFEE29}" name="Add Local Torque" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{9DB604D8-FB74-4590-8F3E-BB65816048FA}"/>
+          <Connection conn="1" subconn="0" chipid="{75264890-DA9D-4D7A-B0B2-C7E6C2BAEF20}"/>
+        </Connections>
+        <ChipData>
+          <Data id="cmd">505</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{75264890-DA9D-4D7A-B0B2-C7E6C2BAEF20}" type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" name="Vector" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="vector">0 20 0 1</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{9DB604D8-FB74-4590-8F3E-BB65816048FA}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="PhysX Rigid Dynamic" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="original">{166B010D-9B26-4094-B97D-25D85C819930}</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{A83A24F5-709B-4C93-BC69-449CABB295E5}" type="{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}" name="Project Start" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{5BF2B3E7-B449-419F-AB3F-0E166C004F5B}"/>
+          <Connection conn="0" subconn="1" chipid="{73AB647E-A85D-4724-9CFD-3122CEA7F953}"/>
+          <Connection conn="0" subconn="2" chipid="{F2EC80AD-FB2B-4125-A361-445BA4D0407D}"/>
+          <Connection conn="0" subconn="3" chipid="{DAB2C349-8C86-4EAD-9A7F-E38B84629D5B}"/>
+          <Connection conn="0" subconn="4" chipid="{4257CD9D-BAB1-4EAB-9B33-96FB6405387E}"/>
+          <Connection conn="0" subconn="5" chipid="{F0627820-22E6-4558-9362-BEBAD25D1AD6}"/>
+          <Connection conn="0" subconn="6" chipid="{798D6E40-DE10-4A94-90A8-0657345A9BC6}"/>
+          <Connection conn="0" subconn="7" chipid="{4454507F-C7E6-419C-818F-D76734603794}"/>
+        </Connections>
+        <ChipData/>
+      </Chip>
+      <Chip chipid="{73AB647E-A85D-4724-9CFD-3122CEA7F953}" type="{A2C861A1-4990-4CB3-ACBD-3346D3E3F6A2}" name="Clear Render Target Views" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{B46D986C-1840-4357-AAD4-6B5CC57DFD4E}"/>
+          <Connection conn="1" subconn="0" chipid="{80BB00EE-688D-449F-9C8D-97ED5750BE50}"/>
+        </Connections>
+        <ChipData>
+          <Data id="cmd">1</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{5BF2B3E7-B449-419F-AB3F-0E166C004F5B}" type="{A2C861A1-4990-4CB3-ACBD-3346D3E3F6A2}" name="Set Render Target Views" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{25A63C8B-526C-44AD-A6B1-2F9549FFA8D5}"/>
+          <Connection conn="1" subconn="0" chipid="{B4FE1EA8-2ADF-4474-BB51-15729733104A}"/>
+        </Connections>
+        <ChipData>
+          <Data id="cmd">2</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{B4FE1EA8-2ADF-4474-BB51-15729733104A}" type="{D27FF489-2396-4EFE-9871-0705655B8622}" name="Back Buffer" refreshmode="function">
+        <Connections/>
+        <ChipData/>
+      </Chip>
+      <Chip chipid="{B46D986C-1840-4357-AAD4-6B5CC57DFD4E}" type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" name="Clear Color" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="vector">0.150000006 0.150000006 0.5 1</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{DAB2C349-8C86-4EAD-9A7F-E38B84629D5B}" type="{A2C861A1-4990-4CB3-ACBD-3346D3E3F6A2}" name="Set Viewports (Relative)" refreshmode="function">
+        <Connections>
+          <Connection conn="2" subconn="0" chipid="{1B18C176-DE47-4334-A905-5B05F5A4EC96}"/>
+        </Connections>
+        <ChipData>
+          <Data id="cmd">3</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{1B18C176-DE47-4334-A905-5B05F5A4EC96}" type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" name="Vector" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="vector">0 0 1 1</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{25A63C8B-526C-44AD-A6B1-2F9549FFA8D5}" type="{3B32EE42-3AE8-459F-B2B1-39D9B96EB51A}" name="Depth Buffer" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="width">100</Data>
+          <Data id="height">100</Data>
+          <Data id="arraySize">1</Data>
+          <Data id="mipLevels">1</Data>
+          <Data id="format">20</Data>
+          <Data id="msCount">1</Data>
+          <Data id="flags">10</Data>
+          <Data id="flagsEx">3</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{798D6E40-DE10-4A94-90A8-0657345A9BC6}" type="{A2C861A1-4990-4CB3-ACBD-3346D3E3F6A2}" name="Draw Debug Geometry" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="cmd">10000</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{F2EC80AD-FB2B-4125-A361-445BA4D0407D}" type="{A2C861A1-4990-4CB3-ACBD-3346D3E3F6A2}" name="Clear Depth Stencil Views" refreshmode="function">
+        <Connections>
+          <Connection conn="2" subconn="0" chipid="{BE87C8A1-EA55-4AC4-BF81-9906075993FC}"/>
+        </Connections>
+        <ChipData>
+          <Data id="cmd">5</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{80BB00EE-688D-449F-9C8D-97ED5750BE50}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Back Buffer" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="original">{B4FE1EA8-2ADF-4474-BB51-15729733104A}</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{BE87C8A1-EA55-4AC4-BF81-9906075993FC}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Depth Buffer" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="original">{25A63C8B-526C-44AD-A6B1-2F9549FFA8D5}</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{542CD044-3783-4C9A-AB5C-8A6E113ABA40}" type="{8348DEC5-8EA4-481A-9E41-32F814DFEE29}" name="Destroy Scene" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{FF318808-0943-4A99-A8EA-18CBF2909441}"/>
+        </Connections>
+        <ChipData>
+          <Data id="cmd">6</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{6DD2EA4D-385E-4F71-8D13-74AA6457F6BE}" type="{8348DEC5-8EA4-481A-9E41-32F814DFEE29}" name="Start Simulation" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{44BEE3F5-5513-4BBF-BE4B-219B2F7D1B1C}"/>
+        </Connections>
+        <ChipData>
+          <Data id="cmd">4</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{3E54E4ED-64B2-45E5-92B3-17DA39C4A6AD}" type="{03A46761-CA4D-42BE-9DA0-4FB3F669C193}" name="Reset 'One Time'-Chip" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{88CFCBA7-B080-423F-87A2-2FA609AFD611}"/>
+        </Connections>
+        <ChipData>
+          <Data id="ot">200</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{F6815FD8-EFEF-4ABD-99FC-3A4D43108F64}" type="{4221CFFF-DEBE-4E70-9787-CF6543C4D9E3}" name="If/Else" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{D7A1A8E7-89E1-46A0-BC84-3F6ACA449B50}"/>
+          <Connection conn="1" subconn="0" chipid="{563A525C-57B2-42F2-AEE8-8FADB8C09078}"/>
+          <Connection conn="2" subconn="0" chipid="{6DD2EA4D-385E-4F71-8D13-74AA6457F6BE}"/>
+        </Connections>
+        <ChipData/>
+      </Chip>
+      <Chip chipid="{D7A1A8E7-89E1-46A0-BC84-3F6ACA449B50}" type="{388C1557-310F-4284-B29B-8F8ED1EA95D3}" name="Is Running?" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{44BEE3F5-5513-4BBF-BE4B-219B2F7D1B1C}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">1</Data>
+          <Data id="cmd">2</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{563A525C-57B2-42F2-AEE8-8FADB8C09078}" type="{8348DEC5-8EA4-481A-9E41-32F814DFEE29}" name="Stop Simulation" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{44BEE3F5-5513-4BBF-BE4B-219B2F7D1B1C}"/>
+        </Connections>
+        <ChipData>
+          <Data id="cmd">5</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{4454507F-C7E6-419C-818F-D76734603794}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="XGUI-&gt;UpdateAndRender" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{381B55A9-C59E-4636-B1C5-D6754C15F023}"/>
+        </Connections>
+        <ChipData>
+          <Data id="type">{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}</Data>
+          <Data id="cg">XGUI</Data>
+          <Data id="func">UpdateAndRender</Data>
+          <Data id="cbn">false</Data>
+          <Data id="preload">true</Data>
+          <Data id="filename">.\XGUI.m3x</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{381B55A9-C59E-4636-B1C5-D6754C15F023}" type="{EA094CF0-CF56-4F5E-BADC-7A8BF2E5F276}" name="Instance Ref" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="save">true</Data>
+          <Data id="preload">true</Data>
+          <Data id="object">
+            <Data id="type">2</Data>
+            <Data id="name"/>
+            <Data id="id">{AF51F782-1CF1-4581-BDB1-AAB58CB6FE69}</Data>
+            <Data id="cgid">{EE47AE37-81B4-4DFF-91FE-D29CBC1F5CA2}</Data>
+            <Data id="data">
+              <Data id="count">9</Data>
+              <Data id="d0">
+                <Data id="first">{6A182001-CAD2-48A2-B017-47E4F250DF8C}</Data>
+                <Data id="second">
+                  <Ptr>
+                    <Chip chipid="{4772B506-50B3-4034-98A5-9DA2B0523C81}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="MouseMove" refreshmode="function">
+                      <ChipData>
+                        <Data id="value">0</Data>
+                      </ChipData>
+                    </Chip>
+                  </Ptr>
+                </Data>
+              </Data>
+              <Data id="d1">
+                <Data id="first">{82A90136-DF95-45E1-9360-BE7808E8E31E}</Data>
+                <Data id="second">
+                  <Ptr>
+                    <Chip chipid="{CD25052A-EB64-4969-B439-0DBC391DD4EB}" type="{EA094CF0-CF56-4F5E-BADC-7A8BF2E5F276}" name="MouseTrackWidget" refreshmode="function">
+                      <ChipData>
+                        <Data id="save">true</Data>
+                        <Data id="preload">true</Data>
+                        <Data id="object">
+                          <Data id="type">0</Data>
+                        </Data>
+                      </ChipData>
+                    </Chip>
+                  </Ptr>
+                </Data>
+              </Data>
+              <Data id="d2">
+                <Data id="first">{8AFB6D40-A610-4660-BA17-7250D621CF70}</Data>
+                <Data id="second">
+                  <Ptr>
+                    <Chip chipid="{D1F139BC-5989-4077-A728-3FF52BBB864E}" type="{EA094CF0-CF56-4F5E-BADC-7A8BF2E5F276}" name="HoverWidget" refreshmode="function">
+                      <ChipData>
+                        <Data id="save">true</Data>
+                        <Data id="preload">true</Data>
+                        <Data id="object">
+                          <Data id="type">0</Data>
+                        </Data>
+                      </ChipData>
+                    </Chip>
+                  </Ptr>
+                </Data>
+              </Data>
+              <Data id="d3">
+                <Data id="first">{0D28194B-F7B5-4E0F-8BB0-530DB86E2B03}</Data>
+                <Data id="second">
+                  <Ptr>
+                    <Chip chipid="{68DF7299-9DEB-4688-A39A-7EC626C8463C}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="MouseX" refreshmode="function">
+                      <ChipData>
+                        <Data id="value">0.019506369426751591</Data>
+                      </ChipData>
+                    </Chip>
+                  </Ptr>
+                </Data>
+              </Data>
+              <Data id="d4">
+                <Data id="first">{BD0E9762-8FB0-44D3-BC3B-3C44246EF833}</Data>
+                <Data id="second">
+                  <Ptr>
+                    <Chip chipid="{54F0A975-CB34-4B5E-9F16-C5375CBE51F1}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="MouseHover" refreshmode="function">
+                      <ChipData>
+                        <Data id="value">0</Data>
+                      </ChipData>
+                    </Chip>
+                  </Ptr>
+                </Data>
+              </Data>
+              <Data id="d5">
+                <Data id="first">{E54607A0-1C73-4D6E-90E6-58F4F0623179}</Data>
+                <Data id="second">
+                  <Ptr>
+                    <Chip chipid="{EA83AC6A-8B5E-4A49-84C8-30C077508B2F}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="MouseY" refreshmode="function">
+                      <ChipData>
+                        <Data id="value">1.0253456221198156</Data>
+                      </ChipData>
+                    </Chip>
+                  </Ptr>
+                </Data>
+              </Data>
+              <Data id="d6">
+                <Data id="first">{A20C76B9-B4EF-470F-A894-D8ABE21FCE00}</Data>
+                <Data id="second">
+                  <Ptr>
+                    <Chip chipid="{7B9CEB0D-C194-43D4-99AA-ED463A55A66E}" type="{EA094CF0-CF56-4F5E-BADC-7A8BF2E5F276}" name="RootWidget" refreshmode="function">
+                      <ChipData>
+                        <Data id="save">true</Data>
+                        <Data id="preload">true</Data>
+                        <Data id="object">
+                          <Data id="type">2</Data>
+                          <Data id="name"/>
+                          <Data id="id">{C23C382F-C88A-488A-B676-F9378F9BE79D}</Data>
+                          <Data id="cgid">{F4B4A014-BDA0-4F99-AF32-07D54C627463}</Data>
+                          <Data id="data">
+                            <Data id="count">17</Data>
+                            <Data id="d0">
+                              <Data id="first">{1D1B810F-51C5-4039-A220-EB0603976EF4}</Data>
+                              <Data id="second">
+                                <Ptr>
+                                  <Chip chipid="{E4B01804-B84E-4A65-89DA-E776B15A3689}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="YPos" refreshmode="function">
+                                    <ChipData>
+                                      <Data id="value">0</Data>
+                                    </ChipData>
+                                  </Chip>
+                                </Ptr>
+                              </Data>
+                            </Data>
+                            <Data id="d1">
+                              <Data id="first">{C0C62112-BA79-4D72-9C79-11F4B4B8E50A}</Data>
+                              <Data id="second">
+                                <Ptr>
+                                  <Chip chipid="{ED895D56-217C-4BA8-919E-AA6E512E2C02}" type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" name="Color" refreshmode="function">
+                                    <ChipData>
+                                      <Data id="vector">0 0 0 0</Data>
+                                    </ChipData>
+                                  </Chip>
+                                </Ptr>
+                              </Data>
+                            </Data>
+                            <Data id="d2">
+                              <Data id="first">{CA426530-2B69-4376-80D6-3443566563B6}</Data>
+                              <Data id="second">
+                                <Ptr>
+                                  <Chip chipid="{004CDCAE-B63C-46DB-8B19-27B1F99BA740}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="WidthGlobal" refreshmode="function">
+                                    <ChipData>
+                                      <Data id="value">1</Data>
+                                    </ChipData>
+                                  </Chip>
+                                </Ptr>
+                              </Data>
+                            </Data>
+                            <Data id="d3">
+                              <Data id="first">{7403AF45-13E8-46E6-964C-DC7F697F4D49}</Data>
+                              <Data id="second">
+                                <Ptr>
+                                  <Chip chipid="{A8A0B183-FBA6-490E-A7E4-DEA470922052}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Width" refreshmode="function">
+                                    <ChipData>
+                                      <Data id="value">1</Data>
+                                    </ChipData>
+                                  </Chip>
+                                </Ptr>
+                              </Data>
+                            </Data>
+                            <Data id="d4">
+                              <Data id="first">{EF91E549-E26B-4E0B-AEC5-5873B87F9AE3}</Data>
+                              <Data id="second">
+                                <Ptr>
+                                  <Chip chipid="{89B83E0B-CE84-4E17-B633-AC580DBB027C}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="YPosGlobal" refreshmode="function">
+                                    <ChipData>
+                                      <Data id="value">0</Data>
+                                    </ChipData>
+                                  </Chip>
+                                </Ptr>
+                              </Data>
+                            </Data>
+                            <Data id="d5">
+                              <Data id="first">{76D5195C-65F1-42E9-B4C6-A15FEF69E9F8}</Data>
+                              <Data id="second">
+                                <Ptr>
+                                  <Chip chipid="{A92B7169-A63C-4CFD-9D23-2B581C8A5DD0}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="RelativeCoordinates" refreshmode="function">
+                                    <ChipData>
+                                      <Data id="value">0</Data>
+                                    </ChipData>
+                                  </Chip>
+                                </Ptr>
+                              </Data>
+                            </Data>
+                            <Data id="d6">
+                              <Data id="first">{BF4CBE5D-AB8A-4668-B524-900D8267D1CD}</Data>
+                              <Data id="second">
+                                <Ptr>
+                                  <Chip chipid="{6068D6F0-01BF-44E0-95B3-FB96CFF5E025}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="VerticalAlignment" refreshmode="function">
+                                    <ChipData>
+                                      <Data id="value">0</Data>
+                                    </ChipData>
+                                  </Chip>
+                                </Ptr>
+                              </Data>
+                            </Data>
+                            <Data id="d7">
+                              <Data id="first">{7587845F-4A18-429F-B433-DF53191BBD94}</Data>
+                              <Data id="second">
+                                <Ptr>
+                                  <Chip chipid="{3ACC944E-6C3A-4645-8C0E-299C7BCE97AC}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="HeightGlobal" refreshmode="function">
+                                    <ChipData>
+                                      <Data id="value">1</Data>
+                                    </ChipData>
+                                  </Chip>
+                                </Ptr>
+                              </Data>
+                            </Data>
+                            <Data id="d8">
+                              <Data id="first">{5D734E77-B058-4269-98C4-396D09A68CF4}</Data>
+                              <Data id="second">
+                                <Ptr>
+                                  <Chip chipid="{B940C07D-4D97-4971-9397-FC44A1434889}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="HorizontalAlignment" refreshmode="function">
+                                    <ChipData>
+                                      <Data id="value">0</Data>
+                                    </ChipData>
+                                  </Chip>
+                                </Ptr>
+                              </Data>
+                            </Data>
+                            <Data id="d9">
+                              <Data id="first">{8F1B6079-6794-4E3A-BE1C-21FB3E23E171}</Data>
+                              <Data id="second">
+                                <Ptr>
+                                  <Chip chipid="{91307F25-9D75-4BC0-A2F8-5D4CE4F0B167}" type="{DD99A19D-D2A2-41A3-BA1D-53C2FF219446}" name="Children" refreshmode="function">
+                                    <ChipData>
+                                      <Data id="saveContent">true</Data>
+                                      <Data id="preload">true</Data>
+                                      <Data id="array">
+                                        <Data id="count">4</Data>
+                                        <Data id="array">
+                                          <Data id="d0">
+                                            <Data id="type">2</Data>
+                                            <Data id="name">Start Btn</Data>
+                                            <Data id="id">{79EE7CB7-E249-4D68-B10C-BD501890B2A4}</Data>
+                                            <Data id="cgid">{48CC82AE-FBFF-4271-88D9-08C13D52C4A5}</Data>
+                                            <Data id="data">
+                                              <Data id="count">20</Data>
+                                              <Data id="d0">
+                                                <Data id="first">{1D1B810F-51C5-4039-A220-EB0603976EF4}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{ADFC2501-6AA9-4308-911B-21EF763CB9FB}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="YPos" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0.074999999999999997</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d1">
+                                                <Data id="first">{C0C62112-BA79-4D72-9C79-11F4B4B8E50A}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{2A18BE3C-5C65-4475-9E0A-45952668B3F2}" type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" name="Color" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="vector">1 1 1 1</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d2">
+                                                <Data id="first">{C6286F1D-4EF5-4F99-85DD-F1E1B8C6B97F}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{00407E7B-8486-42E9-A1CF-6E12A26E9F28}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="_ButtonStatus" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d3">
+                                                <Data id="first">{CA426530-2B69-4376-80D6-3443566563B6}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{DD52B275-DE7B-4E8E-9C22-7804AE4FE1D2}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="WidthGlobal" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0.069108280254777082</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d4">
+                                                <Data id="first">{7403AF45-13E8-46E6-964C-DC7F697F4D49}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{B021AAA6-4F94-4109-AA1B-2A41335CAB1B}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Width" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">5</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d5">
+                                                <Data id="first">{EF91E549-E26B-4E0B-AEC5-5873B87F9AE3}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{AC501A91-AC71-4E22-B1C5-117B032DF039}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="YPosGlobal" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0.88500000000000001</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d6">
+                                                <Data id="first">{76D5195C-65F1-42E9-B4C6-A15FEF69E9F8}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{64DD6FD5-B557-4EBB-8381-3512A6EDD70A}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="RelativeCoordinates" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d7">
+                                                <Data id="first">{BF4CBE5D-AB8A-4668-B524-900D8267D1CD}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{2B84F26C-19E5-4FBA-BAED-BE16C9CB5F07}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="VerticalAlignment" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">2</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d8">
+                                                <Data id="first">{7587845F-4A18-429F-B433-DF53191BBD94}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{234C0568-3C01-4307-897E-767683A4CB1A}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="HeightGlobal" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0.040000000000000001</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d9">
+                                                <Data id="first">{D6F25A60-3C33-49A0-8802-92172A354084}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{FCEFB26F-BF1F-4B03-8C8A-C27E71B76852}" type="{EA094CF0-CF56-4F5E-BADC-7A8BF2E5F276}" name="Text" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="save">true</Data>
+                                                        <Data id="preload">true</Data>
+                                                        <Data id="object">
+                                                          <Data id="type">2</Data>
+                                                          <Data id="name"/>
+                                                          <Data id="id">{3582737E-84E4-4AA3-B331-72AEB88AEB96}</Data>
+                                                          <Data id="cgid">{05E3C33D-F783-4130-A21D-B168AED4296A}</Data>
+                                                          <Data id="data">
+                                                            <Data id="count">3</Data>
+                                                            <Data id="d0">
+                                                            <Data id="first">{A2B46B40-7FC7-4125-86FE-F7159DA50A36}</Data>
+                                                            <Data id="second">
+                                                            <Ptr>
+                                                            <Chip chipid="{E1A7C6EA-7CF5-4FC6-BBA1-B2690783CC93}" type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" name="Color" refreshmode="function">
+                                                            <ChipData>
+                                                            <Data id="vector">0 0 0 1</Data>
+                                                            </ChipData>
+                                                            </Chip>
+                                                            </Ptr>
+                                                            </Data>
+                                                            </Data>
+                                                            <Data id="d1">
+                                                            <Data id="first">{9BA5BC69-21AA-4B60-BF31-74A8501016F4}</Data>
+                                                            <Data id="second">
+                                                            <Ptr>
+                                                            <Chip chipid="{78858CD5-7AB7-4BA3-B0CD-2170044E89D6}" type="{D6779B90-ECA6-4E29-A309-A78D5C51C1F7}" name="Textout" refreshmode="function">
+                                                            <ChipData>
+                                                            <Data id="halign">1</Data>
+                                                            <Data id="valign">1</Data>
+                                                            </ChipData>
+                                                            </Chip>
+                                                            </Ptr>
+                                                            </Data>
+                                                            </Data>
+                                                            <Data id="d2">
+                                                            <Data id="first">{6C7E22CE-E0D8-43D7-8ABF-362B771EA5BB}</Data>
+                                                            <Data id="second">
+                                                            <Ptr>
+                                                            <Chip chipid="{723A095D-A0CC-4212-A742-CD372B95FB35}" type="{03DDF010-919D-4D52-A9CC-6D1EF697A81F}" name="Text" refreshmode="function">
+                                                            <ChipData>
+                                                            <Data id="text">Start/Pause</Data>
+                                                            </ChipData>
+                                                            </Chip>
+                                                            </Ptr>
+                                                            </Data>
+                                                            </Data>
+                                                          </Data>
+                                                          <Data id="filename">.\XGUI.m3x</Data>
+                                                        </Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d10">
+                                                <Data id="first">{5D734E77-B058-4269-98C4-396D09A68CF4}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{80190D02-D466-4DDE-959D-AE5CB6BBF90B}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="HorizontalAlignment" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d11">
+                                                <Data id="first">{8F1B6079-6794-4E3A-BE1C-21FB3E23E171}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{9F92D96E-9EC1-415A-A50D-36EC5E341C5D}" type="{DD99A19D-D2A2-41A3-BA1D-53C2FF219446}" name="Children" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="saveContent">true</Data>
+                                                        <Data id="preload">true</Data>
+                                                        <Data id="array">
+                                                          <Data id="count">0</Data>
+                                                        </Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d12">
+                                                <Data id="first">{C7632481-246D-4DC8-B96A-8B4280406A20}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{34BA4707-B95F-46C8-B590-E5AF7BEEBFF4}" type="{EA094CF0-CF56-4F5E-BADC-7A8BF2E5F276}" name="OnClicked" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="save">true</Data>
+                                                        <Data id="preload">true</Data>
+                                                        <Data id="object">
+                                                          <Data id="type">2</Data>
+                                                          <Data id="name"/>
+                                                          <Data id="id">{8162EE4E-0A26-4809-B75B-1B3C7AB73E95}</Data>
+                                                          <Data id="cgid">{3157190C-0BF1-471C-93A9-EDF5A34E6674}</Data>
+                                                          <Data id="data">
+                                                            <Data id="count">1</Data>
+                                                            <Data id="d0">
+                                                            <Data id="first">{4D1576EA-0C7B-45FC-B902-5D0D285DBDD4}</Data>
+                                                            <Data id="second">
+                                                            <Ptr>
+                                                            <Chip chipid="{3E9448D0-C791-4BFB-B5F2-929183B4F0BA}" type="{DD99A19D-D2A2-41A3-BA1D-53C2FF219446}" name="Callbacks" refreshmode="function">
+                                                            <ChipData>
+                                                            <Data id="saveContent">true</Data>
+                                                            <Data id="preload">true</Data>
+                                                            <Data id="array">
+                                                            <Data id="count">1</Data>
+                                                            <Data id="array">
+                                                            <Data id="d0">
+                                                            <Data id="type">2</Data>
+                                                            <Data id="name"/>
+                                                            <Data id="id">{44C03F08-7EAA-481C-BAC4-49A6583F2998}</Data>
+                                                            <Data id="cgid">{64C0A7BC-71AF-4594-B2E7-B632C43E5B3E}</Data>
+                                                            <Data id="data">
+                                                            <Data id="count">2</Data>
+                                                            <Data id="d0">
+                                                            <Data id="first">{C30D494A-7EAC-4B9D-832F-943CF6E06511}</Data>
+                                                            <Data id="second">
+                                                            <Ptr>
+                                                            <Chip chipid="{602F7D3F-C70D-4EC1-80E8-237BA674E089}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="Default-&gt;StartCallback" refreshmode="function">
+                                                            <ChipData>
+                                                            <Data id="type">{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}</Data>
+                                                            <Data id="cg">Default</Data>
+                                                            <Data id="func">StartCallback</Data>
+                                                            <Data id="cbn">false</Data>
+                                                            <Data id="preload">true</Data>
+                                                            <Data id="filename">.\PhysX - Spherical Joint.m3x</Data>
+                                                            </ChipData>
+                                                            </Chip>
+                                                            </Ptr>
+                                                            </Data>
+                                                            </Data>
+                                                            <Data id="d1">
+                                                            <Data id="first">{303F28A3-9A68-4216-BCB9-D37AD6AB392A}</Data>
+                                                            <Data id="second">
+                                                            <Ptr>
+                                                            <Chip chipid="{05B579D1-0044-4CB5-8366-55DF299AD7B7}" type="{EA094CF0-CF56-4F5E-BADC-7A8BF2E5F276}" name="Instance Ref" refreshmode="function">
+                                                            <ChipData>
+                                                            <Data id="save">true</Data>
+                                                            <Data id="preload">true</Data>
+                                                            <Data id="object">
+                                                            <Data id="type">0</Data>
+                                                            </Data>
+                                                            </ChipData>
+                                                            </Chip>
+                                                            </Ptr>
+                                                            </Data>
+                                                            </Data>
+                                                            </Data>
+                                                            <Data id="filename">.\XGUI.m3x</Data>
+                                                            </Data>
+                                                            </Data>
+                                                            </Data>
+                                                            </ChipData>
+                                                            </Chip>
+                                                            </Ptr>
+                                                            </Data>
+                                                            </Data>
+                                                          </Data>
+                                                          <Data id="filename">.\XGUI.m3x</Data>
+                                                        </Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d13">
+                                                <Data id="first">{0D8AA486-B267-4920-8193-667E30B3CE4F}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{DE3592F3-D6FF-48E1-BF84-183C5F83FF39}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="UseRelativeSize" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d14">
+                                                <Data id="first">{024E9A99-6ACE-4CD7-8E14-3015B56434FC}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{11B05580-6574-4966-B586-65E92D7661BC}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="XPos" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0.01</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d15">
+                                                <Data id="first">{A83364B9-CC7A-4CBF-9D96-2D94499370F6}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{C257C3DF-2587-4727-B1F4-E7091961CA78}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="AspectRatioType" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">2</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d16">
+                                                <Data id="first">{3A200CCE-D90B-4045-907A-D0B77AE92E9C}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{A44DC486-FB91-4469-B1F3-5DCD1BCE5130}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="IsEnabled" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">1</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d17">
+                                                <Data id="first">{A63477D9-C743-46AB-9074-B396B73DE12E}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{914DFC47-121D-49E6-B01F-1AC98CC07B6E}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Height" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0.040000000000000001</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d18">
+                                                <Data id="first">{9D87E0E6-6643-4D72-9AD2-69768B0C7127}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{A556A5DC-1F36-43BA-8E62-9510376A94B7}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="XPosGlobal" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0.01</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d19">
+                                                <Data id="first">{19D8D2F3-312C-4743-BBE6-8DB31BCB96E7}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{B4FFA0AB-9CDB-405A-A363-BBD8F4EAAA96}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="AcceptsFocus" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">1</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                            </Data>
+                                            <Data id="filename">.\XGUI.m3x</Data>
+                                          </Data>
+                                          <Data id="d1">
+                                            <Data id="type">2</Data>
+                                            <Data id="name">Destroy Btn</Data>
+                                            <Data id="id">{5014D7CA-4D88-4761-8064-BABD4C9D9B0F}</Data>
+                                            <Data id="cgid">{48CC82AE-FBFF-4271-88D9-08C13D52C4A5}</Data>
+                                            <Data id="data">
+                                              <Data id="count">20</Data>
+                                              <Data id="d0">
+                                                <Data id="first">{1D1B810F-51C5-4039-A220-EB0603976EF4}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{E888D53E-769D-4A95-B719-2F7CA0A2BBFE}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="YPos" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0.125</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d1">
+                                                <Data id="first">{C0C62112-BA79-4D72-9C79-11F4B4B8E50A}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{62E662FC-D604-4E83-9CF3-7E9CECE48C95}" type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" name="Color" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="vector">1 1 1 1</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d2">
+                                                <Data id="first">{C6286F1D-4EF5-4F99-85DD-F1E1B8C6B97F}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{ED202EB0-AF27-4EB9-9107-6AD006CF4398}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="_ButtonStatus" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d3">
+                                                <Data id="first">{CA426530-2B69-4376-80D6-3443566563B6}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{81A33EB8-BD31-4CF2-92F9-F9ECAC2A406D}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="WidthGlobal" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0.069108280254777082</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d4">
+                                                <Data id="first">{7403AF45-13E8-46E6-964C-DC7F697F4D49}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{A80AD313-6EFD-4951-87BA-20B60601E757}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Width" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">5</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d5">
+                                                <Data id="first">{EF91E549-E26B-4E0B-AEC5-5873B87F9AE3}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{17456704-4E17-4654-9FAF-4B994E7A4377}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="YPosGlobal" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0.83499999999999996</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d6">
+                                                <Data id="first">{76D5195C-65F1-42E9-B4C6-A15FEF69E9F8}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{F411134A-41A7-497B-BF7C-E6703EDF1B55}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="RelativeCoordinates" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d7">
+                                                <Data id="first">{BF4CBE5D-AB8A-4668-B524-900D8267D1CD}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{8FA179D3-395D-43A4-B164-D7F9BA48E2D4}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="VerticalAlignment" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">2</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d8">
+                                                <Data id="first">{7587845F-4A18-429F-B433-DF53191BBD94}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{EA6BF090-6304-4548-AA1D-BE69A6DAB832}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="HeightGlobal" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0.040000000000000001</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d9">
+                                                <Data id="first">{D6F25A60-3C33-49A0-8802-92172A354084}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{22DE72EE-8AB7-46D6-9AF5-8ED3FF436C63}" type="{EA094CF0-CF56-4F5E-BADC-7A8BF2E5F276}" name="Text" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="save">true</Data>
+                                                        <Data id="preload">true</Data>
+                                                        <Data id="object">
+                                                          <Data id="type">2</Data>
+                                                          <Data id="name"/>
+                                                          <Data id="id">{3FAF3EC2-5B36-4ED9-A991-4908946CCB4A}</Data>
+                                                          <Data id="cgid">{05E3C33D-F783-4130-A21D-B168AED4296A}</Data>
+                                                          <Data id="data">
+                                                            <Data id="count">3</Data>
+                                                            <Data id="d0">
+                                                            <Data id="first">{A2B46B40-7FC7-4125-86FE-F7159DA50A36}</Data>
+                                                            <Data id="second">
+                                                            <Ptr>
+                                                            <Chip chipid="{E22076BC-C9A4-4800-B1D4-ABB17F33D3CC}" type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" name="Color" refreshmode="function">
+                                                            <ChipData>
+                                                            <Data id="vector">0 0 0 1</Data>
+                                                            </ChipData>
+                                                            </Chip>
+                                                            </Ptr>
+                                                            </Data>
+                                                            </Data>
+                                                            <Data id="d1">
+                                                            <Data id="first">{9BA5BC69-21AA-4B60-BF31-74A8501016F4}</Data>
+                                                            <Data id="second">
+                                                            <Ptr>
+                                                            <Chip chipid="{847C8D83-44BE-4517-96DA-92361F788984}" type="{D6779B90-ECA6-4E29-A309-A78D5C51C1F7}" name="Textout" refreshmode="function">
+                                                            <ChipData>
+                                                            <Data id="halign">1</Data>
+                                                            <Data id="valign">1</Data>
+                                                            </ChipData>
+                                                            </Chip>
+                                                            </Ptr>
+                                                            </Data>
+                                                            </Data>
+                                                            <Data id="d2">
+                                                            <Data id="first">{6C7E22CE-E0D8-43D7-8ABF-362B771EA5BB}</Data>
+                                                            <Data id="second">
+                                                            <Ptr>
+                                                            <Chip chipid="{EFA0E6E4-CAC9-44DF-A8C3-D783F7EC7240}" type="{03DDF010-919D-4D52-A9CC-6D1EF697A81F}" name="Text" refreshmode="function">
+                                                            <ChipData>
+                                                            <Data id="text">Destroy Scene</Data>
+                                                            </ChipData>
+                                                            </Chip>
+                                                            </Ptr>
+                                                            </Data>
+                                                            </Data>
+                                                          </Data>
+                                                          <Data id="filename">.\XGUI.m3x</Data>
+                                                        </Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d10">
+                                                <Data id="first">{5D734E77-B058-4269-98C4-396D09A68CF4}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{3F2CFE2E-7530-4949-B7DE-0D9BFA8C0BB2}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="HorizontalAlignment" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d11">
+                                                <Data id="first">{8F1B6079-6794-4E3A-BE1C-21FB3E23E171}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{7BF90396-4C7E-476E-B8FE-615952B46D92}" type="{DD99A19D-D2A2-41A3-BA1D-53C2FF219446}" name="Children" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="saveContent">true</Data>
+                                                        <Data id="preload">true</Data>
+                                                        <Data id="array">
+                                                          <Data id="count">0</Data>
+                                                        </Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d12">
+                                                <Data id="first">{C7632481-246D-4DC8-B96A-8B4280406A20}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{296C38E5-FB0B-4B42-BEBC-C5AF079B93FF}" type="{EA094CF0-CF56-4F5E-BADC-7A8BF2E5F276}" name="OnClicked" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="save">true</Data>
+                                                        <Data id="preload">true</Data>
+                                                        <Data id="object">
+                                                          <Data id="type">2</Data>
+                                                          <Data id="name"/>
+                                                          <Data id="id">{72B1CCE3-661B-42E7-9406-2B0F47EBC09B}</Data>
+                                                          <Data id="cgid">{3157190C-0BF1-471C-93A9-EDF5A34E6674}</Data>
+                                                          <Data id="data">
+                                                            <Data id="count">1</Data>
+                                                            <Data id="d0">
+                                                            <Data id="first">{4D1576EA-0C7B-45FC-B902-5D0D285DBDD4}</Data>
+                                                            <Data id="second">
+                                                            <Ptr>
+                                                            <Chip chipid="{A9A1520D-29B5-4B30-A2BA-A8EDFF6A5C88}" type="{DD99A19D-D2A2-41A3-BA1D-53C2FF219446}" name="Callbacks" refreshmode="function">
+                                                            <ChipData>
+                                                            <Data id="saveContent">true</Data>
+                                                            <Data id="preload">true</Data>
+                                                            <Data id="array">
+                                                            <Data id="count">1</Data>
+                                                            <Data id="array">
+                                                            <Data id="d0">
+                                                            <Data id="type">2</Data>
+                                                            <Data id="name"/>
+                                                            <Data id="id">{2932E47A-5A14-4EE1-96D5-E4BBB14C5BC4}</Data>
+                                                            <Data id="cgid">{64C0A7BC-71AF-4594-B2E7-B632C43E5B3E}</Data>
+                                                            <Data id="data">
+                                                            <Data id="count">2</Data>
+                                                            <Data id="d0">
+                                                            <Data id="first">{C30D494A-7EAC-4B9D-832F-943CF6E06511}</Data>
+                                                            <Data id="second">
+                                                            <Ptr>
+                                                            <Chip chipid="{24EE8CD7-920E-4986-B2DB-D506F8B0BDB9}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="Default-&gt;DestroyCallback" refreshmode="function">
+                                                            <ChipData>
+                                                            <Data id="type">{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}</Data>
+                                                            <Data id="cg">Default</Data>
+                                                            <Data id="func">DestroyCallback</Data>
+                                                            <Data id="cbn">false</Data>
+                                                            <Data id="preload">true</Data>
+                                                            <Data id="filename">.\PhysX - Spherical Joint.m3x</Data>
+                                                            </ChipData>
+                                                            </Chip>
+                                                            </Ptr>
+                                                            </Data>
+                                                            </Data>
+                                                            <Data id="d1">
+                                                            <Data id="first">{303F28A3-9A68-4216-BCB9-D37AD6AB392A}</Data>
+                                                            <Data id="second">
+                                                            <Ptr>
+                                                            <Chip chipid="{515F9110-D0BE-43B7-AF2D-1AFCB1744424}" type="{EA094CF0-CF56-4F5E-BADC-7A8BF2E5F276}" name="Instance Ref" refreshmode="function">
+                                                            <ChipData>
+                                                            <Data id="save">true</Data>
+                                                            <Data id="preload">true</Data>
+                                                            <Data id="object">
+                                                            <Data id="type">0</Data>
+                                                            </Data>
+                                                            </ChipData>
+                                                            </Chip>
+                                                            </Ptr>
+                                                            </Data>
+                                                            </Data>
+                                                            </Data>
+                                                            <Data id="filename">.\XGUI.m3x</Data>
+                                                            </Data>
+                                                            </Data>
+                                                            </Data>
+                                                            </ChipData>
+                                                            </Chip>
+                                                            </Ptr>
+                                                            </Data>
+                                                            </Data>
+                                                          </Data>
+                                                          <Data id="filename">.\XGUI.m3x</Data>
+                                                        </Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d13">
+                                                <Data id="first">{0D8AA486-B267-4920-8193-667E30B3CE4F}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{EAE65E00-BBBA-49F5-A9DD-89EBB89C81CC}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="UseRelativeSize" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d14">
+                                                <Data id="first">{024E9A99-6ACE-4CD7-8E14-3015B56434FC}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{C9E1F681-8194-4E12-922C-1237F55B93B3}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="XPos" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0.01</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d15">
+                                                <Data id="first">{A83364B9-CC7A-4CBF-9D96-2D94499370F6}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{E0ABD3F3-4A4C-4008-B283-C468BA4CFBC0}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="AspectRatioType" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">2</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d16">
+                                                <Data id="first">{3A200CCE-D90B-4045-907A-D0B77AE92E9C}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{1B7A2850-79DA-48A7-AFA0-FCD0771DACDB}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="IsEnabled" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">1</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d17">
+                                                <Data id="first">{A63477D9-C743-46AB-9074-B396B73DE12E}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{C6129524-50FC-4E21-801B-3BA9B75DFDDF}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Height" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0.040000000000000001</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d18">
+                                                <Data id="first">{9D87E0E6-6643-4D72-9AD2-69768B0C7127}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{4BB00C54-5AA6-4E25-8045-D7D7E808CED8}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="XPosGlobal" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0.01</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d19">
+                                                <Data id="first">{19D8D2F3-312C-4743-BBE6-8DB31BCB96E7}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{888A5378-2941-4916-AFC1-7CE221A40FDE}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="AcceptsFocus" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">1</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                            </Data>
+                                            <Data id="filename">.\XGUI.m3x</Data>
+                                          </Data>
+                                          <Data id="d2">
+                                            <Data id="type">2</Data>
+                                            <Data id="name">Force Btn</Data>
+                                            <Data id="id">{233BFC0E-F342-4C23-8973-977B5C368A07}</Data>
+                                            <Data id="cgid">{48CC82AE-FBFF-4271-88D9-08C13D52C4A5}</Data>
+                                            <Data id="data">
+                                              <Data id="count">20</Data>
+                                              <Data id="d0">
+                                                <Data id="first">{1D1B810F-51C5-4039-A220-EB0603976EF4}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{0A5E514C-FC57-471E-A846-B83A9C3F8B99}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="YPos" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0.17499999999999999</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d1">
+                                                <Data id="first">{C0C62112-BA79-4D72-9C79-11F4B4B8E50A}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{94D7F38D-BEF4-474E-B71D-7F6EDFBBDA6E}" type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" name="Color" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="vector">1 1 1 1</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d2">
+                                                <Data id="first">{C6286F1D-4EF5-4F99-85DD-F1E1B8C6B97F}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{7033FDCF-B6FB-4F55-ACBA-23BE6D76AB93}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="_ButtonStatus" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d3">
+                                                <Data id="first">{CA426530-2B69-4376-80D6-3443566563B6}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{90B581CF-78B9-4831-BBC7-3BD815BC3730}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="WidthGlobal" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0.069108280254777082</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d4">
+                                                <Data id="first">{7403AF45-13E8-46E6-964C-DC7F697F4D49}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{8D5C3EFE-076C-4ADC-9466-D11AD29AC834}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Width" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">5</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d5">
+                                                <Data id="first">{EF91E549-E26B-4E0B-AEC5-5873B87F9AE3}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{F6942F99-D21F-413E-9189-D9B92CB5B732}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="YPosGlobal" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0.78499999999999992</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d6">
+                                                <Data id="first">{76D5195C-65F1-42E9-B4C6-A15FEF69E9F8}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{6885C543-8EF8-42C8-A569-946C5D867AC6}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="RelativeCoordinates" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d7">
+                                                <Data id="first">{BF4CBE5D-AB8A-4668-B524-900D8267D1CD}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{82A9332B-42BE-4DFA-BB5F-4BA22918444A}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="VerticalAlignment" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">2</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d8">
+                                                <Data id="first">{7587845F-4A18-429F-B433-DF53191BBD94}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{32CB1D94-9080-4494-AB20-6A7A2F0B3A09}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="HeightGlobal" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0.040000000000000001</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d9">
+                                                <Data id="first">{D6F25A60-3C33-49A0-8802-92172A354084}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{32E73DE0-C25C-4466-998A-B1B8663F87CC}" type="{EA094CF0-CF56-4F5E-BADC-7A8BF2E5F276}" name="Text" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="save">true</Data>
+                                                        <Data id="preload">true</Data>
+                                                        <Data id="object">
+                                                          <Data id="type">2</Data>
+                                                          <Data id="name"/>
+                                                          <Data id="id">{39D144CE-F6DF-4F6B-A343-AFCFCD630688}</Data>
+                                                          <Data id="cgid">{05E3C33D-F783-4130-A21D-B168AED4296A}</Data>
+                                                          <Data id="data">
+                                                            <Data id="count">3</Data>
+                                                            <Data id="d0">
+                                                            <Data id="first">{A2B46B40-7FC7-4125-86FE-F7159DA50A36}</Data>
+                                                            <Data id="second">
+                                                            <Ptr>
+                                                            <Chip chipid="{74FD013F-03B3-487F-A5D0-57FEDEF7FD5D}" type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" name="Color" refreshmode="function">
+                                                            <ChipData>
+                                                            <Data id="vector">0 0 0 1</Data>
+                                                            </ChipData>
+                                                            </Chip>
+                                                            </Ptr>
+                                                            </Data>
+                                                            </Data>
+                                                            <Data id="d1">
+                                                            <Data id="first">{9BA5BC69-21AA-4B60-BF31-74A8501016F4}</Data>
+                                                            <Data id="second">
+                                                            <Ptr>
+                                                            <Chip chipid="{09C1E865-8C3B-4F7B-A69B-8976775996CE}" type="{D6779B90-ECA6-4E29-A309-A78D5C51C1F7}" name="Textout" refreshmode="function">
+                                                            <ChipData>
+                                                            <Data id="halign">1</Data>
+                                                            <Data id="valign">1</Data>
+                                                            </ChipData>
+                                                            </Chip>
+                                                            </Ptr>
+                                                            </Data>
+                                                            </Data>
+                                                            <Data id="d2">
+                                                            <Data id="first">{6C7E22CE-E0D8-43D7-8ABF-362B771EA5BB}</Data>
+                                                            <Data id="second">
+                                                            <Ptr>
+                                                            <Chip chipid="{0706A1C4-CD4F-45DE-93E3-0B1313D811CF}" type="{03DDF010-919D-4D52-A9CC-6D1EF697A81F}" name="Text" refreshmode="function">
+                                                            <ChipData>
+                                                            <Data id="text">Apply Force</Data>
+                                                            </ChipData>
+                                                            </Chip>
+                                                            </Ptr>
+                                                            </Data>
+                                                            </Data>
+                                                          </Data>
+                                                          <Data id="filename">.\XGUI.m3x</Data>
+                                                        </Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d10">
+                                                <Data id="first">{5D734E77-B058-4269-98C4-396D09A68CF4}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{8BA0E90E-5948-41B3-8C0D-869338A7078E}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="HorizontalAlignment" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d11">
+                                                <Data id="first">{8F1B6079-6794-4E3A-BE1C-21FB3E23E171}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{F92CE92C-41E7-492F-BD9B-AA8865490ADA}" type="{DD99A19D-D2A2-41A3-BA1D-53C2FF219446}" name="Children" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="saveContent">true</Data>
+                                                        <Data id="preload">true</Data>
+                                                        <Data id="array">
+                                                          <Data id="count">0</Data>
+                                                        </Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d12">
+                                                <Data id="first">{C7632481-246D-4DC8-B96A-8B4280406A20}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{D9B8DDC4-204A-456B-9688-08FF15D94400}" type="{EA094CF0-CF56-4F5E-BADC-7A8BF2E5F276}" name="OnClicked" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="save">true</Data>
+                                                        <Data id="preload">true</Data>
+                                                        <Data id="object">
+                                                          <Data id="type">2</Data>
+                                                          <Data id="name"/>
+                                                          <Data id="id">{51D8A135-98B0-4C76-8C78-13622F0DAAF3}</Data>
+                                                          <Data id="cgid">{3157190C-0BF1-471C-93A9-EDF5A34E6674}</Data>
+                                                          <Data id="data">
+                                                            <Data id="count">1</Data>
+                                                            <Data id="d0">
+                                                            <Data id="first">{4D1576EA-0C7B-45FC-B902-5D0D285DBDD4}</Data>
+                                                            <Data id="second">
+                                                            <Ptr>
+                                                            <Chip chipid="{72889227-713A-4AE4-BC8D-4612EA0CAA96}" type="{DD99A19D-D2A2-41A3-BA1D-53C2FF219446}" name="Callbacks" refreshmode="function">
+                                                            <ChipData>
+                                                            <Data id="saveContent">true</Data>
+                                                            <Data id="preload">true</Data>
+                                                            <Data id="array">
+                                                            <Data id="count">0</Data>
+                                                            </Data>
+                                                            </ChipData>
+                                                            </Chip>
+                                                            </Ptr>
+                                                            </Data>
+                                                            </Data>
+                                                          </Data>
+                                                          <Data id="filename">.\XGUI.m3x</Data>
+                                                        </Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d13">
+                                                <Data id="first">{0D8AA486-B267-4920-8193-667E30B3CE4F}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{DBE554A4-5F78-4DE0-808A-26C43AC7AA79}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="UseRelativeSize" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d14">
+                                                <Data id="first">{024E9A99-6ACE-4CD7-8E14-3015B56434FC}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{EE1C212D-B164-41B2-9B3E-AB9439189814}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="XPos" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0.01</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d15">
+                                                <Data id="first">{A83364B9-CC7A-4CBF-9D96-2D94499370F6}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{D809B574-1F00-484B-8E5A-B5E4F8B858C7}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="AspectRatioType" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">2</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d16">
+                                                <Data id="first">{3A200CCE-D90B-4045-907A-D0B77AE92E9C}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{4C8D08A9-9D90-4053-BCEE-B35E98CA3781}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="IsEnabled" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">1</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d17">
+                                                <Data id="first">{A63477D9-C743-46AB-9074-B396B73DE12E}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{659BA261-F1E7-4C47-8C77-4251266B748C}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Height" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0.040000000000000001</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d18">
+                                                <Data id="first">{9D87E0E6-6643-4D72-9AD2-69768B0C7127}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{9777EB15-0A38-4C21-81DB-5E190D6F6874}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="XPosGlobal" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0.01</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d19">
+                                                <Data id="first">{19D8D2F3-312C-4743-BBE6-8DB31BCB96E7}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{E2680C7F-45DB-40DC-9F0D-F6B12903ABAC}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="AcceptsFocus" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">1</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                            </Data>
+                                            <Data id="filename">.\XGUI.m3x</Data>
+                                          </Data>
+                                          <Data id="d3">
+                                            <Data id="type">2</Data>
+                                            <Data id="name">Torque Btn</Data>
+                                            <Data id="id">{A19C38F3-1067-45BE-A777-D668E8BD5709}</Data>
+                                            <Data id="cgid">{48CC82AE-FBFF-4271-88D9-08C13D52C4A5}</Data>
+                                            <Data id="data">
+                                              <Data id="count">20</Data>
+                                              <Data id="d0">
+                                                <Data id="first">{1D1B810F-51C5-4039-A220-EB0603976EF4}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{2447C2CF-D1E2-4DC7-AFB8-F37D7CB1DB0C}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="YPos" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0.22500000000000001</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d1">
+                                                <Data id="first">{C0C62112-BA79-4D72-9C79-11F4B4B8E50A}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{C4403385-7238-41FB-BD18-8EE6DA6BC4C6}" type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" name="Color" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="vector">1 1 1 1</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d2">
+                                                <Data id="first">{C6286F1D-4EF5-4F99-85DD-F1E1B8C6B97F}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{3552BC90-AD84-44A8-8958-A8BC3C068B76}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="_ButtonStatus" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d3">
+                                                <Data id="first">{CA426530-2B69-4376-80D6-3443566563B6}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{F6BE790F-5C7A-49DA-AB22-4DD8A3AAA9B2}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="WidthGlobal" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0.069108280254777082</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d4">
+                                                <Data id="first">{7403AF45-13E8-46E6-964C-DC7F697F4D49}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{237EFC6D-CF07-4917-B3A7-0F5640AE4AB5}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Width" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">5</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d5">
+                                                <Data id="first">{EF91E549-E26B-4E0B-AEC5-5873B87F9AE3}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{321FD978-0B2C-4C4A-A081-5EBECA64627B}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="YPosGlobal" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0.73499999999999999</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d6">
+                                                <Data id="first">{76D5195C-65F1-42E9-B4C6-A15FEF69E9F8}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{5592C558-6685-47E2-BF20-B9664F5463C2}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="RelativeCoordinates" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d7">
+                                                <Data id="first">{BF4CBE5D-AB8A-4668-B524-900D8267D1CD}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{EF422902-D77D-4E80-AAEB-7BF19C8505F1}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="VerticalAlignment" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">2</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d8">
+                                                <Data id="first">{7587845F-4A18-429F-B433-DF53191BBD94}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{555833DF-A03F-48D9-A92B-DE07DA8AA8B3}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="HeightGlobal" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0.040000000000000001</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d9">
+                                                <Data id="first">{D6F25A60-3C33-49A0-8802-92172A354084}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{37288EA6-6801-4E62-8E9C-B0F8BD9002A3}" type="{EA094CF0-CF56-4F5E-BADC-7A8BF2E5F276}" name="Text" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="save">true</Data>
+                                                        <Data id="preload">true</Data>
+                                                        <Data id="object">
+                                                          <Data id="type">2</Data>
+                                                          <Data id="name"/>
+                                                          <Data id="id">{B6D6283A-021C-4FD2-81F8-196D54DB9604}</Data>
+                                                          <Data id="cgid">{05E3C33D-F783-4130-A21D-B168AED4296A}</Data>
+                                                          <Data id="data">
+                                                            <Data id="count">3</Data>
+                                                            <Data id="d0">
+                                                            <Data id="first">{A2B46B40-7FC7-4125-86FE-F7159DA50A36}</Data>
+                                                            <Data id="second">
+                                                            <Ptr>
+                                                            <Chip chipid="{40EDEC5A-7EE2-4D7D-A536-0CD3173E55C9}" type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" name="Color" refreshmode="function">
+                                                            <ChipData>
+                                                            <Data id="vector">0 0 0 1</Data>
+                                                            </ChipData>
+                                                            </Chip>
+                                                            </Ptr>
+                                                            </Data>
+                                                            </Data>
+                                                            <Data id="d1">
+                                                            <Data id="first">{9BA5BC69-21AA-4B60-BF31-74A8501016F4}</Data>
+                                                            <Data id="second">
+                                                            <Ptr>
+                                                            <Chip chipid="{5C5FA35C-3D31-4DAC-853E-151D96C3C75F}" type="{D6779B90-ECA6-4E29-A309-A78D5C51C1F7}" name="Textout" refreshmode="function">
+                                                            <ChipData>
+                                                            <Data id="halign">1</Data>
+                                                            <Data id="valign">1</Data>
+                                                            </ChipData>
+                                                            </Chip>
+                                                            </Ptr>
+                                                            </Data>
+                                                            </Data>
+                                                            <Data id="d2">
+                                                            <Data id="first">{6C7E22CE-E0D8-43D7-8ABF-362B771EA5BB}</Data>
+                                                            <Data id="second">
+                                                            <Ptr>
+                                                            <Chip chipid="{4CB09493-1FCD-441B-8384-C0D1FAF96E82}" type="{03DDF010-919D-4D52-A9CC-6D1EF697A81F}" name="Text" refreshmode="function">
+                                                            <ChipData>
+                                                            <Data id="text">Apply Torque</Data>
+                                                            </ChipData>
+                                                            </Chip>
+                                                            </Ptr>
+                                                            </Data>
+                                                            </Data>
+                                                          </Data>
+                                                          <Data id="filename">.\XGUI.m3x</Data>
+                                                        </Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d10">
+                                                <Data id="first">{5D734E77-B058-4269-98C4-396D09A68CF4}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{6A3440B8-0416-4CD8-A185-5C484C290E3C}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="HorizontalAlignment" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d11">
+                                                <Data id="first">{8F1B6079-6794-4E3A-BE1C-21FB3E23E171}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{B67787A5-16AA-4E87-AE05-2FD662B80412}" type="{DD99A19D-D2A2-41A3-BA1D-53C2FF219446}" name="Children" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="saveContent">true</Data>
+                                                        <Data id="preload">true</Data>
+                                                        <Data id="array">
+                                                          <Data id="count">0</Data>
+                                                        </Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d12">
+                                                <Data id="first">{C7632481-246D-4DC8-B96A-8B4280406A20}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{8754DE3C-2800-4E5B-BC2D-1476FB3D89DA}" type="{EA094CF0-CF56-4F5E-BADC-7A8BF2E5F276}" name="OnClicked" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="save">true</Data>
+                                                        <Data id="preload">true</Data>
+                                                        <Data id="object">
+                                                          <Data id="type">2</Data>
+                                                          <Data id="name"/>
+                                                          <Data id="id">{C02518F9-8BB4-4623-81BB-F17B899C6F0D}</Data>
+                                                          <Data id="cgid">{3157190C-0BF1-471C-93A9-EDF5A34E6674}</Data>
+                                                          <Data id="data">
+                                                            <Data id="count">1</Data>
+                                                            <Data id="d0">
+                                                            <Data id="first">{4D1576EA-0C7B-45FC-B902-5D0D285DBDD4}</Data>
+                                                            <Data id="second">
+                                                            <Ptr>
+                                                            <Chip chipid="{B6AF6EEE-C2C3-497A-A856-CE4037D7EA7B}" type="{DD99A19D-D2A2-41A3-BA1D-53C2FF219446}" name="Callbacks" refreshmode="function">
+                                                            <ChipData>
+                                                            <Data id="saveContent">true</Data>
+                                                            <Data id="preload">true</Data>
+                                                            <Data id="array">
+                                                            <Data id="count">0</Data>
+                                                            </Data>
+                                                            </ChipData>
+                                                            </Chip>
+                                                            </Ptr>
+                                                            </Data>
+                                                            </Data>
+                                                          </Data>
+                                                          <Data id="filename">.\XGUI.m3x</Data>
+                                                        </Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d13">
+                                                <Data id="first">{0D8AA486-B267-4920-8193-667E30B3CE4F}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{EBCEEF4E-262D-4416-8B8F-F1FDAE287546}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="UseRelativeSize" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d14">
+                                                <Data id="first">{024E9A99-6ACE-4CD7-8E14-3015B56434FC}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{B5DCFDAB-6E16-4A11-B239-C28ACE0044FE}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="XPos" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0.01</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d15">
+                                                <Data id="first">{A83364B9-CC7A-4CBF-9D96-2D94499370F6}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{FE71375B-C11A-4988-A7F1-49CB9720B2E6}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="AspectRatioType" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">2</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d16">
+                                                <Data id="first">{3A200CCE-D90B-4045-907A-D0B77AE92E9C}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{8F2B2B85-0C0B-4266-BC14-AB26613710E9}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="IsEnabled" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">1</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d17">
+                                                <Data id="first">{A63477D9-C743-46AB-9074-B396B73DE12E}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{1D3D9C9C-3CAD-4E55-9341-EB62DA9F2F72}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Height" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0.040000000000000001</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d18">
+                                                <Data id="first">{9D87E0E6-6643-4D72-9AD2-69768B0C7127}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{6DBA8397-0B71-4104-9157-84BFECAB3C09}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="XPosGlobal" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">0.01</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                              <Data id="d19">
+                                                <Data id="first">{19D8D2F3-312C-4743-BBE6-8DB31BCB96E7}</Data>
+                                                <Data id="second">
+                                                  <Ptr>
+                                                    <Chip chipid="{E7DCC11D-7828-46D0-8925-B4759AA90A6D}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="AcceptsFocus" refreshmode="function">
+                                                      <ChipData>
+                                                        <Data id="value">1</Data>
+                                                      </ChipData>
+                                                    </Chip>
+                                                  </Ptr>
+                                                </Data>
+                                              </Data>
+                                            </Data>
+                                            <Data id="filename">.\XGUI.m3x</Data>
+                                          </Data>
+                                        </Data>
+                                      </Data>
+                                    </ChipData>
+                                  </Chip>
+                                </Ptr>
+                              </Data>
+                            </Data>
+                            <Data id="d10">
+                              <Data id="first">{0D8AA486-B267-4920-8193-667E30B3CE4F}</Data>
+                              <Data id="second">
+                                <Ptr>
+                                  <Chip chipid="{610A9670-6044-4AE6-BD70-5D811BA2B794}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="UseRelativeSize" refreshmode="function">
+                                    <ChipData>
+                                      <Data id="value">0</Data>
+                                    </ChipData>
+                                  </Chip>
+                                </Ptr>
+                              </Data>
+                            </Data>
+                            <Data id="d11">
+                              <Data id="first">{024E9A99-6ACE-4CD7-8E14-3015B56434FC}</Data>
+                              <Data id="second">
+                                <Ptr>
+                                  <Chip chipid="{90FC03C7-5790-4DC9-A07F-E8704D57A028}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="XPos" refreshmode="function">
+                                    <ChipData>
+                                      <Data id="value">0</Data>
+                                    </ChipData>
+                                  </Chip>
+                                </Ptr>
+                              </Data>
+                            </Data>
+                            <Data id="d12">
+                              <Data id="first">{A83364B9-CC7A-4CBF-9D96-2D94499370F6}</Data>
+                              <Data id="second">
+                                <Ptr>
+                                  <Chip chipid="{74881194-5A99-47C6-BD38-8411C4A907CB}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="AspectRatioType" refreshmode="function">
+                                    <ChipData>
+                                      <Data id="value">0</Data>
+                                    </ChipData>
+                                  </Chip>
+                                </Ptr>
+                              </Data>
+                            </Data>
+                            <Data id="d13">
+                              <Data id="first">{3A200CCE-D90B-4045-907A-D0B77AE92E9C}</Data>
+                              <Data id="second">
+                                <Ptr>
+                                  <Chip chipid="{7E3D76A8-1437-41A2-A386-A0A35A2AC184}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="IsEnabled" refreshmode="function">
+                                    <ChipData>
+                                      <Data id="value">1</Data>
+                                    </ChipData>
+                                  </Chip>
+                                </Ptr>
+                              </Data>
+                            </Data>
+                            <Data id="d14">
+                              <Data id="first">{A63477D9-C743-46AB-9074-B396B73DE12E}</Data>
+                              <Data id="second">
+                                <Ptr>
+                                  <Chip chipid="{8B9B0ED4-6B4C-4631-8F97-DA9ABF09E394}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Height" refreshmode="function">
+                                    <ChipData>
+                                      <Data id="value">1</Data>
+                                    </ChipData>
+                                  </Chip>
+                                </Ptr>
+                              </Data>
+                            </Data>
+                            <Data id="d15">
+                              <Data id="first">{9D87E0E6-6643-4D72-9AD2-69768B0C7127}</Data>
+                              <Data id="second">
+                                <Ptr>
+                                  <Chip chipid="{6A0152A1-95CD-4A4E-B62F-670D7823E96B}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="XPosGlobal" refreshmode="function">
+                                    <ChipData>
+                                      <Data id="value">0</Data>
+                                    </ChipData>
+                                  </Chip>
+                                </Ptr>
+                              </Data>
+                            </Data>
+                            <Data id="d16">
+                              <Data id="first">{19D8D2F3-312C-4743-BBE6-8DB31BCB96E7}</Data>
+                              <Data id="second">
+                                <Ptr>
+                                  <Chip chipid="{3CF80E76-AAF2-43A5-AEF1-B5EFD97726B3}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="AcceptsFocus" refreshmode="function">
+                                    <ChipData>
+                                      <Data id="value">1</Data>
+                                    </ChipData>
+                                  </Chip>
+                                </Ptr>
+                              </Data>
+                            </Data>
+                          </Data>
+                          <Data id="filename">.\XGUI.m3x</Data>
+                        </Data>
+                      </ChipData>
+                    </Chip>
+                  </Ptr>
+                </Data>
+              </Data>
+              <Data id="d7">
+                <Data id="first">{F360A2C8-D830-4E91-8082-928D53E399B2}</Data>
+                <Data id="second">
+                  <Ptr>
+                    <Chip chipid="{020F06CE-5A6A-4915-A968-EFA715BF1AAD}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="MouseDown" refreshmode="function">
+                      <ChipData>
+                        <Data id="value">0</Data>
+                      </ChipData>
+                    </Chip>
+                  </Ptr>
+                </Data>
+              </Data>
+              <Data id="d8">
+                <Data id="first">{55745BDA-B0FD-4393-9B05-9D60FE0B4DDF}</Data>
+                <Data id="second">
+                  <Ptr>
+                    <Chip chipid="{B394FA37-421F-4B13-9EBC-01C7D3732839}" type="{EA094CF0-CF56-4F5E-BADC-7A8BF2E5F276}" name="FocusWidget" refreshmode="function">
+                      <ChipData>
+                        <Data id="save">true</Data>
+                        <Data id="preload">true</Data>
+                        <Data id="object">
+                          <Data id="type">1</Data>
+                          <Data id="id">{79EE7CB7-E249-4D68-B10C-BD501890B2A4}</Data>
+                          <Data id="cgid">{48CC82AE-FBFF-4271-88D9-08C13D52C4A5}</Data>
+                          <Data id="filename">.\PhysX - Spherical Joint.m3x</Data>
+                        </Data>
+                      </ChipData>
+                    </Chip>
+                  </Ptr>
+                </Data>
+              </Data>
+            </Data>
+            <Data id="filename">.\XGUI.m3x</Data>
+          </Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{07EC970B-A3C2-4BFB-BBB2-1F32643EF055}" type="{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}" name="StartCallback" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{F6815FD8-EFEF-4ABD-99FC-3A4D43108F64}"/>
+        </Connections>
+        <Function type="static" access="public"/>
+        <ChipData/>
+      </Chip>
+      <Chip chipid="{7E6705A6-B0C8-4789-AD5A-8857778F0389}" type="{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}" name="DestroyCallback" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{542CD044-3783-4C9A-AB5C-8A6E113ABA40}"/>
+          <Connection conn="0" subconn="1" chipid="{3E54E4ED-64B2-45E5-92B3-17DA39C4A6AD}"/>
+        </Connections>
+        <Function type="static" access="public"/>
+        <ChipData/>
+      </Chip>
+      <Chip chipid="{CBC81459-AB73-4C95-91FB-656667055A4D}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="XPushButton-&gt;IsPressed" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{AF5D5FE9-7E69-487C-895B-68C410F5692F}"/>
+        </Connections>
+        <ChipData>
+          <Data id="type">{418C3585-C883-4CED-8A68-9C2204DEE395}</Data>
+          <Data id="cg">XPushButton</Data>
+          <Data id="func">IsPressed</Data>
+          <Data id="cbn">false</Data>
+          <Data id="preload">true</Data>
+          <Data id="filename">.\XGUI.m3x</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{AF5D5FE9-7E69-487C-895B-68C410F5692F}" type="{EA094CF0-CF56-4F5E-BADC-7A8BF2E5F276}" name="Instance Ref" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="save">true</Data>
+          <Data id="preload">true</Data>
+          <Data id="object">
+            <Data id="type">1</Data>
+            <Data id="id">{233BFC0E-F342-4C23-8973-977B5C368A07}</Data>
+            <Data id="cgid">{48CC82AE-FBFF-4271-88D9-08C13D52C4A5}</Data>
+            <Data id="filename">.\PhysX - Spherical Joint.m3x</Data>
+          </Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{6CCBA7D9-9D5C-40C6-BC6E-F2DEE51DFD5D}" type="{EA094CF0-CF56-4F5E-BADC-7A8BF2E5F276}" name="Instance Ref" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="save">true</Data>
+          <Data id="preload">true</Data>
+          <Data id="object">
+            <Data id="type">1</Data>
+            <Data id="id">{A19C38F3-1067-45BE-A777-D668E8BD5709}</Data>
+            <Data id="cgid">{48CC82AE-FBFF-4271-88D9-08C13D52C4A5}</Data>
+            <Data id="filename">.\PhysX - Spherical Joint.m3x</Data>
+          </Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{73F13463-CA98-4606-ADDC-F533848B1B40}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="XPushButton-&gt;IsPressed" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{6CCBA7D9-9D5C-40C6-BC6E-F2DEE51DFD5D}"/>
+        </Connections>
+        <ChipData>
+          <Data id="type">{418C3585-C883-4CED-8A68-9C2204DEE395}</Data>
+          <Data id="cg">XPushButton</Data>
+          <Data id="func">IsPressed</Data>
+          <Data id="cbn">false</Data>
+          <Data id="preload">true</Data>
+          <Data id="filename">.\XGUI.m3x</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{FF318808-0943-4A99-A8EA-18CBF2909441}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="PhysX Scene" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="original">{A49B7F9C-B680-4F46-9F35-22DC25A46A77}</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{88CFCBA7-B080-423F-87A2-2FA609AFD611}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="One Time" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="original">{35BB672C-ADB3-441B-AAC4-A252C7BEA4A4}</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{44BEE3F5-5513-4BBF-BE4B-219B2F7D1B1C}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="PhysX Scene" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="original">{A49B7F9C-B680-4F46-9F35-22DC25A46A77}</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{0BBDBD48-8B19-4B75-AA77-D630006F72DC}" type="{4221CFFF-DEBE-4E70-9787-CF6543C4D9E3}" name="If/Else" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{CBC81459-AB73-4C95-91FB-656667055A4D}"/>
+          <Connection conn="1" subconn="0" chipid="{2407DFCE-7E2C-4C25-A086-49D8F6A0D03D}"/>
+        </Connections>
+        <ChipData/>
+      </Chip>
+      <Chip chipid="{85C4DCE6-1235-4158-BFEC-5806A2BDA296}" type="{4221CFFF-DEBE-4E70-9787-CF6543C4D9E3}" name="If/Else" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{73F13463-CA98-4606-ADDC-F533848B1B40}"/>
+          <Connection conn="1" subconn="0" chipid="{AABBB7D4-7A7C-406C-A01F-CC407E34FF57}"/>
+        </Connections>
+        <ChipData/>
+      </Chip>
+      <Chip chipid="{4257CD9D-BAB1-4EAB-9B33-96FB6405387E}" type="{A2C861A1-4990-4CB3-ACBD-3346D3E3F6A2}" name="Set Camera Matrices" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{B155D602-6A58-4CDD-9734-CE2E2B96F3C9}"/>
+          <Connection conn="1" subconn="0" chipid="{CE1C8BF6-2481-45C8-B9F8-81D1B3F8FAD5}"/>
+        </Connections>
+        <ChipData>
+          <Data id="cmd">300</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{CE1C8BF6-2481-45C8-B9F8-81D1B3F8FAD5}" type="{8DD16693-4C81-481B-912B-D03B7C664CB9}" name="Perspective FOVY" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{7FBA6F79-19B7-4FFD-96EA-18BCC7719F4E}"/>
+          <Connection conn="1" subconn="0" chipid="{E9BC7A00-58AF-4349-A31E-358166FA6FE8}"/>
+          <Connection conn="2" subconn="0" chipid="{01BB102A-848A-46F8-8EF5-D6835780F8F5}"/>
+          <Connection conn="3" subconn="0" chipid="{0EAB350D-E2ED-4545-8D96-AC79E132F204}"/>
+        </Connections>
+        <ChipData>
+          <Data id="matrix">0.598495245 0 0 0 0 1.73205078 0 0 0 0 1.00010002 1 0 0 -0.10001 0</Data>
+          <Data id="ot">4</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{9236196D-5A02-4FED-A898-99584DDFA0D7}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="FOVY (deg)" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="value">60</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{E9BC7A00-58AF-4349-A31E-358166FA6FE8}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Aspect Ratio" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{4EBDB978-D9CE-4BD0-ABBD-4CDDB28B781F}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">2.8940092165898617</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{01BB102A-848A-46F8-8EF5-D6835780F8F5}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Z-near" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="value">0.10000000100000001</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{0EAB350D-E2ED-4545-8D96-AC79E132F204}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Z-far" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="value">1000</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{4EBDB978-D9CE-4BD0-ABBD-4CDDB28B781F}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="a/b" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{9D926433-8E72-463E-9622-1CFA5D617EE8}"/>
+          <Connection conn="0" subconn="1" chipid="{0DFC585D-4A44-4A6C-A7FC-373D46E4B66F}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">2.8940092165898617</Data>
+          <Data id="exp">a/b</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{9D926433-8E72-463E-9622-1CFA5D617EE8}" type="{CB1384D9-4781-4FAD-8C71-F5A152927405}" name="Get Current Render Target Width" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="value">2512</Data>
+          <Data id="type">108</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{0DFC585D-4A44-4A6C-A7FC-373D46E4B66F}" type="{CB1384D9-4781-4FAD-8C71-F5A152927405}" name="Get Current Render Target Height" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="value">868</Data>
+          <Data id="type">109</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{7FBA6F79-19B7-4FFD-96EA-18BCC7719F4E}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="rad(a)" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{9236196D-5A02-4FED-A898-99584DDFA0D7}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">1.0471975430846214</Data>
+          <Data id="exp">rad(a)</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{AEA30FE7-D22B-4869-9C00-B86355403A14}" type="{F1B68FAA-9005-4730-A2C4-52953615B93E}" name="Camera Matrix" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{9AF9C0F7-77A7-4F29-BBE8-44432A7473EE}"/>
+          <Connection conn="3" subconn="0" chipid="{BEE72606-0A47-48BD-80D2-7E63554E9F52}"/>
+        </Connections>
+        <ChipData>
+          <Data id="matrix">0.707388282 0 -0.706825137 0 0.455349267 0.764842153 0.45571202 0 0.540609717 -0.64421767 0.541040421 0 -5.84093142 6.96034718 -5.84558487 1</Data>
+          <Data id="useQuat">false</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{BEE72606-0A47-48BD-80D2-7E63554E9F52}" type="{F1B68FAA-9005-4730-A2C4-52953615B93E}" name="Motion" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{C9CE4915-CED2-4121-A350-CB3FF485CDA7}"/>
+          <Connection conn="1" subconn="0" chipid="{3AC0D14F-82DF-46ED-B411-1BC9F3F4F878}"/>
+          <Connection conn="3" subconn="0" chipid="{592026FC-88D8-4C44-8F26-8AA176B1AB42}"/>
+        </Connections>
+        <ChipData>
+          <Data id="matrix">0.707388282 0 -0.706825137 0 0.455349267 0.764842153 0.45571202 0 0.540609717 -0.64421767 0.541040421 0 0 0 0 1</Data>
+          <Data id="useQuat">false</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{3AC0D14F-82DF-46ED-B411-1BC9F3F4F878}" type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" name="Vector" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{8A7DB58C-784B-4304-9E27-41ECCA45B257}"/>
+          <Connection conn="1" subconn="0" chipid="{54AEEFB2-3118-4D81-ACC2-CCA9B191A3DD}"/>
+        </Connections>
+        <ChipData>
+          <Data id="vector">0.699999988 0.785000026 0 1</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{9AF9C0F7-77A7-4F29-BBE8-44432A7473EE}" type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" name="Vector" refreshmode="function">
+        <Connections>
+          <Connection conn="2" subconn="0" chipid="{B76C82B0-20BE-436A-9BC1-A64269137750}"/>
+        </Connections>
+        <ChipData>
+          <Data id="vector">0 0 -10.8043404 1</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{72D4BEF6-01EE-4EDD-AAF8-CA14D59DFE4F}" type="{D358F9A5-D245-4C59-BDE8-BFA3CEEAE4C8}" name="Mouse Delta X" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="dt">1</Data>
+          <Data id="mt">1</Data>
+          <Data id="bm">2</Data>
+          <Data id="kt">0</Data>
+          <Data id="jt">0</Data>
+          <Data id="tt">0</Data>
+          <Data id="key">0</Data>
+          <Data id="joystickNr">0</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{77201EBF-8E60-463A-A13F-BF52691DA3F7}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Value" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="value">-50</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{A9C1D158-EFD9-4802-A124-2DEA8A862079}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="-a*b*c" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{B435C1CE-2017-4A62-A5EA-17974F0B2DAD}"/>
+          <Connection conn="0" subconn="1" chipid="{D34C7A1E-7BEA-43AE-9765-82838CB71A8C}"/>
+          <Connection conn="0" subconn="2" chipid="{0A80DAC7-E952-452B-BD24-EE777F29DDA8}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="exp">-a*b*c</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{B435C1CE-2017-4A62-A5EA-17974F0B2DAD}" type="{D358F9A5-D245-4C59-BDE8-BFA3CEEAE4C8}" name="Mouse Wheel" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="dt">1</Data>
+          <Data id="mt">9</Data>
+          <Data id="bm">2</Data>
+          <Data id="kt">0</Data>
+          <Data id="jt">0</Data>
+          <Data id="tt">0</Data>
+          <Data id="key">0</Data>
+          <Data id="joystickNr">0</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{A62F974D-5ADC-4FF5-B706-135394307229}" type="{27EF5168-493E-4A13-BED9-E1476DDF113F}" name="Inertia" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{A9C1D158-EFD9-4802-A124-2DEA8A862079}"/>
+          <Connection conn="1" subconn="0" chipid="{1FE18BE1-E48B-4A18-A568-3CFBB61E0C7C}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="dir">0</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{B1DE1535-E207-4790-84F9-C23B845AA337}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Value" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="value">-1</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{AAEB8C55-ED3E-4702-BDA2-CF2215616954}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="a*b*c" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{C49E1E19-28BD-4AF7-A648-134FA0F7B4E7}"/>
+          <Connection conn="0" subconn="1" chipid="{72D4BEF6-01EE-4EDD-AAF8-CA14D59DFE4F}"/>
+          <Connection conn="0" subconn="2" chipid="{7C5A8D84-44EE-4659-94FC-C7340B53973D}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="exp">a*b*c</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{C368C5EA-9F8D-47D2-AB76-C288D61F186D}" type="{27EF5168-493E-4A13-BED9-E1476DDF113F}" name="Inertia" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{AAEB8C55-ED3E-4702-BDA2-CF2215616954}"/>
+          <Connection conn="1" subconn="0" chipid="{10315196-4820-44C0-9AA0-404CEA428A4F}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="dir">0</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{E3C48169-DF50-435A-9761-5A2E68F5D184}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Value" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="value">1.5700000000000001</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{0540598C-D634-4750-B1B3-B54FD42EB0EF}" type="{D358F9A5-D245-4C59-BDE8-BFA3CEEAE4C8}" name="Mouse Delta Y" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="dt">1</Data>
+          <Data id="mt">2</Data>
+          <Data id="bm">2</Data>
+          <Data id="kt">0</Data>
+          <Data id="jt">0</Data>
+          <Data id="tt">0</Data>
+          <Data id="key">0</Data>
+          <Data id="joystickNr">0</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{13078BF5-ACF2-4384-8ADD-CCEDEEDBDBF3}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="a*b*c" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{2ED3AFC6-4751-4D34-B7F9-7A2C79FD1D4D}"/>
+          <Connection conn="0" subconn="1" chipid="{0540598C-D634-4750-B1B3-B54FD42EB0EF}"/>
+          <Connection conn="0" subconn="2" chipid="{25FB66BA-F287-48C9-8549-25F0F22A9622}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="exp">a*b*c</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{2ED3AFC6-4751-4D34-B7F9-7A2C79FD1D4D}" type="{D358F9A5-D245-4C59-BDE8-BFA3CEEAE4C8}" name="Right Button State" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="dt">1</Data>
+          <Data id="mt">7</Data>
+          <Data id="bm">2</Data>
+          <Data id="kt">0</Data>
+          <Data id="jt">0</Data>
+          <Data id="tt">0</Data>
+          <Data id="key">0</Data>
+          <Data id="joystickNr">0</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{CD6E883A-571A-4698-9E06-3B0B51C1A468}" type="{27EF5168-493E-4A13-BED9-E1476DDF113F}" name="Inertia" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{13078BF5-ACF2-4384-8ADD-CCEDEEDBDBF3}"/>
+          <Connection conn="1" subconn="0" chipid="{B9A96320-A3AA-4B6C-8977-82FD3BE50775}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="dir">0</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{6CF165C5-52CB-49CE-ACC6-0A6BCF7887B0}" type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" name="Vector" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{85D871BD-2552-4ABF-A2D3-840286ED6514}"/>
+          <Connection conn="1" subconn="0" chipid="{04A9323E-C67E-4356-9751-9139F8ECDEFA}"/>
+        </Connections>
+        <ChipData>
+          <Data id="vector">0 0 0 0</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{7CA70AC2-7EF2-4155-B3FF-8A2665B0EDE4}" type="{7454B3C5-E34C-4400-ADFA-3083415563BD}" name="Rotate Using Euler Angles" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{6CF165C5-52CB-49CE-ACC6-0A6BCF7887B0}"/>
+          <Connection conn="1" subconn="0" chipid="{3AC0D14F-82DF-46ED-B411-1BC9F3F4F878}"/>
+        </Connections>
+        <ChipData>
+          <Data id="vector">0 0 0 0</Data>
+          <Data id="ot">50</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{29F4C02C-78F7-483D-A8A3-974BD095E61C}" type="{D358F9A5-D245-4C59-BDE8-BFA3CEEAE4C8}" name="Mouse Delta X" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="dt">1</Data>
+          <Data id="mt">1</Data>
+          <Data id="bm">2</Data>
+          <Data id="kt">0</Data>
+          <Data id="jt">0</Data>
+          <Data id="tt">0</Data>
+          <Data id="key">0</Data>
+          <Data id="joystickNr">0</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{06A55B1C-EDF7-419E-BAC9-E55C1F28172C}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="-a*b*c*d*0.1" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{30829B39-19E8-43DB-A260-A638D62ACCCB}"/>
+          <Connection conn="0" subconn="1" chipid="{29F4C02C-78F7-483D-A8A3-974BD095E61C}"/>
+          <Connection conn="0" subconn="2" chipid="{216C3F4A-4C93-4F3D-90A9-8EB0F28BDA7B}"/>
+          <Connection conn="0" subconn="3" chipid="{B2661CD5-8B8A-4CFA-A8BE-E4144813BE10}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="exp">-a*b*c*d*0.1</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{30829B39-19E8-43DB-A260-A638D62ACCCB}" type="{D358F9A5-D245-4C59-BDE8-BFA3CEEAE4C8}" name="Middle Button State" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="dt">1</Data>
+          <Data id="mt">5</Data>
+          <Data id="bm">2</Data>
+          <Data id="kt">0</Data>
+          <Data id="jt">0</Data>
+          <Data id="tt">0</Data>
+          <Data id="key">0</Data>
+          <Data id="joystickNr">0</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{85D871BD-2552-4ABF-A2D3-840286ED6514}" type="{27EF5168-493E-4A13-BED9-E1476DDF113F}" name="Inertia" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{06A55B1C-EDF7-419E-BAC9-E55C1F28172C}"/>
+          <Connection conn="1" subconn="0" chipid="{5A19B7C0-075C-4B2A-A431-D9FED87C39B8}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="dir">0</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{5A19B7C0-075C-4B2A-A431-D9FED87C39B8}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Value" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="value">0.29999999999999999</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{E8496979-86D9-49EC-BB72-EB5FA32288BF}" type="{D358F9A5-D245-4C59-BDE8-BFA3CEEAE4C8}" name="Mouse Delta Y" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="dt">1</Data>
+          <Data id="mt">2</Data>
+          <Data id="bm">2</Data>
+          <Data id="kt">0</Data>
+          <Data id="jt">0</Data>
+          <Data id="tt">0</Data>
+          <Data id="key">0</Data>
+          <Data id="joystickNr">0</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{718856EC-6195-4F6C-923C-85A8FEC98E54}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="a*b*c*d*0.1" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{7573564F-C70E-4AFD-AF07-0ADF03C7153D}"/>
+          <Connection conn="0" subconn="1" chipid="{E8496979-86D9-49EC-BB72-EB5FA32288BF}"/>
+          <Connection conn="0" subconn="2" chipid="{EF3BBAE1-48B2-4634-AA7D-FF024287926A}"/>
+          <Connection conn="0" subconn="3" chipid="{D0F049BB-8DCF-43B9-828A-89C999ED5579}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="exp">a*b*c*d*0.1</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{7573564F-C70E-4AFD-AF07-0ADF03C7153D}" type="{D358F9A5-D245-4C59-BDE8-BFA3CEEAE4C8}" name="Middle Button State" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="dt">1</Data>
+          <Data id="mt">5</Data>
+          <Data id="bm">2</Data>
+          <Data id="kt">0</Data>
+          <Data id="jt">0</Data>
+          <Data id="tt">0</Data>
+          <Data id="key">0</Data>
+          <Data id="joystickNr">0</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{04A9323E-C67E-4356-9751-9139F8ECDEFA}" type="{27EF5168-493E-4A13-BED9-E1476DDF113F}" name="Inertia" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{718856EC-6195-4F6C-923C-85A8FEC98E54}"/>
+          <Connection conn="1" subconn="0" chipid="{3675A729-C475-4721-AA8B-7C2605C16473}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="dir">0</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{89A7C6C3-8678-4ADD-A149-072378E91C21}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Value" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="value">-1.5700000000000001</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{176A4901-C02C-4BC3-9D53-F4D358875BAF}" type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" name="Focus Point" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="vector">0 0 0 1</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{B76C82B0-20BE-436A-9BC1-A64269137750}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="clamp(old+a,b,c)" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{A62F974D-5ADC-4FF5-B706-135394307229}"/>
+          <Connection conn="0" subconn="1" chipid="{77201EBF-8E60-463A-A13F-BF52691DA3F7}"/>
+          <Connection conn="0" subconn="2" chipid="{B1DE1535-E207-4790-84F9-C23B845AA337}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">-10.804340288188486</Data>
+          <Data id="exp">clamp(old+a,b,c)</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{D34C7A1E-7BEA-43AE-9765-82838CB71A8C}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="clamp(old+a,b,c)" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="original">{B76C82B0-20BE-436A-9BC1-A64269137750}</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{216C3F4A-4C93-4F3D-90A9-8EB0F28BDA7B}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="clamp(old+a,b,c)" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="original">{B76C82B0-20BE-436A-9BC1-A64269137750}</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{EF3BBAE1-48B2-4634-AA7D-FF024287926A}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="clamp(old+a,b,c)" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="original">{B76C82B0-20BE-436A-9BC1-A64269137750}</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{C9CE4915-CED2-4121-A350-CB3FF485CDA7}" type="{AFF6C0E6-4967-4E74-89AE-3D38E3C71D1D}" name="old+a" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{7CA70AC2-7EF2-4155-B3FF-8A2665B0EDE4}"/>
+        </Connections>
+        <ChipData>
+          <Data id="vector">0 0 0 1</Data>
+          <Data id="exp">old+a</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{8A7DB58C-784B-4304-9E27-41ECCA45B257}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="clamp(old+a,b,c)" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{CD6E883A-571A-4698-9E06-3B0B51C1A468}"/>
+          <Connection conn="0" subconn="1" chipid="{89A7C6C3-8678-4ADD-A149-072378E91C21}"/>
+          <Connection conn="0" subconn="2" chipid="{E3C48169-DF50-435A-9761-5A2E68F5D184}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">0.69999999999999996</Data>
+          <Data id="exp">clamp(old+a,b,c)</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{54AEEFB2-3118-4D81-ACC2-CCA9B191A3DD}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="old+a&lt;0?a+2*pi+old:old+a&gt;2*pi?a-2*pi+old:old+a" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{C368C5EA-9F8D-47D2-AB76-C288D61F186D}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">0.78500000000000003</Data>
+          <Data id="exp">old+a&lt;0?a+2*pi+old:old+a&gt;2*pi?a-2*pi+old:old+a</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{B155D602-6A58-4CDD-9734-CE2E2B96F3C9}" type="{B55F0787-2764-43C8-902B-3675C08DE1B1}" name="View Matrix" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{AEA30FE7-D22B-4869-9C00-B86355403A14}"/>
+        </Connections>
+        <ChipData>
+          <Data id="matrix">0.707388341 0.455349296 0.540609717 0 -1.4901163e-08 0.764842272 -0.64421767 0 -0.706825197 0.45571208 0.541040421 0 0 0 10.8043413 1</Data>
+          <Data id="exp">inverse(a)</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{C49E1E19-28BD-4AF7-A648-134FA0F7B4E7}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Right Button State" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="original">{2ED3AFC6-4751-4D34-B7F9-7A2C79FD1D4D}</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{592026FC-88D8-4C44-8F26-8AA176B1AB42}" type="{F1B68FAA-9005-4730-A2C4-52953615B93E}" name="Motion" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{0056774C-D7C3-472A-A71E-340774654C41}"/>
+        </Connections>
+        <ChipData>
+          <Data id="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Data>
+          <Data id="useQuat">false</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{66C9220E-810C-446B-B2AA-1CAA7FC96081}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Mouse Sensitivity" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="value">0.02</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{25FB66BA-F287-48C9-8549-25F0F22A9622}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Mouse Sensitivity" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="original">{66C9220E-810C-446B-B2AA-1CAA7FC96081}</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{7C5A8D84-44EE-4659-94FC-C7340B53973D}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Mouse Sensitivity" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="original">{66C9220E-810C-446B-B2AA-1CAA7FC96081}</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{B2661CD5-8B8A-4CFA-A8BE-E4144813BE10}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Mouse Sensitivity" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="original">{66C9220E-810C-446B-B2AA-1CAA7FC96081}</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{D0F049BB-8DCF-43B9-828A-89C999ED5579}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Mouse Sensitivity" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="original">{66C9220E-810C-446B-B2AA-1CAA7FC96081}</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{3675A729-C475-4721-AA8B-7C2605C16473}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Value" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="original">{5A19B7C0-075C-4B2A-A431-D9FED87C39B8}</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{B9A96320-A3AA-4B6C-8977-82FD3BE50775}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Value" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="original">{5A19B7C0-075C-4B2A-A431-D9FED87C39B8}</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{10315196-4820-44C0-9AA0-404CEA428A4F}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Value" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="original">{5A19B7C0-075C-4B2A-A431-D9FED87C39B8}</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{21616E8E-700C-47E7-8C68-D07607602CBD}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Wheel Sensitivity" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="value">0.29999999999999999</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{0A80DAC7-E952-452B-BD24-EE777F29DDA8}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Wheel Sensitivity" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="original">{21616E8E-700C-47E7-8C68-D07607602CBD}</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{0056774C-D7C3-472A-A71E-340774654C41}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Focus Point" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="original">{176A4901-C02C-4BC3-9D53-F4D358875BAF}</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{43498AE6-C19C-4465-AC2C-C5639D2BFBB3}" type="{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}" name="Dummy" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{176A4901-C02C-4BC3-9D53-F4D358875BAF}"/>
+          <Connection conn="0" subconn="1" chipid="{66C9220E-810C-446B-B2AA-1CAA7FC96081}"/>
+          <Connection conn="0" subconn="2" chipid="{21616E8E-700C-47E7-8C68-D07607602CBD}"/>
+        </Connections>
+        <ChipData/>
+      </Chip>
+      <Chip chipid="{1FE18BE1-E48B-4A18-A568-3CFBB61E0C7C}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Value" refreshmode="function">
+        <Connections/>
+        <ChipData>
+          <Data id="original">{5A19B7C0-075C-4B2A-A431-D9FED87C39B8}</Data>
+        </ChipData>
+      </Chip>
+    </Chips>
+    <Editor>
+      <ClassDiagram>
+        <Comment/>
+        <Chips>
+          <Chip chipid="{E78038C1-9A68-46B7-8DB4-45CD1D0490E5}" x="0.63585341" y="-4.98748732"/>
+        </Chips>
+        <Inheritance/>
+      </ClassDiagram>
+      <Comments/>
+      <ClassVisual extent="-25.0539894 -39.3103485 31.9669342 0.629117668">
+        <Chip chipid="{F0627820-22E6-4558-9362-BEBAD25D1AD6}" x="11.563488" y="-4.94281149"/>
+        <Chip chipid="{166B010D-9B26-4094-B97D-25D85C819930}" x="15.6953249" y="-20.1331711"/>
+        <Chip chipid="{A49B7F9C-B680-4F46-9F35-22DC25A46A77}" x="12.611804" y="-22.9559193"/>
+        <Chip chipid="{FDAD06FF-5DE9-439F-9C4E-C2F860EECECD}" x="14.0797396" y="-23.988472"/>
+        <Chip chipid="{0A9060CA-7C01-498D-94B2-EA8E97878DA9}" x="15.3732948" y="-25.1444244"/>
+        <Chip chipid="{37697BCA-D1A8-47A7-8FAA-8BAB24E3D452}" x="17.4374847" y="-25.1994743"/>
+        <Chip chipid="{35BB672C-ADB3-441B-AAC4-A252C7BEA4A4}" x="16.2836094" y="-14.8784695"/>
+        <Chip chipid="{F4BB2932-87F6-402C-A2A7-BEACBB564083}" x="20.0521297" y="-17.5481701"/>
+        <Chip chipid="{9CDAB9BF-0B53-41F0-A697-871F05FCCF27}" x="20.4374428" y="-20.1628151"/>
+        <Chip chipid="{CE43AF99-D280-40BE-A78F-A60F443CB090}" x="27.7260513" y="-18.1964073"/>
+        <Chip chipid="{79EE3B13-D485-4D08-B4B3-0B73B3F25A66}" x="27.7029457" y="-20.6180687"/>
+        <Chip chipid="{B35BB2EC-CD49-458C-92E1-CBD5D7BD90B3}" x="31.291935" y="-14.7006569"/>
+        <Chip chipid="{970C3228-C1D2-422B-8427-9D80B690247F}" x="29.3498898" y="-18.1688881"/>
+        <Chip chipid="{2407DFCE-7E2C-4C25-A086-49D8F6A0D03D}" x="-0.758752167" y="-34.384201"/>
+        <Chip chipid="{38C8FB87-0FEC-4AE9-B1C1-2EC29DB608C1}" x="-2.32169199" y="-37.1593781"/>
+        <Chip chipid="{1033399C-C626-4511-B322-E18D32724000}" x="-0.373148531" y="-38.5862236"/>
+        <Chip chipid="{91ECF4EA-9E47-49E2-8774-B9781DF887A6}" x="3.95462418" y="-25.6802864"/>
+        <Chip chipid="{348F9512-5C59-42BE-B4AA-0A773CFDC70E}" x="27.9455986" y="-15.1382761"/>
+        <Chip chipid="{ADE2EAFA-3F6A-43CE-AF82-286F30CC5902}" x="25.8151779" y="-18.112114"/>
+        <Chip chipid="{9782CED8-2DC1-4629-91C3-628239546E69}" x="31.3002281" y="-16.8850269"/>
+        <Chip chipid="{AABBB7D4-7A7C-406C-A01F-CC407E34FF57}" x="11.3811502" y="-35.1596909"/>
+        <Chip chipid="{75264890-DA9D-4D7A-B0B2-C7E6C2BAEF20}" x="11.9064913" y="-38.8103485"/>
+        <Chip chipid="{9DB604D8-FB74-4590-8F3E-BB65816048FA}" x="9.57810307" y="-37.9667168"/>
+        <Chip chipid="{A83A24F5-709B-4C93-BC69-449CABB295E5}" x="0.189101741" y="0.129117653"/>
+        <Chip chipid="{73AB647E-A85D-4724-9CFD-3122CEA7F953}" x="-7.22703362" y="-4.7951479"/>
+        <Chip chipid="{5BF2B3E7-B449-419F-AB3F-0E166C004F5B}" x="-11.4413013" y="-4.7231245"/>
+        <Chip chipid="{B4FE1EA8-2ADF-4474-BB51-15729733104A}" x="-11.0593586" y="-6.86411667"/>
+        <Chip chipid="{B46D986C-1840-4357-AAD4-6B5CC57DFD4E}" x="-8.34310246" y="-8.00144768"/>
+        <Chip chipid="{DAB2C349-8C86-4EAD-9A7F-E38B84629D5B}" x="-0.335111201" y="-4.74713278"/>
+        <Chip chipid="{1B18C176-DE47-4334-A905-5B05F5A4EC96}" x="-0.171676025" y="-6.72378445"/>
+        <Chip chipid="{25A63C8B-526C-44AD-A6B1-2F9549FFA8D5}" x="-12.3754215" y="-7.87243843"/>
+        <Chip chipid="{798D6E40-DE10-4A94-90A8-0657345A9BC6}" x="18.0052261" y="-4.6488986"/>
+        <Chip chipid="{F2EC80AD-FB2B-4125-A361-445BA4D0407D}" x="-3.82168889" y="-4.74713278"/>
+        <Chip chipid="{80BB00EE-688D-449F-9C8D-97ED5750BE50}" x="-6.68714809" y="-7.13717031"/>
+        <Chip chipid="{BE87C8A1-EA55-4AC4-BF81-9906075993FC}" x="-3.74966574" y="-6.81915522"/>
+        <Chip chipid="{542CD044-3783-4C9A-AB5C-8A6E113ABA40}" x="-17.8431873" y="-32.5440941"/>
+        <Chip chipid="{6DD2EA4D-385E-4F71-8D13-74AA6457F6BE}" x="-20.8363266" y="-35.205925"/>
+        <Chip chipid="{3E54E4ED-64B2-45E5-92B3-17DA39C4A6AD}" x="-15.0023088" y="-32.5224876"/>
+        <Chip chipid="{F6815FD8-EFEF-4ABD-99FC-3A4D43108F64}" x="-22.2148132" y="-31.8833485"/>
+        <Chip chipid="{D7A1A8E7-89E1-46A0-BC84-3F6ACA449B50}" x="-24.3789902" y="-35.1313095"/>
+        <Chip chipid="{563A525C-57B2-42F2-AEE8-8FADB8C09078}" x="-22.5355301" y="-35.1605759"/>
+        <Chip chipid="{4454507F-C7E6-419C-818F-D76734603794}" x="22.5874443" y="-4.56968689"/>
+        <Chip chipid="{381B55A9-C59E-4636-B1C5-D6754C15F023}" x="22.5313683" y="-6.587533"/>
+        <Chip chipid="{07EC970B-A3C2-4BFB-BBB2-1F32643EF055}" x="-22.0164795" y="-27.452383"/>
+        <Chip chipid="{7E6705A6-B0C8-4789-AD5A-8857778F0389}" x="-16.7881088" y="-27.29286"/>
+        <Chip chipid="{CBC81459-AB73-4C95-91FB-656667055A4D}" x="-6.03796768" y="-34.4434776"/>
+        <Chip chipid="{AF5D5FE9-7E69-487C-895B-68C410F5692F}" x="-6.02524185" y="-36.8367805"/>
+        <Chip chipid="{6CCBA7D9-9D5C-40C6-BC6E-F2DEE51DFD5D}" x="7.29742575" y="-37.34235"/>
+        <Chip chipid="{73F13463-CA98-4606-ADDC-F533848B1B40}" x="7.3779788" y="-35.1847115"/>
+        <Chip chipid="{FF318808-0943-4A99-A8EA-18CBF2909441}" x="-17.551302" y="-35.2025795"/>
+        <Chip chipid="{88CFCBA7-B080-423F-87A2-2FA609AFD611}" x="-15.1814642" y="-35.1328545"/>
+        <Chip chipid="{44BEE3F5-5513-4BBF-BE4B-219B2F7D1B1C}" x="-22.4824715" y="-37.8830452"/>
+        <Chip chipid="{0BBDBD48-8B19-4B75-AA77-D630006F72DC}" x="-2.69754958" y="-30.6998901"/>
+        <Chip chipid="{85C4DCE6-1235-4158-BFEC-5806A2BDA296}" x="9.57330036" y="-31.3257618"/>
+        <Chip chipid="{4257CD9D-BAB1-4EAB-9B33-96FB6405387E}" x="5.29113722" y="-5.1271677"/>
+        <Chip chipid="{CE1C8BF6-2481-45C8-B9F8-81D1B3F8FAD5}" x="8.20055866" y="-7.85589504"/>
+        <Chip chipid="{9236196D-5A02-4FED-A898-99584DDFA0D7}" x="5.82308149" y="-16.4612026"/>
+        <Chip chipid="{E9BC7A00-58AF-4349-A31E-358166FA6FE8}" x="8.08298683" y="-13.3835621"/>
+        <Chip chipid="{01BB102A-848A-46F8-8EF5-D6835780F8F5}" x="9.53298759" y="-12.2901878"/>
+        <Chip chipid="{0EAB350D-E2ED-4545-8D96-AC79E132F204}" x="10.8210096" y="-11.1158237"/>
+        <Chip chipid="{4EBDB978-D9CE-4BD0-ABBD-4CDDB28B781F}" x="8.14053535" y="-17.0705891"/>
+        <Chip chipid="{9D926433-8E72-463E-9622-1CFA5D617EE8}" x="7.24219513" y="-20.5337715"/>
+        <Chip chipid="{0DFC585D-4A44-4A6C-A7FC-373D46E4B66F}" x="8.61916256" y="-19.4481277"/>
+        <Chip chipid="{7FBA6F79-19B7-4FFD-96EA-18BCC7719F4E}" x="5.9621892" y="-14.1113453"/>
+        <Chip chipid="{176A4901-C02C-4BC3-9D53-F4D358875BAF}" x="0.379252195" y="-13.5047245"/>
+        <Chip chipid="{66C9220E-810C-446B-B2AA-1CAA7FC96081}" x="2.43979692" y="-12.3196583"/>
+        <Chip chipid="{21616E8E-700C-47E7-8C68-D07607602CBD}" x="3.96970844" y="-11.258646"/>
+        <Folder name="Internal" x="1.38413692" y="-7.99350166" inx="0.121688887" iny="3.87831116">
+          <Chip chipid="{AEA30FE7-D22B-4869-9C00-B86355403A14}" x="0.136654168" y="-2.84732246"/>
+          <Chip chipid="{BEE72606-0A47-48BD-80D2-7E63554E9F52}" x="4.43735456" y="-6.08297682"/>
+          <Chip chipid="{3AC0D14F-82DF-46ED-B411-1BC9F3F4F878}" x="8.80471897" y="-18.5535698"/>
+          <Chip chipid="{9AF9C0F7-77A7-4F29-BBE8-44432A7473EE}" x="-9.27919674" y="-6.24625731"/>
+          <Chip chipid="{72D4BEF6-01EE-4EDD-AAF8-CA14D59DFE4F}" x="9.90450001" y="-32.7925415"/>
+          <Chip chipid="{77201EBF-8E60-463A-A13F-BF52691DA3F7}" x="-8.99465752" y="-12.6865072"/>
+          <Chip chipid="{A9C1D158-EFD9-4802-A124-2DEA8A862079}" x="-11.7455921" y="-15.0624638"/>
+          <Chip chipid="{B435C1CE-2017-4A62-A5EA-17974F0B2DAD}" x="-13.6200542" y="-20.2060471"/>
+          <Chip chipid="{A62F974D-5ADC-4FF5-B706-135394307229}" x="-10.9785862" y="-12.7143507"/>
+          <Chip chipid="{B1DE1535-E207-4790-84F9-C23B845AA337}" x="-7.12320089" y="-12.6981459"/>
+          <Chip chipid="{AAEB8C55-ED3E-4702-BDA2-CF2215616954}" x="10.333293" y="-29.2149048"/>
+          <Chip chipid="{C368C5EA-9F8D-47D2-AB76-C288D61F186D}" x="10.5355968" y="-25.3529282"/>
+          <Chip chipid="{E3C48169-DF50-435A-9761-5A2E68F5D184}" x="7.5955286" y="-25.5346298"/>
+          <Chip chipid="{0540598C-D634-4750-B1B3-B54FD42EB0EF}" x="3.19051027" y="-33.4829788"/>
+          <Chip chipid="{13078BF5-ACF2-4384-8ADD-CCEDEEDBDBF3}" x="3.47353029" y="-29.4257278"/>
+          <Chip chipid="{2ED3AFC6-4751-4D34-B7F9-7A2C79FD1D4D}" x="2.10654378" y="-34.6084366"/>
+          <Chip chipid="{CD6E883A-571A-4698-9E06-3B0B51C1A468}" x="3.82898569" y="-25.5637436"/>
+          <Chip chipid="{6CF165C5-52CB-49CE-ACC6-0A6BCF7887B0}" x="-5.37391901" y="-17.7358818"/>
+          <Chip chipid="{7CA70AC2-7EF2-4155-B3FF-8A2665B0EDE4}" x="-1.66252279" y="-14.1288795"/>
+          <Chip chipid="{29F4C02C-78F7-483D-A8A3-974BD095E61C}" x="-9.4213419" y="-28.5748787"/>
+          <Chip chipid="{06A55B1C-EDF7-419E-BAC9-E55C1F28172C}" x="-8.47940445" y="-23.129076"/>
+          <Chip chipid="{30829B39-19E8-43DB-A260-A638D62ACCCB}" x="-10.604269" y="-29.7258034"/>
+          <Chip chipid="{85D871BD-2552-4ABF-A2D3-840286ED6514}" x="-7.87359667" y="-21.0647469"/>
+          <Chip chipid="{5A19B7C0-075C-4B2A-A431-D9FED87C39B8}" x="-6.277215" y="-23.1200199"/>
+          <Chip chipid="{E8496979-86D9-49EC-BB72-EB5FA32288BF}" x="-4.48994207" y="-28.6774998"/>
+          <Chip chipid="{718856EC-6195-4F6C-923C-85A8FEC98E54}" x="-3.32039499" y="-23.2002201"/>
+          <Chip chipid="{7573564F-C70E-4AFD-AF07-0ADF03C7153D}" x="-5.56007147" y="-29.8867531"/>
+          <Chip chipid="{04A9323E-C67E-4356-9751-9139F8ECDEFA}" x="-2.68839288" y="-21.0686989"/>
+          <Chip chipid="{89A7C6C3-8678-4ADD-A149-072378E91C21}" x="5.84282637" y="-25.5405502"/>
+          <Chip chipid="{B76C82B0-20BE-436A-9BC1-A64269137750}" x="-9.07507896" y="-9.7814703"/>
+          <Chip chipid="{D34C7A1E-7BEA-43AE-9765-82838CB71A8C}" x="-12.2199545" y="-19.2547874"/>
+          <Chip chipid="{216C3F4A-4C93-4F3D-90A9-8EB0F28BDA7B}" x="-8.20722771" y="-27.5270004"/>
+          <Chip chipid="{EF3BBAE1-48B2-4634-AA7D-FF024287926A}" x="-3.2966795" y="-27.7232647"/>
+          <Chip chipid="{C9CE4915-CED2-4121-A350-CB3FF485CDA7}" x="-1.46333647" y="-11.3278036"/>
+          <Chip chipid="{8A7DB58C-784B-4304-9E27-41ECCA45B257}" x="5.81102324" y="-22.4625015"/>
+          <Chip chipid="{54AEEFB2-3118-4D81-ACC2-CCA9B191A3DD}" x="10.7115612" y="-22.4719925"/>
+          <Chip chipid="{B155D602-6A58-4CDD-9734-CE2E2B96F3C9}" x="0.130369574" y="0.142319217"/>
+          <Chip chipid="{C49E1E19-28BD-4AF7-A648-134FA0F7B4E7}" x="8.8677454" y="-33.8911972"/>
+          <Chip chipid="{592026FC-88D8-4C44-8F26-8AA176B1AB42}" x="11.1036854" y="-10.917738"/>
+          <Chip chipid="{25FB66BA-F287-48C9-8549-25F0F22A9622}" x="4.40405369" y="-32.3768158"/>
+          <Chip chipid="{7C5A8D84-44EE-4659-94FC-C7340B53973D}" x="10.9988356" y="-31.9657097"/>
+          <Chip chipid="{B2661CD5-8B8A-4CFA-A8BE-E4144813BE10}" x="-7.04935074" y="-26.3983574"/>
+          <Chip chipid="{D0F049BB-8DCF-43B9-828A-89C999ED5579}" x="-2.20249152" y="-26.7592812"/>
+          <Chip chipid="{3675A729-C475-4721-AA8B-7C2605C16473}" x="-1.29155743" y="-23.3218193"/>
+          <Chip chipid="{B9A96320-A3AA-4B6C-8977-82FD3BE50775}" x="5.04881573" y="-28.1058731"/>
+          <Chip chipid="{10315196-4820-44C0-9AA0-404CEA428A4F}" x="11.9675903" y="-27.9444962"/>
+          <Chip chipid="{0A80DAC7-E952-452B-BD24-EE777F29DDA8}" x="-11.0855265" y="-18.0999203"/>
+          <Chip chipid="{0056774C-D7C3-472A-A71E-340774654C41}" x="10.6827965" y="-13.6850033"/>
+          <Chip chipid="{43498AE6-C19C-4465-AC2C-C5639D2BFBB3}" x="0.563393235" y="9.7313385"/>
+          <Chip chipid="{1FE18BE1-E48B-4A18-A568-3CFBB61E0C7C}" x="-9.47810555" y="-15.1968279"/>
+        </Folder>
+      </ClassVisual>
+    </Editor>
+  </Class>
+  <Chips>
+    <Chip type="{7908D608-A149-4286-826D-270EDEDE12FE}" version="1.0.0.0"/>
+    <Chip type="{03DDF010-919D-4D52-A9CC-6D1EF697A81F}" version="1.0.0.0"/>
+    <Chip type="{11111111-1111-1111-1111-111111111111}" version="1.0.0.0"/>
+    <Chip type="{8E040D27-AC2F-4142-B3A8-157AC0BAE050}" version="1.0.0.0"/>
+    <Chip type="{3B32EE42-3AE8-459F-B2B1-39D9B96EB51A}" version="1.0.0.0"/>
+    <Chip type="{BD5C1244-1077-4178-BF74-2E7F4EC74A42}" version="1.0.0.0"/>
+    <Chip type="{456D654D-A3BF-40DA-AE84-CF20BF2ACE40}" version="1.0.0.0"/>
+    <Chip type="{14842055-49EE-47E1-86E2-F232EBD90B02}" version="1.0.0.0"/>
+    <Chip type="{325E5456-0D4C-4A65-9141-6920ED169D14}" version="1.0.0.0"/>
+    <Chip type="{388C1557-310F-4284-B29B-8F8ED1EA95D3}" version="1.0.0.0"/>
+    <Chip type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" version="1.0.0.0"/>
+    <Chip type="{9478E85D-274A-4793-B9CF-9DD68F40228D}" version="1.0.0.0"/>
+    <Chip type="{03A46761-CA4D-42BE-9DA0-4FB3F669C193}" version="1.0.0.0"/>
+    <Chip type="{27EF5168-493E-4A13-BED9-E1476DDF113F}" version="1.0.0.0"/>
+    <Chip type="{849DBA74-7538-4C06-92DA-BC0A0BF1E4D7}" version="1.0.0.0"/>
+    <Chip type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" version="1.0.0.0"/>
+    <Chip type="{90732A7F-FAF1-46FE-BB43-769A1BA748C7}" version="1.0.0.0"/>
+    <Chip type="{418C3585-C883-4CED-8A68-9C2204DEE395}" version="1.0.0.0"/>
+    <Chip type="{B55F0787-2764-43C8-902B-3675C08DE1B1}" version="1.0.0.0"/>
+    <Chip type="{9E56C487-4D1E-48D4-B8D9-50F0FFFD1B92}" version="1.0.0.0"/>
+    <Chip type="{D27FF489-2396-4EFE-9871-0705655B8622}" version="1.0.0.0"/>
+    <Chip type="{D6779B90-ECA6-4E29-A309-A78D5C51C1F7}" version="1.0.0.0"/>
+    <Chip type="{8DD16693-4C81-481B-912B-D03B7C664CB9}" version="1.0.0.0"/>
+    <Chip type="{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}" version="1.0.0.0"/>
+    <Chip type="{7BAD6997-690D-48D1-A453-1F6030C36515}" version="1.0.0.0"/>
+    <Chip type="{DD99A19D-D2A2-41A3-BA1D-53C2FF219446}" version="1.0.0.0"/>
+    <Chip type="{A2C861A1-4990-4CB3-ACBD-3346D3E3F6A2}" version="1.0.0.0"/>
+    <Chip type="{D358F9A5-D245-4C59-BDE8-BFA3CEEAE4C8}" version="1.0.0.0"/>
+    <Chip type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" version="1.0.0.0"/>
+    <Chip type="{F1B68FAA-9005-4730-A2C4-52953615B93E}" version="1.0.0.0"/>
+    <Chip type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" version="1.0.0.0"/>
+    <Chip type="{01466AAB-80E4-447C-9662-089B79485231}" version="1.0.0.0"/>
+    <Chip type="{D2CBB0AF-9319-4A04-9D8F-B5E160396D93}" version="1.0.0.0"/>
+    <Chip type="{7454B3C5-E34C-4400-ADFA-3083415563BD}" version="1.0.0.0"/>
+    <Chip type="{8348DEC5-8EA4-481A-9E41-32F814DFEE29}" version="1.0.0.0"/>
+    <Chip type="{CB1384D9-4781-4FAD-8C71-F5A152927405}" version="1.0.0.0"/>
+    <Chip type="{AFF6C0E6-4967-4E74-89AE-3D38E3C71D1D}" version="1.0.0.0"/>
+    <Chip type="{EA094CF0-CF56-4F5E-BADC-7A8BF2E5F276}" version="1.0.0.0"/>
+    <Chip type="{84D0E4FC-8B2A-4283-801D-2DA1F9AE1855}" version="1.0.0.0"/>
+    <Chip type="{4221CFFF-DEBE-4E70-9787-CF6543C4D9E3}" version="1.0.0.0"/>
+  </Chips>
+</Document>
