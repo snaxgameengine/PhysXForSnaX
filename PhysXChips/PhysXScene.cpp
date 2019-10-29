@@ -159,6 +159,7 @@ PxScene *PhysXScene::GetScene()
 			}
 		}
 		else {
+			msg(WARN, L"Failed to enable GPU-accelerated PhysX.");
 			sceneDesc.flags.clear(PxSceneFlag::eENABLE_GPU_DYNAMICS);
 			if (_broadPhaseType == PxBroadPhaseType::eGPU)
 				sceneDesc.broadPhaseType = PxBroadPhaseType::eABP; // Fallback

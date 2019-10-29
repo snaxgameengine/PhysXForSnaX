@@ -169,12 +169,14 @@ PxCudaContextManager *PhysXSDK::GetCudaContextManager()
 	if (_cudaContextManager && _cudaContextManager->contextIsValid())
 		return _cudaContextManager;
 
-	int gg =PxGetSuggestedCudaDeviceOrdinal(gDefaultErrorCallback);
+//	int gg =PxGetSuggestedCudaDeviceOrdinal(gDefaultErrorCallback);
 
 	PxCudaContextManagerDesc cudaContextManagerDesc;
 //	cudaContextManagerDesc.graphicsDevice = ((D3DGraphics*)engine->GetGraphics())->GetDevice();
 //	cudaContextManagerDesc.interopMode = pxtask::CudaInteropMode::D3D11_INTEROP;
 	_cudaContextManager = PxCreateCudaContextManager(*_foundation, cudaContextManagerDesc);
+	if (!_cudaContextManager)
+		return nullptr;
 
 	return _cudaContextManager->contextIsValid() ? _cudaContextManager : nullptr;
 }
