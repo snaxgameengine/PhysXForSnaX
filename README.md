@@ -40,6 +40,7 @@ collision detection and so on.
 
 ## Getting started
 - Install [SnaX](https://snaxgameengine.com/downloads/) if you have not done so already!
+- Get the Windows SDK. It can be installed using Visual Studio Installer.
 - Get the SnaX SDK: `git clone https://github.com/snaxgameengine/snaxsdk.git`.
 - Get PhysXForSnaX: `git clone https://github.com/snaxgameengine/PhysXForSnaX.git`.
 - Get the PhysX 4 SDK. I recommend using [VCPKG](https://github.com/microsoft/vcpkg).  
@@ -54,6 +55,9 @@ collision detection and so on.
   - Click _Next_.
   - For the toolchain file, specify <MY_VCPKG_INSTALL_DIR>/scripts/buildsystems/vcpkg.cmake.
   - Make sure SnaX, SnaX SDK and PhysX are found!
+  - For GPU-accelerated PhysX to work, you will need to manually find PhysXDevice64.dll which should be located
+    in the _buildtrees_-directory of VCPKG, eg. <MY_VCPKG_INSTALL_DIR>\buildtrees\physx\src\56e20a36fa-e946c8d6a1\physx\bin\win.x86_64.vc142.mt\release.
+  - __We recommend to build a separate project for the Debug and Release builds. See comment below!__
   - Generate!
 - Open the project in Visual Studio 2017/2019. The _SnaX_ project is selected as startup-project pr default.
 - Build the solution by pressing F5.
@@ -61,14 +65,16 @@ collision detection and so on.
   in the SnaX installation directory, and SnaXDeveloper is launched!
   
 __IMPORTANT: You have to give the current user _write access_ to the _3rd_, _Chips_ and _Dialogs_ folders in the
-SnaX installation directory. If not, Visual Studio will not be able to automatically copy the new files.__
+SnaX installation directory. If not, Visual Studio will not be able to automatically copy the new files, 
+and you build will fail.__
 
 __NOTE__: Because of a flaw with VCPKG/CMake, a library whose Debug and Release versions have the same name
-(as is the case for the PhysX libraries), using the CMake GUI to generate both Debug and Release configurations
-for Visual Studio, causes the Debug version of the libraries to be used also for the Release version. 
-This is unfortunat, but little I can do about for the moment. It is a known problem, so hopefully there will
-be a fix for it soon! __In the meantime, you wil have to manually go into the Release configurations in
-Visual Studio, and change to the Release version of the PhysX libraries under "Additional Dependencies".__
+(as is the case for the PhysX libraries), can cause CMake to select the wrong version of the library during
+configuration, possibly causing the Debug version of the libraries to be used also for the Release-version
+of your build.
+__We therefore recommend that you generate a separate project for the Debug and Release builds, being careful
+to select the correct version of the PhysX libraries during the configuration phase for each project.__
+
 
 ## Examples
 The _Examples_ folder contains a few example-projects that can be opened in SnaX Developer once the Chips

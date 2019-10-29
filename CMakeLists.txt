@@ -33,7 +33,12 @@ find_library(PHYSXFOUNDATION_LIBRARY PhysXFoundation_64.lib)
 find_library(PHYSXEXTENSIONS_LIBRARY PhysXExtensions_static_64.lib)
 find_library(PHYSXPVDSDK_LIBRARY PhysXPvdSDK_static_64.lib)
 
+find_library(PHYSXGPU_LIBRARY PhysXGpu_64.dll)
+find_library(PHYSXDEVICE_LIBRARY PhysXDevice64.dll)
 
+if (NOT PHYSXDEVICE_LIBRARY)
+message(WARNING "PhysXDevice64.dll not found. GPU-accelerated PhysX will not be available! If using VCPKG, PhysXDevice64.dll is found somewhere the buildtrees directory.")
+endif()
 
 file(GLOB_RECURSE PHYSXCHIPS_SOURCE ./PhysXChips/*.cpp)
 file(GLOB_RECURSE PHYSXCHIPS_HEADER ./PhysXChips/*.h)
@@ -95,6 +100,19 @@ add_custom_command(
         $<TARGET_FILE_DIR:PhysXChips>/PhysXFoundation_64.dll
         ${SNAX_INSTALL_DIR}/3rd/
 )
+
+if (PHYSXDEVICE_LIBRARY AND PHYSXGPU_LIBRARY)
+add_custom_command(
+    TARGET SnaX 
+    POST_BUILD
+	COMMAND ${CMAKE_COMMAND} -E copy
+        ${PHYSXGPU_LIBRARY}
+        ${SNAX_INSTALL_DIR}/3rd/		
+	COMMAND ${CMAKE_COMMAND} -E copy
+        ${PHYSXDEVICE_LIBRARY}
+        ${SNAX_INSTALL_DIR}/3rd/		
+)
+endif()
 
 set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT SnaX)
 set_property(TARGET SnaX PROPERTY VS_DEBUGGER_COMMAND ${SNAX_INSTALL_DIR}/SnaXDeveloper.exe)
