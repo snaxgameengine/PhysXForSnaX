@@ -9,6 +9,8 @@ endif()
 
 add_definitions(-D_UNICODE -DUNICODE)
 
+SET(CMAKE_FIND_LIBRARY_PREFIXES "")
+SET(CMAKE_FIND_LIBRARY_SUFFIXES ".lib" ".dll")
 
 project(PhysXForSnaX)
 
@@ -17,7 +19,6 @@ find_path(SNAX_SDK_DIR Include/M3DCore/MString.h HINTS ./../snaxsdk DOC "Directo
 if (NOT SNAX_SDK_DIR)
 message(FATAL_ERROR "SnaX SDK is not found...")
 endif()
-
 
 find_path(PHYSX_INCLUDE_DIR PhysX/PxPhysics.h)
 
@@ -33,46 +34,19 @@ find_library(PHYSXFOUNDATION_LIBRARY PhysXFoundation_64.lib)
 find_library(PHYSXEXTENSIONS_LIBRARY PhysXExtensions_static_64.lib)
 find_library(PHYSXPVDSDK_LIBRARY PhysXPvdSDK_static_64.lib)
 
-find_library(PHYSXGPU_LIBRARY PhysXGpu_64.dll)
+find_path(PHYSXGPU_LIBRARY PhysXGpu_64.dll)
 find_library(PHYSXDEVICE_LIBRARY PhysXDevice64.dll)
 
 if (NOT PHYSXDEVICE_LIBRARY)
 message(WARNING "PhysXDevice64.dll not found. GPU-accelerated PhysX will not be available! If using VCPKG, PhysXDevice64.dll is found somewhere the buildtrees directory.")
 endif()
 
-file(GLOB_RECURSE PHYSXCHIPS_SOURCE ./PhysXChips/*.cpp)
-file(GLOB_RECURSE PHYSXCHIPS_HEADER ./PhysXChips/*.h)
-
-include_directories(${SNAX_SDK_DIR}/Include)
-include_directories(${PHYSX_INCLUDE_DIR})
-
-add_library(PhysXChips SHARED ${PHYSXCHIPS_SOURCE} ${PHYSXCHIPS_HEADER})
-set_target_properties(PhysXChips PROPERTIES COMPILE_FLAGS "/Yupch.h")
-set_source_files_properties(PhysXChips/pch.cpp PROPERTIES COMPILE_FLAGS "/Ycpch.h")
-
-target_link_libraries(PhysXChips ${M3DCORE_LIB})
-target_link_libraries(PhysXChips ${M3DENGINE_LIB})
-target_link_libraries(PhysXChips ${STDCHIPS_LIB})
-target_link_libraries(PhysXChips ${PHYSX_LIBRARY})
-target_link_libraries(PhysXChips ${PHYSXCOMMON_LIBRARY})
-target_link_libraries(PhysXChips ${PHYSXCOOKING_LIBRARY})
-target_link_libraries(PhysXChips ${PHYSXFOUNDATION_LIBRARY})
-target_link_libraries(PhysXChips ${PHYSXEXTENSIONS_LIBRARY})
-target_link_libraries(PhysXChips ${PHYSXPVDSDK_LIBRARY})
-
-
-
-file(GLOB_RECURSE PHYSXCHIPS_DLG_SOURCE ./PhysXChips_Dlg/*.cpp)
-file(GLOB_RECURSE PHYSXCHIPS_DLG_HEADER ./PhysXChips_Dlg/*.h)
-
 include_directories(.)
 
-add_library(PhysXChips_Dlg SHARED ${PHYSXCHIPS_DLG_SOURCE} ${PHYSXCHIPS_DLG_HEADER})
-set_target_properties(PhysXChips_Dlg PROPERTIES COMPILE_FLAGS "/Yupch.h")
-set_source_files_properties(PhysXChips_Dlg/pch.cpp PROPERTIES COMPILE_FLAGS "/Ycpch.h")
+add_subdirectory(PhysXChips)
+add_subdirectory(PhysXChips_Dlg)
 
-target_link_libraries(PhysXChips_Dlg PhysXChips)
-target_link_libraries(PhysXChips_Dlg ${CHIPDIALOGS_LIB})
+
 
 if (SNAX_INSTALL_DIR)
 
