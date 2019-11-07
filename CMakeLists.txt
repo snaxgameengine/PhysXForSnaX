@@ -56,6 +56,8 @@ add_subdirectory(PhysXChips_Dlg)
 
 if (NOT BUILDING_SNAX)
 add_custom_target(SnaX ALL)
+add_dependencies(SnaX PhysXChips)
+add_dependencies(SnaX PhysXChips_Dlg)
 
 set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT SnaX)
 set_property(TARGET SnaX PROPERTY VS_DEBUGGER_COMMAND ${SNAX_INSTALL_DIR}/SnaXDeveloper.exe)

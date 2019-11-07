@@ -49,6 +49,7 @@ collision detection and so on.
   Note that this plugin was built using __PhysX 4.1.1__.
 - With PhysX SDK in place, you can generate the PhysXForSnaX Visual Studio projects using __CMake >= 3.15__.
   I recommend doing an out-of-source build. If using CMake GUI:
+  - __Build a separate project for Debug and Release. Set CMAKE_BUILD_TYPE and CMAKE_CONFIGURATION_TYPES to eighter Debug or Release. See comment below!__
   - Select the __Visual Studio 15 (2017) or 16 (2019)__ generator. VS2015 is NOT supported.
   - Select x64 as the target platform.
   - Select "Specify toolchain file for cross-compiling" if using VCPKG.
@@ -57,7 +58,6 @@ collision detection and so on.
   - Make sure SnaX, SnaX SDK and PhysX are found!
   - For GPU-accelerated PhysX to work, you will need to manually find PhysXDevice64.dll which should be located
     in the _buildtrees_-directory of VCPKG, eg. <MY_VCPKG_INSTALL_DIR>\buildtrees\physx\src\56e20a36fa-e946c8d6a1\physx\bin\win.x86_64.vc142.mt\release.
-  - __We recommend to build a separate project for the Debug and Release builds. See comment below!__
   - Generate!
 - Open the project in Visual Studio 2017/2019. The _SnaX_ project is selected as startup-project pr default.
 - Build the solution by pressing F5.
