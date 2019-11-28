@@ -8,14 +8,13 @@ add_library(PhysXChips SHARED ${PHYSXCHIPS_SOURCE} ${PHYSXCHIPS_HEADER})
 set_target_properties(PhysXChips PROPERTIES COMPILE_FLAGS "/Yupch.h")
 set_source_files_properties(pch.cpp PROPERTIES COMPILE_FLAGS "/Ycpch.h")
 
-target_include_directories(PhysXChips PUBLIC ${SNAX_SDK_DIR}/Include)
-
-
 if (BUILDING_SNAX)
+	target_include_directories(PhysXChips PUBLIC ${SNAX_SDK_DIR})
 	target_link_libraries(PhysXChips M3DCore)
 	target_link_libraries(PhysXChips M3DEngine)
 	target_link_libraries(PhysXChips StdChips)
 else()
+	target_include_directories(PhysXChips PUBLIC ${SNAX_SDK_DIR}/Include)
 	target_link_libraries(PhysXChips ${M3DCORE_LIB})
 	target_link_libraries(PhysXChips ${M3DENGINE_LIB})
 	target_link_libraries(PhysXChips ${STDCHIPS_LIB})
