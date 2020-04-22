@@ -539,7 +539,7 @@ float4 main(in ShaderInput IN) : SV_TARGET0
         <Connections>
           <Connection conn="0" subconn="0" chipid="{45EC3B49-DA55-4B36-9D87-2BE43A5900C3}"/>
           <Connection conn="1" subconn="0" chipid="{EE4AB06D-796A-4CF9-B163-A95F69AFC63B}"/>
-          <Connection conn="1" subconn="1" chipid="{6A87B979-556E-44A5-A598-BDE615FCCDC2}"/>
+          <Connection conn="2" subconn="0" chipid="{6A87B979-556E-44A5-A598-BDE615FCCDC2}"/>
         </Connections>
         <ChipData>
           <Data id="type">{418C3585-C883-4CED-8A68-9C2204DEE395}</Data>
@@ -969,9 +969,9 @@ float4 main(in ShaderInput IN) : SV_TARGET0
         <Connections>
           <Connection conn="0" subconn="0" chipid="{75D3A619-F9A2-4496-A7C8-2B035FF12036}"/>
           <Connection conn="1" subconn="0" chipid="{05F5A22C-F884-4BE8-93BE-590CDE533CBD}"/>
-          <Connection conn="1" subconn="1" chipid="{9AFAA3EB-11E6-4AE6-BA89-E251E881DF01}"/>
-          <Connection conn="1" subconn="2" chipid="{E9127F8B-566A-496B-A096-0949BD2B9422}"/>
-          <Connection conn="1" subconn="3" chipid="{31EBEF45-8108-4F99-82F6-41ECAA16D88B}"/>
+          <Connection conn="2" subconn="0" chipid="{9AFAA3EB-11E6-4AE6-BA89-E251E881DF01}"/>
+          <Connection conn="3" subconn="0" chipid="{E9127F8B-566A-496B-A096-0949BD2B9422}"/>
+          <Connection conn="4" subconn="0" chipid="{31EBEF45-8108-4F99-82F6-41ECAA16D88B}"/>
         </Connections>
         <ChipData>
           <Data id="type">{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}</Data>
@@ -2193,18 +2193,9 @@ float4 main(in ShaderInput IN) : SV_TARGET0
         </Connections>
         <ChipData/>
       </Chip>
-      <Chip chipid="{CFB7FFA5-AB49-4C5B-B824-51E65C7933A2}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="a.w&gt;0" refreshmode="function">
-        <Connections>
-          <Connection conn="0" subconn="0" chipid="{08D9D6F4-D3A1-4703-A83C-2FC94808AA8E}"/>
-        </Connections>
-        <ChipData>
-          <Data id="value">1</Data>
-          <Data id="exp">a.w&gt;0</Data>
-        </ChipData>
-      </Chip>
       <Chip chipid="{8513DDF7-6602-403B-A2AE-6FAD45B36646}" type="{4221CFFF-DEBE-4E70-9787-CF6543C4D9E3}" name="If/Else" refreshmode="function">
         <Connections>
-          <Connection conn="0" subconn="0" chipid="{CFB7FFA5-AB49-4C5B-B824-51E65C7933A2}"/>
+          <Connection conn="0" subconn="0" chipid="{C5B54722-F374-42D5-BF0B-E2E016D8BFA2}"/>
           <Connection conn="1" subconn="0" chipid="{67B68024-2F0F-47F3-A7DB-B574866C8785}"/>
         </Connections>
         <ChipData/>
@@ -2233,6 +2224,24 @@ float4 main(in ShaderInput IN) : SV_TARGET0
           <Data id="original">{5F799DE8-51CA-43A4-9403-396B317136E1}</Data>
         </ChipData>
       </Chip>
+      <Chip chipid="{C5B54722-F374-42D5-BF0B-E2E016D8BFA2}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="a&gt;0" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{97501173-90ED-44FA-9F01-0B5B892FF8FA}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="exp">a&gt;0</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{97501173-90ED-44FA-9F01-0B5B892FF8FA}" type="{9C9FE924-E3DB-40F3-A11C-C75A3B14D261}" name="Get Vector W" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{08D9D6F4-D3A1-4703-A83C-2FC94808AA8E}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="ot">103</Data>
+        </ChipData>
+      </Chip>
     </Chips>
     <Editor>
       <ClassDiagram>
@@ -2253,7 +2262,7 @@ float4 main(in ShaderInput IN) : SV_TARGET0
 1=Middle
 2=Top</Comment>
       </Comments>
-      <ClassVisual extent="-155.102707 -46.9380798 106.377777 7.32882071">
+      <ClassVisual extent="-155.102707 -46.9380798 106.202782 7.32882071">
         <Chip chipid="{EA298864-8A4B-4027-B1AD-303A54BE5B01}" x="92.111557" y="-0.0915778875"/>
         <Chip chipid="{9490EB71-CDB7-4E43-ACCB-02B4066EAA91}" x="-86.5803299" y="0.225653857"/>
         <Chip chipid="{024E9A99-6ACE-4CD7-8E14-3015B56434FC}" x="7.29068613" y="-44.6494064"/>
@@ -2470,12 +2479,13 @@ float4 main(in ShaderInput IN) : SV_TARGET0
         <Chip chipid="{16D54CC1-E860-4C87-BA33-71737496AE44}" x="44.8494644" y="-32.0898666"/>
         <Chip chipid="{0D8AA486-B267-4920-8193-667E30B3CE4F}" x="-28.2897739" y="-16.7581959"/>
         <Chip chipid="{1A47C729-36C4-4371-B55C-615E53E3D293}" x="-22.890667" y="-13.1439247"/>
-        <Chip chipid="{CFB7FFA5-AB49-4C5B-B824-51E65C7933A2}" x="78.4087753" y="-7.36301613"/>
         <Chip chipid="{8513DDF7-6602-403B-A2AE-6FAD45B36646}" x="81.8784103" y="-4.47576666"/>
-        <Chip chipid="{08D9D6F4-D3A1-4703-A83C-2FC94808AA8E}" x="78.0879135" y="-9.5237627"/>
+        <Chip chipid="{08D9D6F4-D3A1-4703-A83C-2FC94808AA8E}" x="78.2836533" y="-10.5920238"/>
         <Chip chipid="{97BAAF24-013A-4C92-948A-9C4614CA4DA0}" x="-46.4048386" y="-25.3563271"/>
         <Chip chipid="{9A8D8A29-69F1-4960-8574-6E240E0731C8}" x="-131.142563" y="-14.0746469"/>
         <Chip chipid="{B79D20A1-C659-4F5C-BB46-239C8081A987}" x="-90.1210022" y="-23.8932457"/>
+        <Chip chipid="{C5B54722-F374-42D5-BF0B-E2E016D8BFA2}" x="78.4934158" y="-6.62325954"/>
+        <Chip chipid="{97501173-90ED-44FA-9F01-0B5B892FF8FA}" x="78.2813721" y="-8.56406689"/>
       </ClassVisual>
     </Editor>
   </Class>
@@ -3991,7 +4001,7 @@ float4 main(in ShaderInput IN) : SV_TARGET0
           <Connection conn="0" subconn="1" chipid="{146FCA77-01F8-4812-8DCA-3B6AD548EFDC}"/>
           <Connection conn="0" subconn="2" chipid="{249B1213-2B42-4518-9FF5-5E781ED55F85}"/>
           <Connection conn="0" subconn="3" chipid="{45AA1685-2A23-4A4F-B55C-60B133FD6A1A}"/>
-          <Connection conn="0" subconn="4" chipid="{9E7A8D33-6454-4464-969E-0A7ED76B4F72}"/>
+          <Connection conn="0" subconn="4" chipid="{CE7E2875-C715-4CA2-9F8A-7AFE238687C0}"/>
           <Connection conn="0" subconn="5" chipid="{69042218-36ED-44A4-85E5-B41B72CBAE21}"/>
           <Connection conn="0" subconn="6" chipid="{2910E0FB-A13B-4095-96AD-3511658AFDF9}"/>
           <Connection conn="0" subconn="7" chipid="{D3453323-422B-4F3F-A10B-E2FCB59F6A59}"/>
@@ -4437,125 +4447,125 @@ float4 main(in ShaderInput IN) : SV_TARGET0
           <Data id="original">{0919B726-B60A-4C54-9874-A20B066F490B}</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{9E7A8D33-6454-4464-969E-0A7ED76B4F72}" type="{A2C861A1-4990-4CB3-ACBD-3346D3E3F6A2}" name="Set Camera Matrices" refreshmode="function">
+      <Chip chipid="{CE7E2875-C715-4CA2-9F8A-7AFE238687C0}" type="{A2C861A1-4990-4CB3-ACBD-3346D3E3F6A2}" name="Set Camera Matrices" refreshmode="function">
         <Connections>
-          <Connection conn="0" subconn="0" chipid="{677A1E2F-B9EE-40D7-A950-9547C8BF4E26}"/>
-          <Connection conn="1" subconn="0" chipid="{9F07CD8C-D697-442C-9C1B-D24298893E22}"/>
+          <Connection conn="0" subconn="0" chipid="{C173BDAE-2F29-4C44-A6A5-A921250CFD6F}"/>
+          <Connection conn="1" subconn="0" chipid="{5A0A9274-2C16-40E7-BADA-1878570A370F}"/>
         </Connections>
         <ChipData>
           <Data id="cmd">300</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{9F07CD8C-D697-442C-9C1B-D24298893E22}" type="{8DD16693-4C81-481B-912B-D03B7C664CB9}" name="Perspective FOVY" refreshmode="function">
+      <Chip chipid="{5A0A9274-2C16-40E7-BADA-1878570A370F}" type="{8DD16693-4C81-481B-912B-D03B7C664CB9}" name="Perspective FOVY" refreshmode="function">
         <Connections>
-          <Connection conn="0" subconn="0" chipid="{E21C90F5-9C6A-4077-AF8E-0B053B9754F7}"/>
-          <Connection conn="1" subconn="0" chipid="{30924B51-8231-4B58-B0A8-F6F59537B36A}"/>
-          <Connection conn="2" subconn="0" chipid="{F83FDCAB-26AA-4E8E-A690-0955D974E037}"/>
-          <Connection conn="3" subconn="0" chipid="{4CEB5101-3972-40AA-9EF6-4A66E7F79EDF}"/>
+          <Connection conn="0" subconn="0" chipid="{2F9ABE97-A925-4682-97C9-725273020407}"/>
+          <Connection conn="1" subconn="0" chipid="{E97D30E2-543D-44A8-BC99-F122D90239E4}"/>
+          <Connection conn="2" subconn="0" chipid="{13915A38-AF12-4F80-BD21-65EC4F4357F5}"/>
+          <Connection conn="3" subconn="0" chipid="{78774AC4-6A52-435E-9F73-57721FE13F9F}"/>
         </Connections>
         <ChipData>
-          <Data id="matrix">0.598495245 0 0 0 0 1.73205078 0 0 0 0 1.00010002 1 0 0 -0.10001 0</Data>
+          <Data id="matrix">0.672394276 0 0 0 0 1.83048761 0 0 0 0 1.00010002 1 0 0 -0.10001 0</Data>
           <Data id="ot">4</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{10490DA6-22C5-4567-AEE4-FD73E9A3E4D0}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="FOVY (deg)" refreshmode="function">
+      <Chip chipid="{CB2964B5-9FF0-4C07-9818-0A8981FD1851}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="FOVY (deg)" refreshmode="function">
         <Connections/>
         <ChipData>
           <Data id="value">60</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{30924B51-8231-4B58-B0A8-F6F59537B36A}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Aspect Ratio" refreshmode="function">
+      <Chip chipid="{E97D30E2-543D-44A8-BC99-F122D90239E4}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Aspect Ratio" refreshmode="function">
         <Connections>
-          <Connection conn="0" subconn="0" chipid="{1055151E-736A-4063-A39D-CDCA58A8B397}"/>
+          <Connection conn="0" subconn="0" chipid="{112175C8-C317-4D73-AF13-B4BC084ABFB0}"/>
         </Connections>
         <ChipData>
-          <Data id="value">2.8940092165898617</Data>
+          <Data id="value">2.7223427331887202</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{F83FDCAB-26AA-4E8E-A690-0955D974E037}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Z-near" refreshmode="function">
+      <Chip chipid="{13915A38-AF12-4F80-BD21-65EC4F4357F5}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Z-near" refreshmode="function">
         <Connections/>
         <ChipData>
           <Data id="value">0.10000000100000001</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{4CEB5101-3972-40AA-9EF6-4A66E7F79EDF}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Z-far" refreshmode="function">
+      <Chip chipid="{78774AC4-6A52-435E-9F73-57721FE13F9F}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Z-far" refreshmode="function">
         <Connections/>
         <ChipData>
           <Data id="value">1000</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{1055151E-736A-4063-A39D-CDCA58A8B397}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="a/b" refreshmode="function">
+      <Chip chipid="{112175C8-C317-4D73-AF13-B4BC084ABFB0}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="a/b" refreshmode="function">
         <Connections>
-          <Connection conn="0" subconn="0" chipid="{14ADB75C-4964-4D29-A9FB-DC93CCFFA65B}"/>
-          <Connection conn="0" subconn="1" chipid="{1C80A6E6-4B8F-4158-B772-0563CF3567E1}"/>
+          <Connection conn="0" subconn="0" chipid="{D3DDA3A0-C548-45E1-99EE-72F688E319CD}"/>
+          <Connection conn="0" subconn="1" chipid="{8F29B32F-6F9A-4E58-8B50-BBB6441D35F3}"/>
         </Connections>
         <ChipData>
-          <Data id="value">2.8940092165898617</Data>
+          <Data id="value">2.7223427331887202</Data>
           <Data id="exp">a/b</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{14ADB75C-4964-4D29-A9FB-DC93CCFFA65B}" type="{CB1384D9-4781-4FAD-8C71-F5A152927405}" name="Get Current Render Target Width" refreshmode="function">
+      <Chip chipid="{D3DDA3A0-C548-45E1-99EE-72F688E319CD}" type="{CB1384D9-4781-4FAD-8C71-F5A152927405}" name="Get Current Render Target Width" refreshmode="function">
         <Connections/>
         <ChipData>
-          <Data id="value">2512</Data>
+          <Data id="value">2510</Data>
           <Data id="type">108</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{1C80A6E6-4B8F-4158-B772-0563CF3567E1}" type="{CB1384D9-4781-4FAD-8C71-F5A152927405}" name="Get Current Render Target Height" refreshmode="function">
+      <Chip chipid="{8F29B32F-6F9A-4E58-8B50-BBB6441D35F3}" type="{CB1384D9-4781-4FAD-8C71-F5A152927405}" name="Get Current Render Target Height" refreshmode="function">
         <Connections/>
         <ChipData>
-          <Data id="value">868</Data>
+          <Data id="value">922</Data>
           <Data id="type">109</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{E21C90F5-9C6A-4077-AF8E-0B053B9754F7}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="rad(a)" refreshmode="function">
+      <Chip chipid="{2F9ABE97-A925-4682-97C9-725273020407}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="rad(a)" refreshmode="function">
         <Connections>
-          <Connection conn="0" subconn="0" chipid="{10490DA6-22C5-4567-AEE4-FD73E9A3E4D0}"/>
+          <Connection conn="0" subconn="0" chipid="{CB2964B5-9FF0-4C07-9818-0A8981FD1851}"/>
         </Connections>
         <ChipData>
-          <Data id="value">1.0471975430846214</Data>
+          <Data id="value">0</Data>
           <Data id="exp">rad(a)</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{68F1761D-502E-47C0-9E0E-49A3FA9158C2}" type="{F1B68FAA-9005-4730-A2C4-52953615B93E}" name="Camera Matrix" refreshmode="function">
+      <Chip chipid="{4E84BD48-3DEE-4271-9A5C-95B77222B5EA}" type="{F1B68FAA-9005-4730-A2C4-52953615B93E}" name="Camera Matrix" refreshmode="function">
         <Connections>
-          <Connection conn="0" subconn="0" chipid="{F2522AE0-2D1B-4F3A-BDC2-1BA1C8B5F12F}"/>
-          <Connection conn="3" subconn="0" chipid="{DEB7E375-A884-47D5-A2E4-D8D6069752FD}"/>
+          <Connection conn="0" subconn="0" chipid="{8D533E3F-E50C-41BA-8272-A72F7B3A4456}"/>
+          <Connection conn="3" subconn="0" chipid="{4675898B-8C4C-42A5-9A2F-0034B481FDAF}"/>
         </Connections>
         <ChipData>
           <Data id="matrix">0.707388282 0 -0.706825137 0 0.455349267 0.764842153 0.45571202 0 0.540609717 -0.64421767 0.541040421 0 -5.84093142 6.96034718 -5.84558487 1</Data>
           <Data id="useQuat">false</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{DEB7E375-A884-47D5-A2E4-D8D6069752FD}" type="{F1B68FAA-9005-4730-A2C4-52953615B93E}" name="Motion" refreshmode="function">
+      <Chip chipid="{4675898B-8C4C-42A5-9A2F-0034B481FDAF}" type="{F1B68FAA-9005-4730-A2C4-52953615B93E}" name="Motion" refreshmode="function">
         <Connections>
-          <Connection conn="0" subconn="0" chipid="{8193FCF8-3104-4C90-9853-60F6E2B77AF8}"/>
-          <Connection conn="1" subconn="0" chipid="{208F4A43-68D7-4436-B325-45985F4CCD74}"/>
-          <Connection conn="3" subconn="0" chipid="{11C5C1EA-549C-49FA-BF22-BC7330B09B68}"/>
+          <Connection conn="0" subconn="0" chipid="{9AC8337A-FA2D-4B8E-A98D-3D9B8F30642F}"/>
+          <Connection conn="1" subconn="0" chipid="{0EEDC577-F789-4800-9961-9B0AFE736BF5}"/>
+          <Connection conn="3" subconn="0" chipid="{BB64A3DC-4E4A-46F2-AB21-C33957E57610}"/>
         </Connections>
         <ChipData>
           <Data id="matrix">0.707388282 0 -0.706825137 0 0.455349267 0.764842153 0.45571202 0 0.540609717 -0.64421767 0.541040421 0 0 0 0 1</Data>
           <Data id="useQuat">false</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{208F4A43-68D7-4436-B325-45985F4CCD74}" type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" name="Vector" refreshmode="function">
+      <Chip chipid="{0EEDC577-F789-4800-9961-9B0AFE736BF5}" type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" name="Vector" refreshmode="function">
         <Connections>
-          <Connection conn="0" subconn="0" chipid="{ED07C582-C1F0-45FE-BF0D-10778C338D37}"/>
-          <Connection conn="1" subconn="0" chipid="{C0299508-8276-4EF5-9A3C-884B3197973A}"/>
+          <Connection conn="0" subconn="0" chipid="{BA71A82B-E3D8-4920-B06E-667B021749C8}"/>
+          <Connection conn="1" subconn="0" chipid="{15320D62-94F4-40A7-BF93-BCBD7FAE5B52}"/>
         </Connections>
         <ChipData>
           <Data id="vector">0.699999988 0.785000026 0 1</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{F2522AE0-2D1B-4F3A-BDC2-1BA1C8B5F12F}" type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" name="Vector" refreshmode="function">
+      <Chip chipid="{8D533E3F-E50C-41BA-8272-A72F7B3A4456}" type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" name="Vector" refreshmode="function">
         <Connections>
-          <Connection conn="2" subconn="0" chipid="{9467BF30-3F18-46F6-AF05-A374A466D062}"/>
+          <Connection conn="2" subconn="0" chipid="{7EF3E9B5-7BD3-41D5-8223-AFC9DC2C6D7F}"/>
         </Connections>
         <ChipData>
           <Data id="vector">0 0 -10.8043404 1</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{4CC1AE39-D8CC-4C1D-92F7-BDCF14DEDEBC}" type="{D358F9A5-D245-4C59-BDE8-BFA3CEEAE4C8}" name="Mouse Delta X" refreshmode="function">
+      <Chip chipid="{54BE0AB6-7628-4092-A486-9E274F170318}" type="{D358F9A5-D245-4C59-BDE8-BFA3CEEAE4C8}" name="Mouse Delta X" refreshmode="function">
         <Connections/>
         <ChipData>
           <Data id="value">0</Data>
@@ -4569,24 +4579,24 @@ float4 main(in ShaderInput IN) : SV_TARGET0
           <Data id="joystickNr">0</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{322904CB-7843-4CA1-9BE4-64D219FDCF57}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Value" refreshmode="function">
+      <Chip chipid="{CDD5D014-6723-400E-B176-406D198D9289}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Value" refreshmode="function">
         <Connections/>
         <ChipData>
           <Data id="value">-50</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{2035CAB6-FACC-4345-8505-9D6214A93A30}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="-a*b*c" refreshmode="function">
+      <Chip chipid="{99C76AE9-7F07-4A25-8C86-4BC014C29515}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="-a*b*c" refreshmode="function">
         <Connections>
-          <Connection conn="0" subconn="0" chipid="{F1F2D51B-1640-46B2-A2B7-2147266472BE}"/>
-          <Connection conn="0" subconn="1" chipid="{605C13CC-E855-491C-AB32-EA96EB700B33}"/>
-          <Connection conn="0" subconn="2" chipid="{17F6DCA0-6A25-4AD9-8A34-2E131C934614}"/>
+          <Connection conn="0" subconn="0" chipid="{1AE87298-C63A-4481-8F50-FC2A23491E6C}"/>
+          <Connection conn="0" subconn="1" chipid="{E0839B67-6179-4510-B195-A864EB4A6776}"/>
+          <Connection conn="0" subconn="2" chipid="{8F645833-68DA-4953-A61D-4E49EB5BA95A}"/>
         </Connections>
         <ChipData>
           <Data id="value">0</Data>
           <Data id="exp">-a*b*c</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{F1F2D51B-1640-46B2-A2B7-2147266472BE}" type="{D358F9A5-D245-4C59-BDE8-BFA3CEEAE4C8}" name="Mouse Wheel" refreshmode="function">
+      <Chip chipid="{1AE87298-C63A-4481-8F50-FC2A23491E6C}" type="{D358F9A5-D245-4C59-BDE8-BFA3CEEAE4C8}" name="Mouse Wheel" refreshmode="function">
         <Connections/>
         <ChipData>
           <Data id="value">0</Data>
@@ -4600,50 +4610,50 @@ float4 main(in ShaderInput IN) : SV_TARGET0
           <Data id="joystickNr">0</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{10F17BFF-58A6-4331-8B19-FEE6B74AF8B5}" type="{27EF5168-493E-4A13-BED9-E1476DDF113F}" name="Inertia" refreshmode="function">
+      <Chip chipid="{7AFB7A39-BC78-4FAB-945D-6EB3A861C2D1}" type="{27EF5168-493E-4A13-BED9-E1476DDF113F}" name="Inertia" refreshmode="function">
         <Connections>
-          <Connection conn="0" subconn="0" chipid="{2035CAB6-FACC-4345-8505-9D6214A93A30}"/>
-          <Connection conn="1" subconn="0" chipid="{6F1A9588-5963-4EB5-8862-64BAFB603A6E}"/>
+          <Connection conn="0" subconn="0" chipid="{99C76AE9-7F07-4A25-8C86-4BC014C29515}"/>
+          <Connection conn="1" subconn="0" chipid="{770ED198-9319-4C27-99A7-8251BF71CE6A}"/>
         </Connections>
         <ChipData>
           <Data id="value">0</Data>
           <Data id="dir">0</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{672589D7-7694-4E3B-A8DE-486A18058E4A}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Value" refreshmode="function">
+      <Chip chipid="{56BFCD44-E0FB-4E9B-BD04-0B48696A3C1B}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Value" refreshmode="function">
         <Connections/>
         <ChipData>
           <Data id="value">-1</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{B232F6D4-9F73-498A-996B-DC7C52B9F0F6}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="a*b*c" refreshmode="function">
+      <Chip chipid="{1F1EB447-9C3F-4B89-A9B4-36C39F47D2D9}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="a*b*c" refreshmode="function">
         <Connections>
-          <Connection conn="0" subconn="0" chipid="{C7306CF7-3137-4435-B68D-A2ADF79A5554}"/>
-          <Connection conn="0" subconn="1" chipid="{4CC1AE39-D8CC-4C1D-92F7-BDCF14DEDEBC}"/>
-          <Connection conn="0" subconn="2" chipid="{5DCFC190-2C2F-4897-AABD-EA50678482AB}"/>
+          <Connection conn="0" subconn="0" chipid="{DBD92DF3-9EDE-4055-9FFE-8A889E742B77}"/>
+          <Connection conn="0" subconn="1" chipid="{54BE0AB6-7628-4092-A486-9E274F170318}"/>
+          <Connection conn="0" subconn="2" chipid="{0C25DDDF-95CF-4280-B18A-904807948D90}"/>
         </Connections>
         <ChipData>
           <Data id="value">0</Data>
           <Data id="exp">a*b*c</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{95BB928A-2BB1-4006-A64C-3E7F3A4BF23B}" type="{27EF5168-493E-4A13-BED9-E1476DDF113F}" name="Inertia" refreshmode="function">
+      <Chip chipid="{9B546811-A59E-4D88-938E-9A0372EDC2E3}" type="{27EF5168-493E-4A13-BED9-E1476DDF113F}" name="Inertia" refreshmode="function">
         <Connections>
-          <Connection conn="0" subconn="0" chipid="{B232F6D4-9F73-498A-996B-DC7C52B9F0F6}"/>
-          <Connection conn="1" subconn="0" chipid="{46195684-3332-4E5F-8B71-BA3B3F970954}"/>
+          <Connection conn="0" subconn="0" chipid="{1F1EB447-9C3F-4B89-A9B4-36C39F47D2D9}"/>
+          <Connection conn="1" subconn="0" chipid="{656FD7AB-A473-48C3-AB08-C376AB1A72E2}"/>
         </Connections>
         <ChipData>
           <Data id="value">0</Data>
           <Data id="dir">0</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{DB049F4B-9876-47A4-9346-FCB834ABA1F6}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Value" refreshmode="function">
+      <Chip chipid="{2CA3B106-1557-4E34-B227-F1CDEF2F3B80}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Value" refreshmode="function">
         <Connections/>
         <ChipData>
           <Data id="value">1.5700000000000001</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{7A8A0B6F-106C-4353-BB3A-B6DAED1AFD67}" type="{D358F9A5-D245-4C59-BDE8-BFA3CEEAE4C8}" name="Mouse Delta Y" refreshmode="function">
+      <Chip chipid="{B02DEE66-02EF-4DA2-8FD4-4DE19399C368}" type="{D358F9A5-D245-4C59-BDE8-BFA3CEEAE4C8}" name="Mouse Delta Y" refreshmode="function">
         <Connections/>
         <ChipData>
           <Data id="value">0</Data>
@@ -4657,18 +4667,18 @@ float4 main(in ShaderInput IN) : SV_TARGET0
           <Data id="joystickNr">0</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{40977925-8E4F-48CF-9483-5DB24D324780}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="a*b*c" refreshmode="function">
+      <Chip chipid="{86E0C6AA-2376-4774-B2D9-9619C3FBE331}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="a*b*c" refreshmode="function">
         <Connections>
-          <Connection conn="0" subconn="0" chipid="{1980CC65-7DD6-46B2-86C9-B53B32F17E26}"/>
-          <Connection conn="0" subconn="1" chipid="{7A8A0B6F-106C-4353-BB3A-B6DAED1AFD67}"/>
-          <Connection conn="0" subconn="2" chipid="{B9E4C859-469F-49FB-AC62-A39955E307E8}"/>
+          <Connection conn="0" subconn="0" chipid="{EB6E5796-7D03-488F-AB76-5C2FE42E170D}"/>
+          <Connection conn="0" subconn="1" chipid="{B02DEE66-02EF-4DA2-8FD4-4DE19399C368}"/>
+          <Connection conn="0" subconn="2" chipid="{E1B02298-2E1E-43D5-8B4C-F511B871812F}"/>
         </Connections>
         <ChipData>
           <Data id="value">0</Data>
           <Data id="exp">a*b*c</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{1980CC65-7DD6-46B2-86C9-B53B32F17E26}" type="{D358F9A5-D245-4C59-BDE8-BFA3CEEAE4C8}" name="Right Button State" refreshmode="function">
+      <Chip chipid="{EB6E5796-7D03-488F-AB76-5C2FE42E170D}" type="{D358F9A5-D245-4C59-BDE8-BFA3CEEAE4C8}" name="Right Button State" refreshmode="function">
         <Connections/>
         <ChipData>
           <Data id="value">0</Data>
@@ -4682,36 +4692,36 @@ float4 main(in ShaderInput IN) : SV_TARGET0
           <Data id="joystickNr">0</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{C40C3D81-D172-4AFD-89B3-373B3FF3BA50}" type="{27EF5168-493E-4A13-BED9-E1476DDF113F}" name="Inertia" refreshmode="function">
+      <Chip chipid="{9544A43B-1A81-4E17-A38F-8EF692799F29}" type="{27EF5168-493E-4A13-BED9-E1476DDF113F}" name="Inertia" refreshmode="function">
         <Connections>
-          <Connection conn="0" subconn="0" chipid="{40977925-8E4F-48CF-9483-5DB24D324780}"/>
-          <Connection conn="1" subconn="0" chipid="{3678D08C-7CEE-47A1-8ECF-B25DEE9E207A}"/>
+          <Connection conn="0" subconn="0" chipid="{86E0C6AA-2376-4774-B2D9-9619C3FBE331}"/>
+          <Connection conn="1" subconn="0" chipid="{75467672-07D2-4160-9D08-A3D697414D7E}"/>
         </Connections>
         <ChipData>
           <Data id="value">0</Data>
           <Data id="dir">0</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{4C83FCB7-DF87-432C-B17D-A5DA3C48B942}" type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" name="Vector" refreshmode="function">
+      <Chip chipid="{563C9367-05D3-420E-B60A-8DA46DA599EF}" type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" name="Vector" refreshmode="function">
         <Connections>
-          <Connection conn="0" subconn="0" chipid="{D147D578-C03A-463E-BE51-B35ACF157BFE}"/>
-          <Connection conn="1" subconn="0" chipid="{56DF351D-0E85-428E-9B37-9DED04032C70}"/>
+          <Connection conn="0" subconn="0" chipid="{25C9FBB9-C6DA-4180-AE88-CA10642BCF14}"/>
+          <Connection conn="1" subconn="0" chipid="{EE4AA652-F28E-4B1C-9D09-4979C5BC051C}"/>
         </Connections>
         <ChipData>
           <Data id="vector">0 0 0 0</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{D36D9081-4784-45B6-A4FC-384E710B0F8C}" type="{7454B3C5-E34C-4400-ADFA-3083415563BD}" name="Rotate Using Euler Angles" refreshmode="function">
+      <Chip chipid="{2BB44F23-E796-4309-80D5-01FC195B0B79}" type="{7454B3C5-E34C-4400-ADFA-3083415563BD}" name="Rotate Using Euler Angles" refreshmode="function">
         <Connections>
-          <Connection conn="0" subconn="0" chipid="{4C83FCB7-DF87-432C-B17D-A5DA3C48B942}"/>
-          <Connection conn="1" subconn="0" chipid="{208F4A43-68D7-4436-B325-45985F4CCD74}"/>
+          <Connection conn="0" subconn="0" chipid="{563C9367-05D3-420E-B60A-8DA46DA599EF}"/>
+          <Connection conn="1" subconn="0" chipid="{0EEDC577-F789-4800-9961-9B0AFE736BF5}"/>
         </Connections>
         <ChipData>
           <Data id="vector">0 0 0 0</Data>
           <Data id="ot">50</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{FABB7FA5-E39A-4EF4-932F-2E67B382FFEE}" type="{D358F9A5-D245-4C59-BDE8-BFA3CEEAE4C8}" name="Mouse Delta X" refreshmode="function">
+      <Chip chipid="{CA99EFD0-5F26-418E-B103-7162336880C0}" type="{D358F9A5-D245-4C59-BDE8-BFA3CEEAE4C8}" name="Mouse Delta X" refreshmode="function">
         <Connections/>
         <ChipData>
           <Data id="value">0</Data>
@@ -4725,19 +4735,19 @@ float4 main(in ShaderInput IN) : SV_TARGET0
           <Data id="joystickNr">0</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{85F68A7D-85CB-482F-8921-4D8A42FC61CA}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="-a*b*c*d*0.1" refreshmode="function">
+      <Chip chipid="{27160D5F-8A11-41F0-9E12-AED8D30C60E4}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="-a*b*c*d*0.1" refreshmode="function">
         <Connections>
-          <Connection conn="0" subconn="0" chipid="{97EB3E62-61EF-4926-B6DE-1FC66008DA60}"/>
-          <Connection conn="0" subconn="1" chipid="{FABB7FA5-E39A-4EF4-932F-2E67B382FFEE}"/>
-          <Connection conn="0" subconn="2" chipid="{7B7A01C8-AB8C-44D3-A0A8-E44853131BC9}"/>
-          <Connection conn="0" subconn="3" chipid="{467AA996-58D9-4AB9-9DB6-194A59F5A979}"/>
+          <Connection conn="0" subconn="0" chipid="{69D32954-C62A-4730-9D46-A5BE8CBE8B1A}"/>
+          <Connection conn="0" subconn="1" chipid="{CA99EFD0-5F26-418E-B103-7162336880C0}"/>
+          <Connection conn="0" subconn="2" chipid="{03F202AC-075E-4A37-97E2-63A6FB40FDA6}"/>
+          <Connection conn="0" subconn="3" chipid="{B1E44C41-095C-4FB2-B043-C59ECBDC0F6E}"/>
         </Connections>
         <ChipData>
           <Data id="value">0</Data>
           <Data id="exp">-a*b*c*d*0.1</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{97EB3E62-61EF-4926-B6DE-1FC66008DA60}" type="{D358F9A5-D245-4C59-BDE8-BFA3CEEAE4C8}" name="Middle Button State" refreshmode="function">
+      <Chip chipid="{69D32954-C62A-4730-9D46-A5BE8CBE8B1A}" type="{D358F9A5-D245-4C59-BDE8-BFA3CEEAE4C8}" name="Middle Button State" refreshmode="function">
         <Connections/>
         <ChipData>
           <Data id="value">0</Data>
@@ -4751,23 +4761,23 @@ float4 main(in ShaderInput IN) : SV_TARGET0
           <Data id="joystickNr">0</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{D147D578-C03A-463E-BE51-B35ACF157BFE}" type="{27EF5168-493E-4A13-BED9-E1476DDF113F}" name="Inertia" refreshmode="function">
+      <Chip chipid="{25C9FBB9-C6DA-4180-AE88-CA10642BCF14}" type="{27EF5168-493E-4A13-BED9-E1476DDF113F}" name="Inertia" refreshmode="function">
         <Connections>
-          <Connection conn="0" subconn="0" chipid="{85F68A7D-85CB-482F-8921-4D8A42FC61CA}"/>
-          <Connection conn="1" subconn="0" chipid="{96DAD2F7-53E6-4D23-BDB0-7DE5A6626C58}"/>
+          <Connection conn="0" subconn="0" chipid="{27160D5F-8A11-41F0-9E12-AED8D30C60E4}"/>
+          <Connection conn="1" subconn="0" chipid="{4A548BE5-1FA0-494F-9730-A8FC6CB6E691}"/>
         </Connections>
         <ChipData>
           <Data id="value">0</Data>
           <Data id="dir">0</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{96DAD2F7-53E6-4D23-BDB0-7DE5A6626C58}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Value" refreshmode="function">
+      <Chip chipid="{4A548BE5-1FA0-494F-9730-A8FC6CB6E691}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Value" refreshmode="function">
         <Connections/>
         <ChipData>
           <Data id="value">0.29999999999999999</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{84BD292C-E230-4F3A-83CB-7E3B529D6A0D}" type="{D358F9A5-D245-4C59-BDE8-BFA3CEEAE4C8}" name="Mouse Delta Y" refreshmode="function">
+      <Chip chipid="{C28D528E-8B79-430E-BB59-A0E13BC4195C}" type="{D358F9A5-D245-4C59-BDE8-BFA3CEEAE4C8}" name="Mouse Delta Y" refreshmode="function">
         <Connections/>
         <ChipData>
           <Data id="value">0</Data>
@@ -4781,19 +4791,19 @@ float4 main(in ShaderInput IN) : SV_TARGET0
           <Data id="joystickNr">0</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{377B9ABD-967C-4B9D-91D0-2395F2FAEA13}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="a*b*c*d*0.1" refreshmode="function">
+      <Chip chipid="{8142C411-733B-4357-BCFC-BACCF87A9D15}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="a*b*c*d*0.1" refreshmode="function">
         <Connections>
-          <Connection conn="0" subconn="0" chipid="{2E54D8FF-8DFC-4851-BF85-6D5C4297CF41}"/>
-          <Connection conn="0" subconn="1" chipid="{84BD292C-E230-4F3A-83CB-7E3B529D6A0D}"/>
-          <Connection conn="0" subconn="2" chipid="{203794EE-67F7-4224-83BC-567C4AB0FCC7}"/>
-          <Connection conn="0" subconn="3" chipid="{2FC231D9-33BA-49D3-A068-4ED3271868C8}"/>
+          <Connection conn="0" subconn="0" chipid="{1FECAD1A-B4A0-4B72-BB23-AC6DA5258B48}"/>
+          <Connection conn="0" subconn="1" chipid="{C28D528E-8B79-430E-BB59-A0E13BC4195C}"/>
+          <Connection conn="0" subconn="2" chipid="{92204ECC-A1FB-4093-87E5-FD05076D83A1}"/>
+          <Connection conn="0" subconn="3" chipid="{988747A2-5B48-48A4-B832-774BE5E485DF}"/>
         </Connections>
         <ChipData>
           <Data id="value">0</Data>
           <Data id="exp">a*b*c*d*0.1</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{2E54D8FF-8DFC-4851-BF85-6D5C4297CF41}" type="{D358F9A5-D245-4C59-BDE8-BFA3CEEAE4C8}" name="Middle Button State" refreshmode="function">
+      <Chip chipid="{1FECAD1A-B4A0-4B72-BB23-AC6DA5258B48}" type="{D358F9A5-D245-4C59-BDE8-BFA3CEEAE4C8}" name="Middle Button State" refreshmode="function">
         <Connections/>
         <ChipData>
           <Data id="value">0</Data>
@@ -4807,188 +4817,188 @@ float4 main(in ShaderInput IN) : SV_TARGET0
           <Data id="joystickNr">0</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{56DF351D-0E85-428E-9B37-9DED04032C70}" type="{27EF5168-493E-4A13-BED9-E1476DDF113F}" name="Inertia" refreshmode="function">
+      <Chip chipid="{EE4AA652-F28E-4B1C-9D09-4979C5BC051C}" type="{27EF5168-493E-4A13-BED9-E1476DDF113F}" name="Inertia" refreshmode="function">
         <Connections>
-          <Connection conn="0" subconn="0" chipid="{377B9ABD-967C-4B9D-91D0-2395F2FAEA13}"/>
-          <Connection conn="1" subconn="0" chipid="{982C1039-E42B-417E-B167-9AAB7E510B17}"/>
+          <Connection conn="0" subconn="0" chipid="{8142C411-733B-4357-BCFC-BACCF87A9D15}"/>
+          <Connection conn="1" subconn="0" chipid="{9015A555-E150-40EF-BB23-CA43937A0D41}"/>
         </Connections>
         <ChipData>
           <Data id="value">0</Data>
           <Data id="dir">0</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{46D91237-60E9-495A-A24A-229961FC5364}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Value" refreshmode="function">
+      <Chip chipid="{0E9FA35D-F790-41BD-9A6A-E8EB35124330}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Value" refreshmode="function">
         <Connections/>
         <ChipData>
           <Data id="value">-1.5700000000000001</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{A91BF7F0-053E-4829-A8F2-8ACAD3AA856B}" type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" name="Focus Point" refreshmode="function">
+      <Chip chipid="{AAAA91B4-5E43-4EE4-883B-098A6816148A}" type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" name="Focus Point" refreshmode="function">
         <Connections/>
         <ChipData>
           <Data id="vector">0 0 0 1</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{9467BF30-3F18-46F6-AF05-A374A466D062}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="clamp(old+a,b,c)" refreshmode="function">
+      <Chip chipid="{7EF3E9B5-7BD3-41D5-8223-AFC9DC2C6D7F}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="clamp(old+a,b,c)" refreshmode="function">
         <Connections>
-          <Connection conn="0" subconn="0" chipid="{10F17BFF-58A6-4331-8B19-FEE6B74AF8B5}"/>
-          <Connection conn="0" subconn="1" chipid="{322904CB-7843-4CA1-9BE4-64D219FDCF57}"/>
-          <Connection conn="0" subconn="2" chipid="{672589D7-7694-4E3B-A8DE-486A18058E4A}"/>
+          <Connection conn="0" subconn="0" chipid="{7AFB7A39-BC78-4FAB-945D-6EB3A861C2D1}"/>
+          <Connection conn="0" subconn="1" chipid="{CDD5D014-6723-400E-B176-406D198D9289}"/>
+          <Connection conn="0" subconn="2" chipid="{56BFCD44-E0FB-4E9B-BD04-0B48696A3C1B}"/>
         </Connections>
         <ChipData>
           <Data id="value">-10.804340288188486</Data>
           <Data id="exp">clamp(old+a,b,c)</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{605C13CC-E855-491C-AB32-EA96EB700B33}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="clamp(old+a,b,c)" refreshmode="function">
+      <Chip chipid="{E0839B67-6179-4510-B195-A864EB4A6776}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="clamp(old+a,b,c)" refreshmode="function">
         <Connections/>
         <ChipData>
-          <Data id="original">{9467BF30-3F18-46F6-AF05-A374A466D062}</Data>
+          <Data id="original">{7EF3E9B5-7BD3-41D5-8223-AFC9DC2C6D7F}</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{7B7A01C8-AB8C-44D3-A0A8-E44853131BC9}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="clamp(old+a,b,c)" refreshmode="function">
+      <Chip chipid="{03F202AC-075E-4A37-97E2-63A6FB40FDA6}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="clamp(old+a,b,c)" refreshmode="function">
         <Connections/>
         <ChipData>
-          <Data id="original">{9467BF30-3F18-46F6-AF05-A374A466D062}</Data>
+          <Data id="original">{7EF3E9B5-7BD3-41D5-8223-AFC9DC2C6D7F}</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{203794EE-67F7-4224-83BC-567C4AB0FCC7}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="clamp(old+a,b,c)" refreshmode="function">
+      <Chip chipid="{92204ECC-A1FB-4093-87E5-FD05076D83A1}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="clamp(old+a,b,c)" refreshmode="function">
         <Connections/>
         <ChipData>
-          <Data id="original">{9467BF30-3F18-46F6-AF05-A374A466D062}</Data>
+          <Data id="original">{7EF3E9B5-7BD3-41D5-8223-AFC9DC2C6D7F}</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{8193FCF8-3104-4C90-9853-60F6E2B77AF8}" type="{AFF6C0E6-4967-4E74-89AE-3D38E3C71D1D}" name="old+a" refreshmode="function">
+      <Chip chipid="{BA71A82B-E3D8-4920-B06E-667B021749C8}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="clamp(old+a,b,c)" refreshmode="function">
         <Connections>
-          <Connection conn="0" subconn="0" chipid="{D36D9081-4784-45B6-A4FC-384E710B0F8C}"/>
-        </Connections>
-        <ChipData>
-          <Data id="vector">0 0 0 1</Data>
-          <Data id="exp">old+a</Data>
-        </ChipData>
-      </Chip>
-      <Chip chipid="{ED07C582-C1F0-45FE-BF0D-10778C338D37}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="clamp(old+a,b,c)" refreshmode="function">
-        <Connections>
-          <Connection conn="0" subconn="0" chipid="{C40C3D81-D172-4AFD-89B3-373B3FF3BA50}"/>
-          <Connection conn="0" subconn="1" chipid="{46D91237-60E9-495A-A24A-229961FC5364}"/>
-          <Connection conn="0" subconn="2" chipid="{DB049F4B-9876-47A4-9346-FCB834ABA1F6}"/>
+          <Connection conn="0" subconn="0" chipid="{9544A43B-1A81-4E17-A38F-8EF692799F29}"/>
+          <Connection conn="0" subconn="1" chipid="{0E9FA35D-F790-41BD-9A6A-E8EB35124330}"/>
+          <Connection conn="0" subconn="2" chipid="{2CA3B106-1557-4E34-B227-F1CDEF2F3B80}"/>
         </Connections>
         <ChipData>
           <Data id="value">0.69999999999999996</Data>
           <Data id="exp">clamp(old+a,b,c)</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{C0299508-8276-4EF5-9A3C-884B3197973A}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="old+a&lt;0?a+2*pi+old:old+a&gt;2*pi?a-2*pi+old:old+a" refreshmode="function">
+      <Chip chipid="{15320D62-94F4-40A7-BF93-BCBD7FAE5B52}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="old+a&lt;0?a+2*pi+old:old+a&gt;2*pi?a-2*pi+old:old+a" refreshmode="function">
         <Connections>
-          <Connection conn="0" subconn="0" chipid="{95BB928A-2BB1-4006-A64C-3E7F3A4BF23B}"/>
+          <Connection conn="0" subconn="0" chipid="{9B546811-A59E-4D88-938E-9A0372EDC2E3}"/>
         </Connections>
         <ChipData>
           <Data id="value">0.78500000000000003</Data>
           <Data id="exp">old+a&lt;0?a+2*pi+old:old+a&gt;2*pi?a-2*pi+old:old+a</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{677A1E2F-B9EE-40D7-A950-9547C8BF4E26}" type="{B55F0787-2764-43C8-902B-3675C08DE1B1}" name="View Matrix" refreshmode="function">
-        <Connections>
-          <Connection conn="0" subconn="0" chipid="{68F1761D-502E-47C0-9E0E-49A3FA9158C2}"/>
-        </Connections>
-        <ChipData>
-          <Data id="matrix">0.707388341 0.455349296 0.540609717 0 -1.4901163e-08 0.764842272 -0.64421767 0 -0.706825197 0.45571208 0.541040421 0 0 0 10.8043413 1</Data>
-          <Data id="exp">inverse(a)</Data>
-        </ChipData>
-      </Chip>
-      <Chip chipid="{C7306CF7-3137-4435-B68D-A2ADF79A5554}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Right Button State" refreshmode="function">
+      <Chip chipid="{DBD92DF3-9EDE-4055-9FFE-8A889E742B77}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Right Button State" refreshmode="function">
         <Connections/>
         <ChipData>
-          <Data id="original">{1980CC65-7DD6-46B2-86C9-B53B32F17E26}</Data>
+          <Data id="original">{EB6E5796-7D03-488F-AB76-5C2FE42E170D}</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{11C5C1EA-549C-49FA-BF22-BC7330B09B68}" type="{F1B68FAA-9005-4730-A2C4-52953615B93E}" name="Motion" refreshmode="function">
+      <Chip chipid="{BB64A3DC-4E4A-46F2-AB21-C33957E57610}" type="{F1B68FAA-9005-4730-A2C4-52953615B93E}" name="Motion" refreshmode="function">
         <Connections>
-          <Connection conn="0" subconn="0" chipid="{109952B6-6E69-4A8F-858C-20781E4C2781}"/>
+          <Connection conn="0" subconn="0" chipid="{8A549233-9D3C-448C-9DB7-94B859044A67}"/>
         </Connections>
         <ChipData>
           <Data id="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Data>
           <Data id="useQuat">false</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{B766E991-2519-4EFA-96CE-99D9378921C5}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Mouse Sensitivity" refreshmode="function">
+      <Chip chipid="{3B8DFF48-E345-4184-BFC2-0A7DFB33D7BA}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Mouse Sensitivity" refreshmode="function">
         <Connections/>
         <ChipData>
           <Data id="value">0.02</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{B9E4C859-469F-49FB-AC62-A39955E307E8}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Mouse Sensitivity" refreshmode="function">
+      <Chip chipid="{E1B02298-2E1E-43D5-8B4C-F511B871812F}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Mouse Sensitivity" refreshmode="function">
         <Connections/>
         <ChipData>
-          <Data id="original">{B766E991-2519-4EFA-96CE-99D9378921C5}</Data>
+          <Data id="original">{3B8DFF48-E345-4184-BFC2-0A7DFB33D7BA}</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{5DCFC190-2C2F-4897-AABD-EA50678482AB}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Mouse Sensitivity" refreshmode="function">
+      <Chip chipid="{0C25DDDF-95CF-4280-B18A-904807948D90}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Mouse Sensitivity" refreshmode="function">
         <Connections/>
         <ChipData>
-          <Data id="original">{B766E991-2519-4EFA-96CE-99D9378921C5}</Data>
+          <Data id="original">{3B8DFF48-E345-4184-BFC2-0A7DFB33D7BA}</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{467AA996-58D9-4AB9-9DB6-194A59F5A979}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Mouse Sensitivity" refreshmode="function">
+      <Chip chipid="{B1E44C41-095C-4FB2-B043-C59ECBDC0F6E}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Mouse Sensitivity" refreshmode="function">
         <Connections/>
         <ChipData>
-          <Data id="original">{B766E991-2519-4EFA-96CE-99D9378921C5}</Data>
+          <Data id="original">{3B8DFF48-E345-4184-BFC2-0A7DFB33D7BA}</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{2FC231D9-33BA-49D3-A068-4ED3271868C8}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Mouse Sensitivity" refreshmode="function">
+      <Chip chipid="{988747A2-5B48-48A4-B832-774BE5E485DF}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Mouse Sensitivity" refreshmode="function">
         <Connections/>
         <ChipData>
-          <Data id="original">{B766E991-2519-4EFA-96CE-99D9378921C5}</Data>
+          <Data id="original">{3B8DFF48-E345-4184-BFC2-0A7DFB33D7BA}</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{982C1039-E42B-417E-B167-9AAB7E510B17}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Value" refreshmode="function">
+      <Chip chipid="{9015A555-E150-40EF-BB23-CA43937A0D41}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Value" refreshmode="function">
         <Connections/>
         <ChipData>
-          <Data id="original">{96DAD2F7-53E6-4D23-BDB0-7DE5A6626C58}</Data>
+          <Data id="original">{4A548BE5-1FA0-494F-9730-A8FC6CB6E691}</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{3678D08C-7CEE-47A1-8ECF-B25DEE9E207A}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Value" refreshmode="function">
+      <Chip chipid="{75467672-07D2-4160-9D08-A3D697414D7E}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Value" refreshmode="function">
         <Connections/>
         <ChipData>
-          <Data id="original">{96DAD2F7-53E6-4D23-BDB0-7DE5A6626C58}</Data>
+          <Data id="original">{4A548BE5-1FA0-494F-9730-A8FC6CB6E691}</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{46195684-3332-4E5F-8B71-BA3B3F970954}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Value" refreshmode="function">
+      <Chip chipid="{656FD7AB-A473-48C3-AB08-C376AB1A72E2}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Value" refreshmode="function">
         <Connections/>
         <ChipData>
-          <Data id="original">{96DAD2F7-53E6-4D23-BDB0-7DE5A6626C58}</Data>
+          <Data id="original">{4A548BE5-1FA0-494F-9730-A8FC6CB6E691}</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{37E4EA64-1C41-4351-A017-C2E33AA3AC6B}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Wheel Sensitivity" refreshmode="function">
+      <Chip chipid="{21E45A66-3E6E-4764-9F98-622E3DFB17B4}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Wheel Sensitivity" refreshmode="function">
         <Connections/>
         <ChipData>
           <Data id="value">0.29999999999999999</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{17F6DCA0-6A25-4AD9-8A34-2E131C934614}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Wheel Sensitivity" refreshmode="function">
+      <Chip chipid="{8F645833-68DA-4953-A61D-4E49EB5BA95A}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Wheel Sensitivity" refreshmode="function">
         <Connections/>
         <ChipData>
-          <Data id="original">{37E4EA64-1C41-4351-A017-C2E33AA3AC6B}</Data>
+          <Data id="original">{21E45A66-3E6E-4764-9F98-622E3DFB17B4}</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{109952B6-6E69-4A8F-858C-20781E4C2781}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Focus Point" refreshmode="function">
+      <Chip chipid="{8A549233-9D3C-448C-9DB7-94B859044A67}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Focus Point" refreshmode="function">
         <Connections/>
         <ChipData>
-          <Data id="original">{A91BF7F0-053E-4829-A8F2-8ACAD3AA856B}</Data>
+          <Data id="original">{AAAA91B4-5E43-4EE4-883B-098A6816148A}</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{4D14FB69-8C91-469E-940D-3CBA73E47D29}" type="{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}" name="Dummy" refreshmode="function">
+      <Chip chipid="{04989695-36C1-4337-A3B4-7664751C0497}" type="{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}" name="Dummy" refreshmode="function">
         <Connections>
-          <Connection conn="0" subconn="0" chipid="{A91BF7F0-053E-4829-A8F2-8ACAD3AA856B}"/>
-          <Connection conn="0" subconn="1" chipid="{B766E991-2519-4EFA-96CE-99D9378921C5}"/>
-          <Connection conn="0" subconn="2" chipid="{37E4EA64-1C41-4351-A017-C2E33AA3AC6B}"/>
+          <Connection conn="0" subconn="0" chipid="{AAAA91B4-5E43-4EE4-883B-098A6816148A}"/>
+          <Connection conn="0" subconn="1" chipid="{3B8DFF48-E345-4184-BFC2-0A7DFB33D7BA}"/>
+          <Connection conn="0" subconn="2" chipid="{21E45A66-3E6E-4764-9F98-622E3DFB17B4}"/>
         </Connections>
         <ChipData/>
       </Chip>
-      <Chip chipid="{6F1A9588-5963-4EB5-8862-64BAFB603A6E}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Value" refreshmode="function">
+      <Chip chipid="{770ED198-9319-4C27-99A7-8251BF71CE6A}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Value" refreshmode="function">
         <Connections/>
         <ChipData>
-          <Data id="original">{96DAD2F7-53E6-4D23-BDB0-7DE5A6626C58}</Data>
+          <Data id="original">{4A548BE5-1FA0-494F-9730-A8FC6CB6E691}</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{C173BDAE-2F29-4C44-A6A5-A921250CFD6F}" type="{8DD16693-4C81-481B-912B-D03B7C664CB9}" name="View Matrix" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{4E84BD48-3DEE-4271-9A5C-95B77222B5EA}"/>
+        </Connections>
+        <ChipData>
+          <Data id="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Data>
+          <Data id="ot">11</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{9AC8337A-FA2D-4B8E-A98D-3D9B8F30642F}" type="{7454B3C5-E34C-4400-ADFA-3083415563BD}" name="Accumulate" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{2BB44F23-E796-4309-80D5-01FC195B0B79}"/>
+        </Connections>
+        <ChipData>
+          <Data id="vector">0 0 0 1</Data>
+          <Data id="ot">1</Data>
         </ChipData>
       </Chip>
     </Chips>
@@ -5001,7 +5011,7 @@ float4 main(in ShaderInput IN) : SV_TARGET0
         <Inheritance/>
       </ClassDiagram>
       <Comments/>
-      <ClassVisual extent="-21.0685005 -24.2630844 38.1024513 5.9581871">
+      <ClassVisual extent="-21.0685005 -25.2543526 38.1024513 5.9581871">
         <Chip chipid="{5DC82E58-8E06-4D68-81AD-F8B7D6C7228C}" x="26.7691669" y="-6.58924723"/>
         <Chip chipid="{BB9A23B3-103A-4B2D-A47A-C5C92B625126}" x="13.9468069" y="-9.61316681"/>
         <Chip chipid="{D3453323-422B-4F3F-A10B-E2FCB59F6A59}" x="13.932807" y="-7.12156153"/>
@@ -5036,75 +5046,75 @@ float4 main(in ShaderInput IN) : SV_TARGET0
         <Chip chipid="{54DAE6C3-7B39-4210-BA0A-7338771D289D}" x="31.4379406" y="-12.160161"/>
         <Chip chipid="{7E34A51B-26AC-4DE3-8869-AF83A8BC5609}" x="37.0774498" y="-9.46035099"/>
         <Chip chipid="{B0036966-F448-4075-85F0-D3AB24F7493E}" x="37.0746956" y="-12.0206356"/>
-        <Chip chipid="{9E7A8D33-6454-4464-969E-0A7ED76B4F72}" x="-3.46862459" y="-6.63080931"/>
-        <Chip chipid="{9F07CD8C-D697-442C-9C1B-D24298893E22}" x="-1.27057242" y="-11.085206"/>
-        <Chip chipid="{10490DA6-22C5-4567-AEE4-FD73E9A3E4D0}" x="-3.64804792" y="-19.6905136"/>
-        <Chip chipid="{30924B51-8231-4B58-B0A8-F6F59537B36A}" x="-1.38814235" y="-16.6128769"/>
-        <Chip chipid="{F83FDCAB-26AA-4E8E-A690-0955D974E037}" x="0.0618563481" y="-15.5195026"/>
-        <Chip chipid="{4CEB5101-3972-40AA-9EF6-4A66E7F79EDF}" x="1.34987736" y="-14.3451366"/>
-        <Chip chipid="{1055151E-736A-4063-A39D-CDCA58A8B397}" x="-1.33059573" y="-20.299902"/>
-        <Chip chipid="{14ADB75C-4964-4D29-A9FB-DC93CCFFA65B}" x="-2.228935" y="-23.7630844"/>
-        <Chip chipid="{1C80A6E6-4B8F-4158-B772-0563CF3567E1}" x="-0.851967692" y="-22.6774406"/>
-        <Chip chipid="{E21C90F5-9C6A-4077-AF8E-0B053B9754F7}" x="-3.50894094" y="-17.3406582"/>
-        <Chip chipid="{A91BF7F0-053E-4829-A8F2-8ACAD3AA856B}" x="-9.5132494" y="-17.0624199"/>
-        <Chip chipid="{B766E991-2519-4EFA-96CE-99D9378921C5}" x="-7.452703" y="-15.8773518"/>
-        <Chip chipid="{37E4EA64-1C41-4351-A017-C2E33AA3AC6B}" x="-5.922791" y="-14.8163443"/>
+        <Chip chipid="{CE7E2875-C715-4CA2-9F8A-7AFE238687C0}" x="-4.88469887" y="-6.74019194"/>
+        <Chip chipid="{5A0A9274-2C16-40E7-BADA-1878570A370F}" x="-0.313595742" y="-12.076479"/>
+        <Chip chipid="{CB2964B5-9FF0-4C07-9818-0A8981FD1851}" x="-2.69107127" y="-20.6817818"/>
+        <Chip chipid="{E97D30E2-543D-44A8-BC99-F122D90239E4}" x="-0.431166172" y="-17.6041431"/>
+        <Chip chipid="{13915A38-AF12-4F80-BD21-65EC4F4357F5}" x="1.01883268" y="-16.5107689"/>
+        <Chip chipid="{78774AC4-6A52-435E-9F73-57721FE13F9F}" x="2.30685377" y="-15.3364077"/>
+        <Chip chipid="{112175C8-C317-4D73-AF13-B4BC084ABFB0}" x="-0.373618543" y="-21.2911701"/>
+        <Chip chipid="{D3DDA3A0-C548-45E1-99EE-72F688E319CD}" x="-1.27195871" y="-24.7543526"/>
+        <Chip chipid="{8F29B32F-6F9A-4E58-8B50-BBB6441D35F3}" x="0.105008572" y="-23.6687088"/>
+        <Chip chipid="{2F9ABE97-A925-4682-97C9-725273020407}" x="-2.55196404" y="-18.3319263"/>
+        <Chip chipid="{AAAA91B4-5E43-4EE4-883B-098A6816148A}" x="-11.4326982" y="-17.8019924"/>
+        <Chip chipid="{3B8DFF48-E345-4184-BFC2-0A7DFB33D7BA}" x="-9.37215424" y="-16.6169243"/>
+        <Chip chipid="{21E45A66-3E6E-4764-9F98-622E3DFB17B4}" x="-7.84224415" y="-15.5559206"/>
         <Text x="32.2700043" y="-5.34093285" sx="8.05000019" sy="2" color="0 0 0 1" textSize="0.5">Callbacks from GUI buttons</Text>
         <Text x="1.02941251" y="3.17873001" sx="22.6223068" sy="5.55891371" color="0 0 0 1" textSize="0.5">This examples demonstrates how to create a GUI library in SnaX.
 The plan is to make this a fully functional GUI library.
 
 Currently, there is only a generic XWidget and XPushButton available.</Text>
-        <Folder name="Internal" x="-8.50836563" y="-11.5512028" inx="0.121688887" iny="3.87831116">
-          <Chip chipid="{68F1761D-502E-47C0-9E0E-49A3FA9158C2}" x="0.136654168" y="-2.84732246"/>
-          <Chip chipid="{DEB7E375-A884-47D5-A2E4-D8D6069752FD}" x="4.43735456" y="-6.08297682"/>
-          <Chip chipid="{208F4A43-68D7-4436-B325-45985F4CCD74}" x="8.80471897" y="-18.5535698"/>
-          <Chip chipid="{F2522AE0-2D1B-4F3A-BDC2-1BA1C8B5F12F}" x="-9.27919674" y="-6.24625731"/>
-          <Chip chipid="{4CC1AE39-D8CC-4C1D-92F7-BDCF14DEDEBC}" x="9.90450001" y="-32.7925415"/>
-          <Chip chipid="{322904CB-7843-4CA1-9BE4-64D219FDCF57}" x="-8.99465752" y="-12.6865072"/>
-          <Chip chipid="{2035CAB6-FACC-4345-8505-9D6214A93A30}" x="-11.7455921" y="-15.0624638"/>
-          <Chip chipid="{F1F2D51B-1640-46B2-A2B7-2147266472BE}" x="-13.6200542" y="-20.2060471"/>
-          <Chip chipid="{10F17BFF-58A6-4331-8B19-FEE6B74AF8B5}" x="-10.9785862" y="-12.7143507"/>
-          <Chip chipid="{672589D7-7694-4E3B-A8DE-486A18058E4A}" x="-7.12320089" y="-12.6981459"/>
-          <Chip chipid="{B232F6D4-9F73-498A-996B-DC7C52B9F0F6}" x="10.333293" y="-29.2149048"/>
-          <Chip chipid="{95BB928A-2BB1-4006-A64C-3E7F3A4BF23B}" x="10.5355968" y="-25.3529282"/>
-          <Chip chipid="{DB049F4B-9876-47A4-9346-FCB834ABA1F6}" x="7.5955286" y="-25.5346298"/>
-          <Chip chipid="{7A8A0B6F-106C-4353-BB3A-B6DAED1AFD67}" x="3.19051027" y="-33.4829788"/>
-          <Chip chipid="{40977925-8E4F-48CF-9483-5DB24D324780}" x="3.47353029" y="-29.4257278"/>
-          <Chip chipid="{1980CC65-7DD6-46B2-86C9-B53B32F17E26}" x="2.10654378" y="-34.6084366"/>
-          <Chip chipid="{C40C3D81-D172-4AFD-89B3-373B3FF3BA50}" x="3.82898569" y="-25.5637436"/>
-          <Chip chipid="{4C83FCB7-DF87-432C-B17D-A5DA3C48B942}" x="-5.37391901" y="-17.7358818"/>
-          <Chip chipid="{D36D9081-4784-45B6-A4FC-384E710B0F8C}" x="-1.66252279" y="-14.1288795"/>
-          <Chip chipid="{FABB7FA5-E39A-4EF4-932F-2E67B382FFEE}" x="-9.4213419" y="-28.5748787"/>
-          <Chip chipid="{85F68A7D-85CB-482F-8921-4D8A42FC61CA}" x="-8.47940445" y="-23.129076"/>
-          <Chip chipid="{97EB3E62-61EF-4926-B6DE-1FC66008DA60}" x="-10.604269" y="-29.7258034"/>
-          <Chip chipid="{D147D578-C03A-463E-BE51-B35ACF157BFE}" x="-7.87359667" y="-21.0647469"/>
-          <Chip chipid="{96DAD2F7-53E6-4D23-BDB0-7DE5A6626C58}" x="-6.277215" y="-23.1200199"/>
-          <Chip chipid="{84BD292C-E230-4F3A-83CB-7E3B529D6A0D}" x="-4.48994207" y="-28.6774998"/>
-          <Chip chipid="{377B9ABD-967C-4B9D-91D0-2395F2FAEA13}" x="-3.32039499" y="-23.2002201"/>
-          <Chip chipid="{2E54D8FF-8DFC-4851-BF85-6D5C4297CF41}" x="-5.56007147" y="-29.8867531"/>
-          <Chip chipid="{56DF351D-0E85-428E-9B37-9DED04032C70}" x="-2.68839288" y="-21.0686989"/>
-          <Chip chipid="{46D91237-60E9-495A-A24A-229961FC5364}" x="5.84282637" y="-25.5405502"/>
-          <Chip chipid="{9467BF30-3F18-46F6-AF05-A374A466D062}" x="-9.07507896" y="-9.7814703"/>
-          <Chip chipid="{605C13CC-E855-491C-AB32-EA96EB700B33}" x="-12.2199545" y="-19.2547874"/>
-          <Chip chipid="{7B7A01C8-AB8C-44D3-A0A8-E44853131BC9}" x="-8.20722771" y="-27.5270004"/>
-          <Chip chipid="{203794EE-67F7-4224-83BC-567C4AB0FCC7}" x="-3.2966795" y="-27.7232647"/>
-          <Chip chipid="{8193FCF8-3104-4C90-9853-60F6E2B77AF8}" x="-1.46333647" y="-11.3278036"/>
-          <Chip chipid="{ED07C582-C1F0-45FE-BF0D-10778C338D37}" x="5.81102324" y="-22.4625015"/>
-          <Chip chipid="{C0299508-8276-4EF5-9A3C-884B3197973A}" x="10.7115612" y="-22.4719925"/>
-          <Chip chipid="{677A1E2F-B9EE-40D7-A950-9547C8BF4E26}" x="0.130369574" y="0.142319217"/>
-          <Chip chipid="{C7306CF7-3137-4435-B68D-A2ADF79A5554}" x="8.8677454" y="-33.8911972"/>
-          <Chip chipid="{11C5C1EA-549C-49FA-BF22-BC7330B09B68}" x="11.1036854" y="-10.917738"/>
-          <Chip chipid="{B9E4C859-469F-49FB-AC62-A39955E307E8}" x="4.40405369" y="-32.3768158"/>
-          <Chip chipid="{5DCFC190-2C2F-4897-AABD-EA50678482AB}" x="10.9988356" y="-31.9657097"/>
-          <Chip chipid="{467AA996-58D9-4AB9-9DB6-194A59F5A979}" x="-7.04935074" y="-26.3983574"/>
-          <Chip chipid="{2FC231D9-33BA-49D3-A068-4ED3271868C8}" x="-2.20249152" y="-26.7592812"/>
-          <Chip chipid="{982C1039-E42B-417E-B167-9AAB7E510B17}" x="-1.29155743" y="-23.3218193"/>
-          <Chip chipid="{3678D08C-7CEE-47A1-8ECF-B25DEE9E207A}" x="5.04881573" y="-28.1058731"/>
-          <Chip chipid="{46195684-3332-4E5F-8B71-BA3B3F970954}" x="11.9675903" y="-27.9444962"/>
-          <Chip chipid="{17F6DCA0-6A25-4AD9-8A34-2E131C934614}" x="-11.0855265" y="-18.0999203"/>
-          <Chip chipid="{109952B6-6E69-4A8F-858C-20781E4C2781}" x="10.6827965" y="-13.6850033"/>
-          <Chip chipid="{4D14FB69-8C91-469E-940D-3CBA73E47D29}" x="0.563393235" y="9.7313385"/>
-          <Chip chipid="{6F1A9588-5963-4EB5-8862-64BAFB603A6E}" x="-9.47810555" y="-15.1968279"/>
+        <Folder name="Internal" x="-10.4278135" y="-12.2907782" inx="0.121688887" iny="3.87831116">
+          <Chip chipid="{4E84BD48-3DEE-4271-9A5C-95B77222B5EA}" x="0.136654168" y="-2.84732246"/>
+          <Chip chipid="{4675898B-8C4C-42A5-9A2F-0034B481FDAF}" x="4.43735456" y="-6.08297682"/>
+          <Chip chipid="{0EEDC577-F789-4800-9961-9B0AFE736BF5}" x="8.80471897" y="-18.5535698"/>
+          <Chip chipid="{8D533E3F-E50C-41BA-8272-A72F7B3A4456}" x="-9.27919674" y="-6.24625731"/>
+          <Chip chipid="{54BE0AB6-7628-4092-A486-9E274F170318}" x="9.90450001" y="-32.7925415"/>
+          <Chip chipid="{CDD5D014-6723-400E-B176-406D198D9289}" x="-8.99465752" y="-12.6865072"/>
+          <Chip chipid="{99C76AE9-7F07-4A25-8C86-4BC014C29515}" x="-11.7455921" y="-15.0624638"/>
+          <Chip chipid="{1AE87298-C63A-4481-8F50-FC2A23491E6C}" x="-13.6200542" y="-20.2060471"/>
+          <Chip chipid="{7AFB7A39-BC78-4FAB-945D-6EB3A861C2D1}" x="-10.9785862" y="-12.7143507"/>
+          <Chip chipid="{56BFCD44-E0FB-4E9B-BD04-0B48696A3C1B}" x="-7.12320089" y="-12.6981459"/>
+          <Chip chipid="{1F1EB447-9C3F-4B89-A9B4-36C39F47D2D9}" x="10.333293" y="-29.2149048"/>
+          <Chip chipid="{9B546811-A59E-4D88-938E-9A0372EDC2E3}" x="10.5355968" y="-25.3529282"/>
+          <Chip chipid="{2CA3B106-1557-4E34-B227-F1CDEF2F3B80}" x="7.5955286" y="-25.5346298"/>
+          <Chip chipid="{B02DEE66-02EF-4DA2-8FD4-4DE19399C368}" x="3.19051027" y="-33.4829788"/>
+          <Chip chipid="{86E0C6AA-2376-4774-B2D9-9619C3FBE331}" x="3.47353029" y="-29.4257278"/>
+          <Chip chipid="{EB6E5796-7D03-488F-AB76-5C2FE42E170D}" x="2.10654378" y="-34.6084366"/>
+          <Chip chipid="{9544A43B-1A81-4E17-A38F-8EF692799F29}" x="3.82898569" y="-25.5637436"/>
+          <Chip chipid="{563C9367-05D3-420E-B60A-8DA46DA599EF}" x="-5.37391901" y="-17.7358818"/>
+          <Chip chipid="{2BB44F23-E796-4309-80D5-01FC195B0B79}" x="-1.66252279" y="-14.1288795"/>
+          <Chip chipid="{CA99EFD0-5F26-418E-B103-7162336880C0}" x="-9.4213419" y="-28.5748787"/>
+          <Chip chipid="{27160D5F-8A11-41F0-9E12-AED8D30C60E4}" x="-8.47940445" y="-23.129076"/>
+          <Chip chipid="{69D32954-C62A-4730-9D46-A5BE8CBE8B1A}" x="-10.604269" y="-29.7258034"/>
+          <Chip chipid="{25C9FBB9-C6DA-4180-AE88-CA10642BCF14}" x="-7.87359667" y="-21.0647469"/>
+          <Chip chipid="{4A548BE5-1FA0-494F-9730-A8FC6CB6E691}" x="-6.277215" y="-23.1200199"/>
+          <Chip chipid="{C28D528E-8B79-430E-BB59-A0E13BC4195C}" x="-4.48994207" y="-28.6774998"/>
+          <Chip chipid="{8142C411-733B-4357-BCFC-BACCF87A9D15}" x="-3.32039499" y="-23.2002201"/>
+          <Chip chipid="{1FECAD1A-B4A0-4B72-BB23-AC6DA5258B48}" x="-5.56007147" y="-29.8867531"/>
+          <Chip chipid="{EE4AA652-F28E-4B1C-9D09-4979C5BC051C}" x="-2.68839288" y="-21.0686989"/>
+          <Chip chipid="{0E9FA35D-F790-41BD-9A6A-E8EB35124330}" x="5.84282637" y="-25.5405502"/>
+          <Chip chipid="{7EF3E9B5-7BD3-41D5-8223-AFC9DC2C6D7F}" x="-9.07507896" y="-9.7814703"/>
+          <Chip chipid="{E0839B67-6179-4510-B195-A864EB4A6776}" x="-12.2199545" y="-19.2547874"/>
+          <Chip chipid="{03F202AC-075E-4A37-97E2-63A6FB40FDA6}" x="-8.20722771" y="-27.5270004"/>
+          <Chip chipid="{92204ECC-A1FB-4093-87E5-FD05076D83A1}" x="-3.2966795" y="-27.7232647"/>
+          <Chip chipid="{BA71A82B-E3D8-4920-B06E-667B021749C8}" x="5.81102324" y="-22.4625015"/>
+          <Chip chipid="{15320D62-94F4-40A7-BF93-BCBD7FAE5B52}" x="10.7115612" y="-22.4719925"/>
+          <Chip chipid="{DBD92DF3-9EDE-4055-9FFE-8A889E742B77}" x="8.8677454" y="-33.8911972"/>
+          <Chip chipid="{BB64A3DC-4E4A-46F2-AB21-C33957E57610}" x="11.1036854" y="-10.917738"/>
+          <Chip chipid="{E1B02298-2E1E-43D5-8B4C-F511B871812F}" x="4.40405369" y="-32.3768158"/>
+          <Chip chipid="{0C25DDDF-95CF-4280-B18A-904807948D90}" x="10.9988356" y="-31.9657097"/>
+          <Chip chipid="{B1E44C41-095C-4FB2-B043-C59ECBDC0F6E}" x="-7.04935074" y="-26.3983574"/>
+          <Chip chipid="{988747A2-5B48-48A4-B832-774BE5E485DF}" x="-2.20249152" y="-26.7592812"/>
+          <Chip chipid="{9015A555-E150-40EF-BB23-CA43937A0D41}" x="-1.29155743" y="-23.3218193"/>
+          <Chip chipid="{75467672-07D2-4160-9D08-A3D697414D7E}" x="5.04881573" y="-28.1058731"/>
+          <Chip chipid="{656FD7AB-A473-48C3-AB08-C376AB1A72E2}" x="11.9675903" y="-27.9444962"/>
+          <Chip chipid="{8F645833-68DA-4953-A61D-4E49EB5BA95A}" x="-11.0855265" y="-18.0999203"/>
+          <Chip chipid="{8A549233-9D3C-448C-9DB7-94B859044A67}" x="10.6827965" y="-13.6850033"/>
+          <Chip chipid="{04989695-36C1-4337-A3B4-7664751C0497}" x="0.563393235" y="9.7313385"/>
+          <Chip chipid="{770ED198-9319-4C27-99A7-8251BF71CE6A}" x="-9.47810555" y="-15.1968279"/>
+          <Chip chipid="{C173BDAE-2F29-4C44-A6A5-A921250CFD6F}" x="0.141989633" y="0.267391801"/>
+          <Chip chipid="{9AC8337A-FA2D-4B8E-A98D-3D9B8F30642F}" x="-1.61216807" y="-10.3536654"/>
         </Folder>
       </ClassVisual>
     </Editor>
@@ -5225,9 +5235,9 @@ Currently, there is only a generic XWidget and XPushButton available.</Text>
         <Connections>
           <Connection conn="0" subconn="0" chipid="{A20C76B9-B4EF-470F-A894-D8ABE21FCE00}"/>
           <Connection conn="1" subconn="0" chipid="{9E745F17-28B7-4C5D-A97A-66C25747A2F2}"/>
-          <Connection conn="1" subconn="1" chipid="{9E745F17-28B7-4C5D-A97A-66C25747A2F2}"/>
-          <Connection conn="1" subconn="2" chipid="{4CFEA99D-7A5F-4170-A840-190C233F30E7}"/>
-          <Connection conn="1" subconn="3" chipid="{4CFEA99D-7A5F-4170-A840-190C233F30E7}"/>
+          <Connection conn="2" subconn="0" chipid="{9E745F17-28B7-4C5D-A97A-66C25747A2F2}"/>
+          <Connection conn="3" subconn="0" chipid="{4CFEA99D-7A5F-4170-A840-190C233F30E7}"/>
+          <Connection conn="4" subconn="0" chipid="{4CFEA99D-7A5F-4170-A840-190C233F30E7}"/>
         </Connections>
         <ChipData>
           <Data id="type">{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}</Data>
@@ -5679,7 +5689,7 @@ Currently, there is only a generic XWidget and XPushButton available.</Text>
         <Inheritance/>
       </ClassDiagram>
       <Comments/>
-      <ClassVisual extent="-39.6367722 -27.6461143 23.1542988 0.57051909">
+      <ClassVisual extent="-39.6367722 -27.6461143 22.9792976 0.57051909">
         <Chip chipid="{AA12AA85-5B18-4040-9A84-1511B680961F}" x="-34.5141258" y="-0.00996103138"/>
         <Chip chipid="{D22D08AA-C32C-41C1-B166-D85E1664146D}" x="-36.0269775" y="-12.623086"/>
         <Chip chipid="{E56C6D21-E5BC-4B0F-9A68-6196E2ACF351}" x="-34.4153633" y="-3.15512609"/>
@@ -6825,7 +6835,6 @@ float4 color;
         <Connections/>
         <ChipData>
           <Data id="Sampler">
-            <Data id="BorderColor">0 0 0 0</Data>
             <Data id="Filter">21</Data>
             <Data id="MaxLOD">3.40282002e+38</Data>
             <Data id="MinLOD">-3.40282002e+38</Data>
@@ -6847,9 +6856,9 @@ float4 color;
       </Chip>
       <Chip chipid="{4799E243-C866-41ED-8CD2-419A08DE1F9C}" type="{F1B68FAA-9005-4730-A2C4-52953615B93E}" name="Motion" refreshmode="function">
         <Connections>
-          <Connection conn="0" subconn="0" chipid="{0F3B015B-1700-426A-B23F-9F4246D9951B}"/>
+          <Connection conn="0" subconn="0" chipid="{3AA36ADE-DE24-47B0-A58F-BC3E343F43CF}"/>
           <Connection conn="1" subconn="0" chipid="{ADA88FEA-270B-4F99-98A2-7B6614D582CB}"/>
-          <Connection conn="2" subconn="0" chipid="{0A736394-E411-4BE9-925E-145353E4EE16}"/>
+          <Connection conn="2" subconn="0" chipid="{CC1A0059-C5B1-4A96-B0DD-71E7C852F88E}"/>
         </Connections>
         <ChipData>
           <Data id="matrix">0.0691082776 0 0 0 0 -3.69548798e-06 -1 0 0 0.0500000007 -1.84774407e-07 0 0.465445846 0.400000006 0 1</Data>
@@ -6880,24 +6889,6 @@ float4 color;
           <Data id="type">{3B32EE42-3AE8-459F-B2B1-39D9B96EB51A}</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{0F3B015B-1700-426A-B23F-9F4246D9951B}" type="{AFF6C0E6-4967-4E74-89AE-3D38E3C71D1D}" name="a.xy" refreshmode="function">
-        <Connections>
-          <Connection conn="0" subconn="0" chipid="{EFE3B407-66CB-4E9F-99FE-45353F9EEE58}"/>
-        </Connections>
-        <ChipData>
-          <Data id="vector">0.465445846 0.400000006 0 0</Data>
-          <Data id="exp">a.xy</Data>
-        </ChipData>
-      </Chip>
-      <Chip chipid="{0A736394-E411-4BE9-925E-145353E4EE16}" type="{AFF6C0E6-4967-4E74-89AE-3D38E3C71D1D}" name="vector(a.z,1.0,a.w,1.0)" refreshmode="function">
-        <Connections>
-          <Connection conn="0" subconn="0" chipid="{EFE3B407-66CB-4E9F-99FE-45353F9EEE58}"/>
-        </Connections>
-        <ChipData>
-          <Data id="vector">0.0691082776 1 0.0500000007 1</Data>
-          <Data id="exp">vector(a.z,1.0,a.w,1.0)</Data>
-        </ChipData>
-      </Chip>
       <Chip chipid="{EFE3B407-66CB-4E9F-99FE-45353F9EEE58}" type="{7298BEEB-2E07-4834-B171-3BFDAF087740}" name="PosAndScale" refreshmode="function">
         <Connections/>
         <ChipData>
@@ -6924,8 +6915,8 @@ float4 color;
       <Chip chipid="{EFB1698E-99DE-41B7-B1DE-41E6CE1102C6}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="(c*d)/(a*b)" refreshmode="function">
         <Connections>
           <Connection conn="0" subconn="0" chipid="{74D1825C-DA1A-4890-861C-55A9935FA2DA}"/>
-          <Connection conn="0" subconn="1" chipid="{7EA45819-0591-4608-93D2-0B0CFEE2451E}"/>
-          <Connection conn="0" subconn="2" chipid="{67A8C79A-C14E-4A65-A98C-2FBB0B113F8E}"/>
+          <Connection conn="0" subconn="1" chipid="{FB3F5E47-2D32-4503-8904-6145F778D680}"/>
+          <Connection conn="0" subconn="2" chipid="{B8BBCA83-8006-4EFC-A202-7DD5F8F3FDB5}"/>
           <Connection conn="0" subconn="3" chipid="{08CA9390-27C9-4D91-9BF4-EF52AB35587F}"/>
         </Connections>
         <ChipData>
@@ -6943,8 +6934,8 @@ float4 color;
       <Chip chipid="{6CCBB8F7-B88C-4D1A-BC4B-53AF53DA89A3}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="(c*d)/(a*b)" refreshmode="function">
         <Connections>
           <Connection conn="0" subconn="0" chipid="{5FD36439-8D57-44A6-BAD5-536CE5A5587F}"/>
-          <Connection conn="0" subconn="1" chipid="{1F84B307-9FA4-44F8-9316-4B63E4F15940}"/>
-          <Connection conn="0" subconn="2" chipid="{0ABA6001-144D-4EAA-A888-65CB107A946A}"/>
+          <Connection conn="0" subconn="1" chipid="{DF133FA3-C02E-4D27-AB0B-5839CB6DA8C2}"/>
+          <Connection conn="0" subconn="2" chipid="{FC11DFD5-7418-4109-A4C7-16C53E48E10C}"/>
           <Connection conn="0" subconn="3" chipid="{08CA9390-27C9-4D91-9BF4-EF52AB35587F}"/>
         </Connections>
         <ChipData>
@@ -6963,60 +6954,6 @@ float4 color;
         <Connections/>
         <ChipData>
           <Data id="original">{EFE3B407-66CB-4E9F-99FE-45353F9EEE58}</Data>
-        </ChipData>
-      </Chip>
-      <Chip chipid="{7EA45819-0591-4608-93D2-0B0CFEE2451E}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="a.z" refreshmode="function">
-        <Connections>
-          <Connection conn="0" subconn="0" chipid="{0E06FB39-1AC2-46D9-9CAF-F41A6F7E5E32}"/>
-        </Connections>
-        <ChipData>
-          <Data id="value">0.069108277559280396</Data>
-          <Data id="exp">a.z</Data>
-        </ChipData>
-      </Chip>
-      <Chip chipid="{1F84B307-9FA4-44F8-9316-4B63E4F15940}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="a.w" refreshmode="function">
-        <Connections>
-          <Connection conn="0" subconn="0" chipid="{0E06FB39-1AC2-46D9-9CAF-F41A6F7E5E32}"/>
-        </Connections>
-        <ChipData>
-          <Data id="value">0.05000000074505806</Data>
-          <Data id="exp">a.w</Data>
-        </ChipData>
-      </Chip>
-      <Chip chipid="{67A8C79A-C14E-4A65-A98C-2FBB0B113F8E}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="Vector X" refreshmode="function">
-        <Connections>
-          <Connection conn="0" subconn="0" chipid="{EB24CBA2-4298-44A2-B5C2-9312D7825C25}"/>
-        </Connections>
-        <ChipData>
-          <Data id="value">32</Data>
-          <Data id="exp">a.x</Data>
-        </ChipData>
-      </Chip>
-      <Chip chipid="{0ABA6001-144D-4EAA-A888-65CB107A946A}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="Vector Y" refreshmode="function">
-        <Connections>
-          <Connection conn="0" subconn="0" chipid="{EB24CBA2-4298-44A2-B5C2-9312D7825C25}"/>
-        </Connections>
-        <ChipData>
-          <Data id="value">32</Data>
-          <Data id="exp">a.y</Data>
-        </ChipData>
-      </Chip>
-      <Chip chipid="{ADA0DA05-8E0F-4A20-84F1-1D8D0AB9F40A}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="Vector Z" refreshmode="function">
-        <Connections>
-          <Connection conn="0" subconn="0" chipid="{EB24CBA2-4298-44A2-B5C2-9312D7825C25}"/>
-        </Connections>
-        <ChipData>
-          <Data id="value">1</Data>
-          <Data id="exp">a.z</Data>
-        </ChipData>
-      </Chip>
-      <Chip chipid="{28C8BECD-D60E-41CA-A104-23051FAEAF2A}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="Vector W" refreshmode="function">
-        <Connections>
-          <Connection conn="0" subconn="0" chipid="{EB24CBA2-4298-44A2-B5C2-9312D7825C25}"/>
-        </Connections>
-        <ChipData>
-          <Data id="value">1</Data>
-          <Data id="exp">a.w</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{CCBE9600-B05C-4677-B5D2-280F97C5761C}" type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" name="Vector" refreshmode="function">
@@ -7057,7 +6994,7 @@ float4 color;
       </Chip>
       <Chip chipid="{40EE2002-1058-4338-AC0C-122985BCB1D7}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="a/256" refreshmode="function">
         <Connections>
-          <Connection conn="0" subconn="0" chipid="{67A8C79A-C14E-4A65-A98C-2FBB0B113F8E}"/>
+          <Connection conn="0" subconn="0" chipid="{B8BBCA83-8006-4EFC-A202-7DD5F8F3FDB5}"/>
         </Connections>
         <ChipData>
           <Data id="value">0.125</Data>
@@ -7066,7 +7003,7 @@ float4 color;
       </Chip>
       <Chip chipid="{668B7704-B1FC-49B2-9141-C3F4A89A60CE}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="a/256" refreshmode="function">
         <Connections>
-          <Connection conn="0" subconn="0" chipid="{0ABA6001-144D-4EAA-A888-65CB107A946A}"/>
+          <Connection conn="0" subconn="0" chipid="{FC11DFD5-7418-4109-A4C7-16C53E48E10C}"/>
         </Connections>
         <ChipData>
           <Data id="value">0.125</Data>
@@ -7076,7 +7013,7 @@ float4 color;
       <Chip chipid="{91AD6101-A712-4A26-A82A-FB80FFC6AA12}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="min(a*b/256,1)" refreshmode="function">
         <Connections>
           <Connection conn="0" subconn="0" chipid="{74D1825C-DA1A-4890-861C-55A9935FA2DA}"/>
-          <Connection conn="0" subconn="1" chipid="{7EA45819-0591-4608-93D2-0B0CFEE2451E}"/>
+          <Connection conn="0" subconn="1" chipid="{FB3F5E47-2D32-4503-8904-6145F778D680}"/>
         </Connections>
         <ChipData>
           <Data id="value">0.67812497355043888</Data>
@@ -7086,7 +7023,7 @@ float4 color;
       <Chip chipid="{85323AF5-0FB1-4D01-84E1-D84407C2F1A9}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="min(a*b/256,1)" refreshmode="function">
         <Connections>
           <Connection conn="0" subconn="0" chipid="{5FD36439-8D57-44A6-BAD5-536CE5A5587F}"/>
-          <Connection conn="0" subconn="1" chipid="{1F84B307-9FA4-44F8-9316-4B63E4F15940}"/>
+          <Connection conn="0" subconn="1" chipid="{DF133FA3-C02E-4D27-AB0B-5839CB6DA8C2}"/>
         </Connections>
         <ChipData>
           <Data id="value">0.16953125252621248</Data>
@@ -7103,6 +7040,96 @@ float4 color;
           <Data id="exp">min(a,b)</Data>
         </ChipData>
       </Chip>
+      <Chip chipid="{CC1A0059-C5B1-4A96-B0DD-71E7C852F88E}" type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" name="Scaling" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{10F2F511-314D-4224-90ED-80D830F5504C}"/>
+          <Connection conn="2" subconn="0" chipid="{82DA5A37-930D-4507-88BB-6FC525D54F1E}"/>
+        </Connections>
+        <ChipData>
+          <Data id="vector">0 1 0 1</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{10F2F511-314D-4224-90ED-80D830F5504C}" type="{9C9FE924-E3DB-40F3-A11C-C75A3B14D261}" name="Get Vector Z" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{EFE3B407-66CB-4E9F-99FE-45353F9EEE58}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="ot">102</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{82DA5A37-930D-4507-88BB-6FC525D54F1E}" type="{9C9FE924-E3DB-40F3-A11C-C75A3B14D261}" name="Get Vector W" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{EFE3B407-66CB-4E9F-99FE-45353F9EEE58}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="ot">103</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{3AA36ADE-DE24-47B0-A58F-BC3E343F43CF}" type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" name="Translation" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{52BCA068-2677-4E30-BB22-0F34FF871233}"/>
+          <Connection conn="1" subconn="0" chipid="{6E248A02-5FEB-4BAB-9FF2-677AE0E59E4C}"/>
+        </Connections>
+        <ChipData>
+          <Data id="vector">0 0 0 0</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{52BCA068-2677-4E30-BB22-0F34FF871233}" type="{9C9FE924-E3DB-40F3-A11C-C75A3B14D261}" name="Get Vector X" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{EFE3B407-66CB-4E9F-99FE-45353F9EEE58}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="ot">100</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{6E248A02-5FEB-4BAB-9FF2-677AE0E59E4C}" type="{9C9FE924-E3DB-40F3-A11C-C75A3B14D261}" name="Get Vector Y" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{EFE3B407-66CB-4E9F-99FE-45353F9EEE58}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="ot">101</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{FB3F5E47-2D32-4503-8904-6145F778D680}" type="{9C9FE924-E3DB-40F3-A11C-C75A3B14D261}" name="Get Vector Z" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{0E06FB39-1AC2-46D9-9CAF-F41A6F7E5E32}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="ot">102</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{B8BBCA83-8006-4EFC-A202-7DD5F8F3FDB5}" type="{9C9FE924-E3DB-40F3-A11C-C75A3B14D261}" name="Get Vector X" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{EB24CBA2-4298-44A2-B5C2-9312D7825C25}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="ot">100</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{FC11DFD5-7418-4109-A4C7-16C53E48E10C}" type="{9C9FE924-E3DB-40F3-A11C-C75A3B14D261}" name="Get Vector Y" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{EB24CBA2-4298-44A2-B5C2-9312D7825C25}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="ot">101</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{DF133FA3-C02E-4D27-AB0B-5839CB6DA8C2}" type="{9C9FE924-E3DB-40F3-A11C-C75A3B14D261}" name="Get Vector W" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{0E06FB39-1AC2-46D9-9CAF-F41A6F7E5E32}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="ot">103</Data>
+        </ChipData>
+      </Chip>
     </Chips>
     <Editor>
       <ClassDiagram>
@@ -7113,7 +7140,7 @@ float4 color;
         <Inheritance/>
       </ClassDiagram>
       <Comments/>
-      <ClassVisual extent="-11.6169491 -50.2362747 19.1133919 0.263467729">
+      <ClassVisual extent="-12.607585 -50.2362747 19.1133919 0.263467729">
         <Chip chipid="{D5A8BC39-40BB-4140-AF77-E2E422CF2CC0}" x="0.0259536281" y="-2.72730923"/>
         <Chip chipid="{7BD3E03C-35E3-4FAE-B93C-FCA6129A7802}" x="0.228729516" y="-6.63855362"/>
         <Chip chipid="{AFAC73F4-DF46-45CD-B59A-A8C1BCE07959}" x="-1.16531825" y="-9.01354408"/>
@@ -7132,9 +7159,7 @@ float4 color;
         <Chip chipid="{EB24CBA2-4298-44A2-B5C2-9312D7825C25}" x="10.2316322" y="-45.675705"/>
         <Chip chipid="{085E3AF5-6174-4A29-8391-E55D68C206A1}" x="15.8157263" y="-21.7166004"/>
         <Chip chipid="{1C14BD76-2512-4823-BD18-5004081028D9}" x="7.01829243" y="-14.8181381"/>
-        <Chip chipid="{0F3B015B-1700-426A-B23F-9F4246D9951B}" x="-10.7669487" y="-8.94936943"/>
-        <Chip chipid="{0A736394-E411-4BE9-925E-145353E4EE16}" x="-6.46694851" y="-8.94936943"/>
-        <Chip chipid="{EFE3B407-66CB-4E9F-99FE-45353F9EEE58}" x="-8.41349697" y="-12.6926661"/>
+        <Chip chipid="{EFE3B407-66CB-4E9F-99FE-45353F9EEE58}" x="-10.1098852" y="-15.2741032"/>
         <Chip chipid="{ADA88FEA-270B-4F99-98A2-7B6614D582CB}" x="-8.61694908" y="-8.94936943"/>
         <Chip chipid="{7DF2E581-C572-4623-9697-70531DEC7E8C}" x="11.3512001" y="-23.8030987"/>
         <Chip chipid="{EFB1698E-99DE-41B7-B1DE-41E6CE1102C6}" x="6.0614996" y="-32.2562599"/>
@@ -7142,21 +7167,25 @@ float4 color;
         <Chip chipid="{6CCBB8F7-B88C-4D1A-BC4B-53AF53DA89A3}" x="12.923687" y="-32.2477951"/>
         <Chip chipid="{5FD36439-8D57-44A6-BAD5-536CE5A5587F}" x="14.3583813" y="-42.8551712"/>
         <Chip chipid="{0E06FB39-1AC2-46D9-9CAF-F41A6F7E5E32}" x="9.47856712" y="-49.7362747"/>
-        <Chip chipid="{7EA45819-0591-4608-93D2-0B0CFEE2451E}" x="4.77164888" y="-42.7315826"/>
-        <Chip chipid="{1F84B307-9FA4-44F8-9316-4B63E4F15940}" x="16.1677074" y="-42.8934402"/>
-        <Chip chipid="{67A8C79A-C14E-4A65-A98C-2FBB0B113F8E}" x="7.01898432" y="-42.8007202"/>
-        <Chip chipid="{0ABA6001-144D-4EAA-A888-65CB107A946A}" x="8.94597816" y="-42.8007202"/>
-        <Chip chipid="{ADA0DA05-8E0F-4A20-84F1-1D8D0AB9F40A}" x="10.7697382" y="-42.8007202"/>
-        <Chip chipid="{28C8BECD-D60E-41CA-A104-23051FAEAF2A}" x="12.6279097" y="-42.7491074"/>
         <Chip chipid="{CCBE9600-B05C-4677-B5D2-280F97C5761C}" x="-3.82951474" y="-11.4936657"/>
         <Chip chipid="{08F490E6-1F1D-486C-BDFD-02F2FC9B349B}" x="9.69287872" y="-30.0798397"/>
         <Chip chipid="{2D0E4BB1-F754-4521-B52F-84424D4A4164}" x="6.49833488" y="-27.774559"/>
         <Chip chipid="{719F843D-9CC7-4F5D-898E-DF3CACDF9A19}" x="13.3410149" y="-27.8215885"/>
         <Chip chipid="{40EE2002-1058-4338-AC0C-122985BCB1D7}" x="16.1774158" y="-27.8705406"/>
         <Chip chipid="{668B7704-B1FC-49B2-9141-C3F4A89A60CE}" x="18.2633915" y="-27.9251213"/>
-        <Chip chipid="{91AD6101-A712-4A26-A82A-FB80FFC6AA12}" x="1.3248179" y="-35.2378654"/>
-        <Chip chipid="{85323AF5-0FB1-4D01-84E1-D84407C2F1A9}" x="-1.22592008" y="-35.1941681"/>
-        <Chip chipid="{08CA9390-27C9-4D91-9BF4-EF52AB35587F}" x="0.202494144" y="-33.2701454"/>
+        <Chip chipid="{91AD6101-A712-4A26-A82A-FB80FFC6AA12}" x="10.8592939" y="-36.0488396"/>
+        <Chip chipid="{85323AF5-0FB1-4D01-84E1-D84407C2F1A9}" x="8.30855656" y="-36.0051422"/>
+        <Chip chipid="{08CA9390-27C9-4D91-9BF4-EF52AB35587F}" x="9.73696995" y="-34.0811195"/>
+        <Chip chipid="{CC1A0059-C5B1-4A96-B0DD-71E7C852F88E}" x="-6.12948895" y="-8.9624157"/>
+        <Chip chipid="{10F2F511-314D-4224-90ED-80D830F5504C}" x="-8.64203453" y="-11.8408699"/>
+        <Chip chipid="{82DA5A37-930D-4507-88BB-6FC525D54F1E}" x="-7.02421713" y="-11.8599033"/>
+        <Chip chipid="{3AA36ADE-DE24-47B0-A58F-BC3E343F43CF}" x="-11.3247108" y="-8.93382072"/>
+        <Chip chipid="{52BCA068-2677-4E30-BB22-0F34FF871233}" x="-11.9325848" y="-11.8429785"/>
+        <Chip chipid="{6E248A02-5FEB-4BAB-9FF2-677AE0E59E4C}" x="-10.3259363" y="-11.8620119"/>
+        <Chip chipid="{FB3F5E47-2D32-4503-8904-6145F778D680}" x="4.47357178" y="-42.805275"/>
+        <Chip chipid="{B8BBCA83-8006-4EFC-A202-7DD5F8F3FDB5}" x="9.30185127" y="-42.8700104"/>
+        <Chip chipid="{FC11DFD5-7418-4109-A4C7-16C53E48E10C}" x="11.3740501" y="-42.8605118"/>
+        <Chip chipid="{DF133FA3-C02E-4D27-AB0B-5839CB6DA8C2}" x="16.1184425" y="-42.899334"/>
       </ClassVisual>
     </Editor>
   </Class>
@@ -7180,7 +7209,7 @@ float4 color;
                   <Data id="func"/>
                   <Data id="cbn">false</Data>
                   <Data id="preload">true</Data>
-                  <Data id="filename"/>
+                  <Data id="filename">.\</Data>
                 </ChipData>
               </Chip>
             </Ptr>
@@ -7597,7 +7626,7 @@ float4 color;
       <Chip chipid="{9BA5BC69-21AA-4B60-BF31-74A8501016F4}" type="{5A1470EF-802F-46FD-A8F7-6E79B6F5D3B7}" name="Textout" refreshmode="function">
         <Connections>
           <Connection conn="0" subconn="0" chipid="{6C7E22CE-E0D8-43D7-8ABF-362B771EA5BB}"/>
-          <Connection conn="1" subconn="0" chipid="{F61CEC77-5AFD-43DE-825B-787C57930D46}"/>
+          <Connection conn="1" subconn="0" chipid="{BBD8EE0C-94F9-4EC3-9A3F-D89A617D43D9}"/>
           <Connection conn="2" subconn="0" chipid="{A2B46B40-7FC7-4125-86FE-F7159DA50A36}"/>
           <Connection conn="3" subconn="0" chipid="{A27A7A3F-14AA-41B4-A91E-868D38C83FD9}"/>
         </Connections>
@@ -7660,15 +7689,71 @@ float4 color;
           <Data id="exp">floor(a*0.020)</Data>
         </ChipData>
       </Chip>
-      <Chip chipid="{F61CEC77-5AFD-43DE-825B-787C57930D46}" type="{AFF6C0E6-4967-4E74-89AE-3D38E3C71D1D}" name="round(vector((a.x+a.z*0.5)*b, c-(a.y+a.w*0.5)*c, 0, 1))" refreshmode="function">
+      <Chip chipid="{BBD8EE0C-94F9-4EC3-9A3F-D89A617D43D9}" type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" name="Position (x, y)" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{F89A9EF8-FC63-464B-A5B7-7FDC955DC295}"/>
+          <Connection conn="1" subconn="0" chipid="{592A1A59-4033-4122-A016-58AA5BEE1AB5}"/>
+        </Connections>
+        <ChipData>
+          <Data id="vector">0 0 0 1</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{F89A9EF8-FC63-464B-A5B7-7FDC955DC295}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="round((a+b*0.5)*c)" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{0F2B5357-67A4-451C-A8A3-2848E65C9E4C}"/>
+          <Connection conn="0" subconn="1" chipid="{DAC0B02D-D8BD-4788-A052-0B02D3F68941}"/>
+          <Connection conn="0" subconn="2" chipid="{0DDDFBC8-F0C9-4DDF-B492-0B2D4235C48E}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="exp">round((a+b*0.5)*c)</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{0F2B5357-67A4-451C-A8A3-2848E65C9E4C}" type="{9C9FE924-E3DB-40F3-A11C-C75A3B14D261}" name="Get Vector X" refreshmode="function">
         <Connections>
           <Connection conn="0" subconn="0" chipid="{8BB17707-19F7-4E43-9135-BE231C17D039}"/>
-          <Connection conn="0" subconn="1" chipid="{0DDDFBC8-F0C9-4DDF-B492-0B2D4235C48E}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="ot">100</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{DAC0B02D-D8BD-4788-A052-0B02D3F68941}" type="{9C9FE924-E3DB-40F3-A11C-C75A3B14D261}" name="Get Vector Z" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{8BB17707-19F7-4E43-9135-BE231C17D039}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="ot">102</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{592A1A59-4033-4122-A016-58AA5BEE1AB5}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="round(c-(a+b*0.5)*c)" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{A1E0C4F7-BF8F-4D80-98AA-BB99B1164A64}"/>
+          <Connection conn="0" subconn="1" chipid="{DAC3E07A-5C1E-421F-8FE3-1E13392213DC}"/>
           <Connection conn="0" subconn="2" chipid="{B756C81C-E18C-4A9B-B931-B263B1FCD60C}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">1256 499 0 1</Data>
-          <Data id="exp">round(vector((a.x+a.z*0.5)*b, c-(a.y+a.w*0.5)*c, 0, 1))</Data>
+          <Data id="value">0</Data>
+          <Data id="exp">round(c-(a+b*0.5)*c)</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{A1E0C4F7-BF8F-4D80-98AA-BB99B1164A64}" type="{9C9FE924-E3DB-40F3-A11C-C75A3B14D261}" name="Get Vector Y" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{8BB17707-19F7-4E43-9135-BE231C17D039}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="ot">101</Data>
+        </ChipData>
+      </Chip>
+      <Chip chipid="{DAC3E07A-5C1E-421F-8FE3-1E13392213DC}" type="{9C9FE924-E3DB-40F3-A11C-C75A3B14D261}" name="Get Vector W" refreshmode="function">
+        <Connections>
+          <Connection conn="0" subconn="0" chipid="{8BB17707-19F7-4E43-9135-BE231C17D039}"/>
+        </Connections>
+        <ChipData>
+          <Data id="value">0</Data>
+          <Data id="ot">103</Data>
         </ChipData>
       </Chip>
     </Chips>
@@ -7681,18 +7766,24 @@ float4 color;
         <Inheritance/>
       </ClassDiagram>
       <Comments/>
-      <ClassVisual extent="-3.53001046 -19.4350147 4.70070601 0.637016535">
+      <ClassVisual extent="-6.49383402 -23.7827358 4.70070601 0.637016535">
         <Chip chipid="{A27A7A3F-14AA-41B4-A91E-868D38C83FD9}" x="3.8695097" y="-10.0567179"/>
-        <Chip chipid="{0DDDFBC8-F0C9-4DDF-B492-0B2D4235C48E}" x="-2.28103399" y="-16.9774456"/>
-        <Chip chipid="{B756C81C-E18C-4A9B-B931-B263B1FCD60C}" x="-0.245590344" y="-15.9866743"/>
-        <Chip chipid="{2F9753B8-36AC-4965-9D92-B637A277DBB2}" x="-1.90369904" y="-18.9350147"/>
+        <Chip chipid="{0DDDFBC8-F0C9-4DDF-B492-0B2D4235C48E}" x="1.27990532" y="-19.9609356"/>
+        <Chip chipid="{B756C81C-E18C-4A9B-B931-B263B1FCD60C}" x="3.31534958" y="-18.9701633"/>
+        <Chip chipid="{2F9753B8-36AC-4965-9D92-B637A277DBB2}" x="1.65724015" y="-21.9185047"/>
         <Chip chipid="{0B2864CB-6A6E-42F5-B1C5-DB8E6303DD83}" x="0.224738479" y="0.137016565"/>
         <Chip chipid="{9BA5BC69-21AA-4B60-BF31-74A8501016F4}" x="0.0499426425" y="-2.71111631"/>
         <Chip chipid="{6C7E22CE-E0D8-43D7-8ABF-362B771EA5BB}" x="-3.03001046" y="-8.67494774"/>
         <Chip chipid="{A2B46B40-7FC7-4125-86FE-F7159DA50A36}" x="1.40862691" y="-8.72886372"/>
-        <Chip chipid="{8BB17707-19F7-4E43-9135-BE231C17D039}" x="-2.88120818" y="-13.2059374"/>
+        <Chip chipid="{8BB17707-19F7-4E43-9135-BE231C17D039}" x="-3.14860439" y="-23.2827358"/>
         <Chip chipid="{6F60717A-6116-49CD-89CC-5B8DD2751F09}" x="3.8507061" y="-12.6892195"/>
-        <Chip chipid="{F61CEC77-5AFD-43DE-825B-787C57930D46}" x="-1.345577" y="-10.0132256"/>
+        <Chip chipid="{BBD8EE0C-94F9-4EC3-9A3F-D89A617D43D9}" x="-1.15833902" y="-8.64297295"/>
+        <Chip chipid="{F89A9EF8-FC63-464B-A5B7-7FDC955DC295}" x="-3.35250425" y="-11.546484"/>
+        <Chip chipid="{0F2B5357-67A4-451C-A8A3-2848E65C9E4C}" x="-5.81883383" y="-18.9814625"/>
+        <Chip chipid="{DAC0B02D-D8BD-4788-A052-0B02D3F68941}" x="-4.4912324" y="-19.004755"/>
+        <Chip chipid="{592A1A59-4033-4122-A016-58AA5BEE1AB5}" x="-0.440464497" y="-11.5335751"/>
+        <Chip chipid="{A1E0C4F7-BF8F-4D80-98AA-BB99B1164A64}" x="-2.47654152" y="-19.0267849"/>
+        <Chip chipid="{DAC3E07A-5C1E-421F-8FE3-1E13392213DC}" x="-1.14893949" y="-19.0500755"/>
       </ClassVisual>
     </Editor>
   </Class>
@@ -7721,7 +7812,6 @@ float4 color;
     <Chip type="{0A02B379-6B5C-4C62-ADEC-1F8356E49AAB}" version="1.0.0.0"/>
     <Chip type="{90732A7F-FAF1-46FE-BB43-769A1BA748C7}" version="1.0.0.0"/>
     <Chip type="{418C3585-C883-4CED-8A68-9C2204DEE395}" version="1.0.0.0"/>
-    <Chip type="{B55F0787-2764-43C8-902B-3675C08DE1B1}" version="1.0.0.0"/>
     <Chip type="{D27FF489-2396-4EFE-9871-0705655B8622}" version="1.0.0.0"/>
     <Chip type="{D6779B90-ECA6-4E29-A309-A78D5C51C1F7}" version="1.0.0.0"/>
     <Chip type="{8DD16693-4C81-481B-912B-D03B7C664CB9}" version="1.0.0.0"/>
@@ -7742,7 +7832,6 @@ float4 color;
     <Chip type="{CAD1FECE-CC41-483F-8D77-48C1CF815133}" version="1.0.0.0"/>
     <Chip type="{F75CC4D4-BB15-40DE-B718-07C3BC40661B}" version="1.0.0.0"/>
     <Chip type="{CB1384D9-4781-4FAD-8C71-F5A152927405}" version="1.0.0.0"/>
-    <Chip type="{AFF6C0E6-4967-4E74-89AE-3D38E3C71D1D}" version="1.0.0.0"/>
     <Chip type="{FFD3F5E6-9C54-4FBF-A03E-640209F09BEB}" version="1.0.0.0"/>
     <Chip type="{7D2C71E9-5B6D-403F-99EB-F002AF26E09E}" version="1.0.0.0"/>
     <Chip type="{C7EA46EB-2613-4652-8763-5E86BA1F2794}" version="1.0.0.0"/>
