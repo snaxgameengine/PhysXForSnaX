@@ -30,7 +30,7 @@
 #include "StdChips/MatrixChip.h"
 #include "PhysXSDK.h"
 //#include <PxTkStream.h>
-#include <physx/cooking/PxCooking.h> 
+#include <cooking/PxCooking.h> 
 
 using namespace m3d;
 

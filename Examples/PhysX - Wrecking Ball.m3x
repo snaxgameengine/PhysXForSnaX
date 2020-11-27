@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<Document startclassid="{30D3279C-2103-4975-99DD-38CE3D26E5CB}" version="1.2.2.0">
-  <Class name="Default" id="{30D3279C-2103-4975-99DD-38CE3D26E5CB}" startchipid="{8C51E14D-D30C-432A-A5FF-466CA481B82F}" version="1.0.0.0">
+<Document startclassid="{30D3279C-2103-4975-99DD-38CE3D26E5CB}" version="1.2.3.0">
+  <Class name="Wrecking Ball" id="{30D3279C-2103-4975-99DD-38CE3D26E5CB}" startchipid="{8C51E14D-D30C-432A-A5FF-466CA481B82F}" version="1.0.0.0">
     <Inheritance/>
     <Chips>
       <Chip chipid="{819EAF43-3B19-40B9-9C17-D2E872B1FA7E}" type="{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}" name="Start Your Project Here!" refreshmode="function">
@@ -1422,10 +1422,10 @@ Simulation Delay: </Data>
                                                             <Data id="first">{C30D494A-7EAC-4B9D-832F-943CF6E06511}</Data>
                                                             <Data id="second">
                                                             <Ptr>
-                                                            <Chip chipid="{82954497-6303-4CB6-A3EC-5E92F191C0CC}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="Default-&gt;StartCallback" refreshmode="function">
+                                                            <Chip chipid="{82954497-6303-4CB6-A3EC-5E92F191C0CC}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="Wrecking Ball-&gt;StartCallback" refreshmode="function">
                                                             <ChipData>
                                                             <Data id="type">{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}</Data>
-                                                            <Data id="cg">Default</Data>
+                                                            <Data id="cg">Wrecking Ball</Data>
                                                             <Data id="func">StartCallback</Data>
                                                             <Data id="cbn">false</Data>
                                                             <Data id="preload">true</Data>
@@ -1796,10 +1796,10 @@ Simulation Delay: </Data>
                                                             <Data id="first">{C30D494A-7EAC-4B9D-832F-943CF6E06511}</Data>
                                                             <Data id="second">
                                                             <Ptr>
-                                                            <Chip chipid="{111ED483-6F44-4B51-B78A-49E49B881A1F}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="Default-&gt;DestroyCallback" refreshmode="function">
+                                                            <Chip chipid="{111ED483-6F44-4B51-B78A-49E49B881A1F}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="Wrecking Ball-&gt;DestroyCallback" refreshmode="function">
                                                             <ChipData>
                                                             <Data id="type">{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}</Data>
-                                                            <Data id="cg">Default</Data>
+                                                            <Data id="cg">Wrecking Ball</Data>
                                                             <Data id="func">DestroyCallback</Data>
                                                             <Data id="cbn">false</Data>
                                                             <Data id="preload">true</Data>
@@ -3366,6 +3366,7 @@ Simulation Delay: </Data>
         </Chips>
         <Inheritance/>
       </ClassDiagram>
+      <Publish>A PhysX example testing performance and stability by slamming a wrecking ball into a stack of boxes.</Publish>
       <Comments/>
       <ClassVisual extent="-21.3179016 -54.4374847 92.0649185 0.604786992">
         <Chip chipid="{819EAF43-3B19-40B9-9C17-D2E872B1FA7E}" x="14.100255" y="-4.88358068"/>
@@ -3628,6 +3629,7 @@ Simulation Delay: </Data>
         </Chips>
         <Inheritance/>
       </ClassDiagram>
+      <Publish/>
       <Comments/>
       <ClassVisual extent="-3.04860187 -3.9732039 2.71724081 0.406250149">
         <Chip chipid="{17BB2FEC-A807-45E9-B3FD-F911C1BD30A8}" x="-2.54860187" y="-2.31862903"/>

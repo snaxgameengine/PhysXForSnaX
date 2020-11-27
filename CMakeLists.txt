@@ -32,7 +32,7 @@ if (NOT SNAX_SDK_DIR)
 	message(FATAL_ERROR "SnaX SDK is not found...")
 endif()
 
-find_path(PHYSX_INCLUDE_DIR PhysX/PxPhysics.h)
+find_path(PHYSX_INCLUDE_DIR PxPhysics.h)
 
 find_library(PHYSX_LIBRARY PhysX_64.lib)
 find_library(PHYSXCOMMON_LIBRARY PhysXCommon_64.lib)

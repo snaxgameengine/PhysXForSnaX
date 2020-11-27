@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<Document startclassid="{E950DA68-8506-48C2-9AAA-C050C10E3D47}" version="1.2.2.0">
-  <Class name="Default" id="{E950DA68-8506-48C2-9AAA-C050C10E3D47}" startchipid="{9FB388AD-E07C-4638-A1F9-8D94288BBF38}" version="1.0.0.0">
+<Document startclassid="{E950DA68-8506-48C2-9AAA-C050C10E3D47}" version="1.2.3.0">
+  <Class name="Simple Rope" id="{E950DA68-8506-48C2-9AAA-C050C10E3D47}" startchipid="{9FB388AD-E07C-4638-A1F9-8D94288BBF38}" version="1.0.0.0">
     <Inheritance/>
     <Chips>
       <Chip chipid="{97E9623B-07C5-423E-86B6-76333E37C0DC}" type="{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}" name="Start Your Project Here!" refreshmode="function">
@@ -527,7 +527,7 @@
                   <Ptr>
                     <Chip chipid="{933B4B8C-4170-4780-A0F4-6057DAD36B99}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="MouseX" refreshmode="function">
                       <ChipData>
-                        <Data id="value">0.017117834394904458</Data>
+                        <Data id="value">0.018710191082802547</Data>
                       </ChipData>
                     </Chip>
                   </Ptr>
@@ -551,7 +551,7 @@
                   <Ptr>
                     <Chip chipid="{166040D2-466F-43D2-AE84-A422B71E58EF}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="MouseY" refreshmode="function">
                       <ChipData>
-                        <Data id="value">1.0205761316872428</Data>
+                        <Data id="value">1.016798418972332</Data>
                       </ChipData>
                     </Chip>
                   </Ptr>
@@ -740,7 +740,7 @@
                                                   <Ptr>
                                                     <Chip chipid="{C17DA291-ECB3-4D8D-A361-615BA66865B4}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="WidthGlobal" refreshmode="function">
                                                       <ChipData>
-                                                        <Data id="value">0.077388535031847144</Data>
+                                                        <Data id="value">0.080573248407643322</Data>
                                                       </ChipData>
                                                     </Chip>
                                                   </Ptr>
@@ -931,10 +931,10 @@
                                                             <Data id="first">{C30D494A-7EAC-4B9D-832F-943CF6E06511}</Data>
                                                             <Data id="second">
                                                             <Ptr>
-                                                            <Chip chipid="{06BA4470-EEA2-4BF4-A94E-D04CA87AA03F}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="Default-&gt;StartCallback" refreshmode="function">
+                                                            <Chip chipid="{06BA4470-EEA2-4BF4-A94E-D04CA87AA03F}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="Simple Rope-&gt;StartCallback" refreshmode="function">
                                                             <ChipData>
                                                             <Data id="type">{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}</Data>
-                                                            <Data id="cg">Default</Data>
+                                                            <Data id="cg">Simple Rope</Data>
                                                             <Data id="func">StartCallback</Data>
                                                             <Data id="cbn">false</Data>
                                                             <Data id="preload">true</Data>
@@ -1114,7 +1114,7 @@
                                                   <Ptr>
                                                     <Chip chipid="{E4A09777-5AF0-4EDF-BBF9-86FEAE238BE5}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="WidthGlobal" refreshmode="function">
                                                       <ChipData>
-                                                        <Data id="value">0.077388535031847144</Data>
+                                                        <Data id="value">0.080573248407643322</Data>
                                                       </ChipData>
                                                     </Chip>
                                                   </Ptr>
@@ -1305,10 +1305,10 @@
                                                             <Data id="first">{C30D494A-7EAC-4B9D-832F-943CF6E06511}</Data>
                                                             <Data id="second">
                                                             <Ptr>
-                                                            <Chip chipid="{AA175189-9491-4872-83C4-AE5FBD8D2256}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="Default-&gt;DestroyCallback" refreshmode="function">
+                                                            <Chip chipid="{AA175189-9491-4872-83C4-AE5FBD8D2256}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="Simple Rope-&gt;DestroyCallback" refreshmode="function">
                                                             <ChipData>
                                                             <Data id="type">{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}</Data>
-                                                            <Data id="cg">Default</Data>
+                                                            <Data id="cg">Simple Rope</Data>
                                                             <Data id="func">DestroyCallback</Data>
                                                             <Data id="cbn">false</Data>
                                                             <Data id="preload">true</Data>
@@ -1488,7 +1488,7 @@
                                                   <Ptr>
                                                     <Chip chipid="{C75C28A8-01E7-4AEE-9C2C-178704AFBD16}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="WidthGlobal" refreshmode="function">
                                                       <ChipData>
-                                                        <Data id="value">0.077388535031847144</Data>
+                                                        <Data id="value">0.080573248407643322</Data>
                                                       </ChipData>
                                                     </Chip>
                                                   </Ptr>
@@ -1817,7 +1817,7 @@
                                                   <Ptr>
                                                     <Chip chipid="{CBA5A324-5338-461C-B8B0-9FA5A1BF8D24}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="WidthGlobal" refreshmode="function">
                                                       <ChipData>
-                                                        <Data id="value">0.077388535031847144</Data>
+                                                        <Data id="value">0.080573248407643322</Data>
                                                       </ChipData>
                                                     </Chip>
                                                   </Ptr>
@@ -2334,7 +2334,7 @@
           <Connection conn="3" subconn="0" chipid="{2D083BD9-77C9-4C45-A385-85832515D07B}"/>
         </Connections>
         <ChipData>
-          <Data id="matrix">0.670204401 0 0 0 0 1.73205078 0 0 0 0 1.00010002 1 0 0 -0.10001 0</Data>
+          <Data id="matrix">0.697784781 0 0 0 0 1.73205078 0 0 0 0 1.00010002 1 0 0 -0.10001 0</Data>
           <Data id="ot">4</Data>
         </ChipData>
       </Chip>
@@ -2349,7 +2349,7 @@
           <Connection conn="0" subconn="0" chipid="{BD0AC179-AC3A-4A57-88A4-648E0322E587}"/>
         </Connections>
         <ChipData>
-          <Data id="value">2.5843621399176953</Data>
+          <Data id="value">2.4822134387351777</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{3D6BEBFE-C212-4BEA-B9EA-3B256CE18163}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Z-near" refreshmode="function">
@@ -2370,7 +2370,7 @@
           <Connection conn="0" subconn="1" chipid="{1C9A1C5B-9C63-4EAF-B802-E51F2B863022}"/>
         </Connections>
         <ChipData>
-          <Data id="value">2.5843621399176953</Data>
+          <Data id="value">2.4822134387351777</Data>
           <Data id="exp">a/b</Data>
         </ChipData>
       </Chip>
@@ -2384,7 +2384,7 @@
       <Chip chipid="{1C9A1C5B-9C63-4EAF-B802-E51F2B863022}" type="{CB1384D9-4781-4FAD-8C71-F5A152927405}" name="Get Current Render Target Height" refreshmode="function">
         <Connections/>
         <ChipData>
-          <Data id="value">972</Data>
+          <Data id="value">1012</Data>
           <Data id="type">109</Data>
         </ChipData>
       </Chip>
@@ -2486,7 +2486,7 @@
           <Connection conn="1" subconn="0" chipid="{201A8558-DA30-4B6A-978E-941409205C98}"/>
         </Connections>
         <ChipData>
-          <Data id="value">5.289587976899977e-29</Data>
+          <Data id="value">0</Data>
           <Data id="dir">0</Data>
         </ChipData>
       </Chip>
@@ -2513,7 +2513,7 @@
           <Connection conn="1" subconn="0" chipid="{19B59F26-B313-443C-9B3F-9A727D368A7E}"/>
         </Connections>
         <ChipData>
-          <Data id="value">1.5270427455800306e-12</Data>
+          <Data id="value">0</Data>
           <Data id="dir">0</Data>
         </ChipData>
       </Chip>
@@ -2568,7 +2568,7 @@
           <Connection conn="1" subconn="0" chipid="{7748BF3F-1E4D-4C85-ADAE-AC8D629F0719}"/>
         </Connections>
         <ChipData>
-          <Data id="value">-3.0246419005609171e-12</Data>
+          <Data id="value">0</Data>
           <Data id="dir">0</Data>
         </ChipData>
       </Chip>
@@ -2578,7 +2578,7 @@
           <Connection conn="1" subconn="0" chipid="{E703EED6-B6E6-4450-8D36-93B143A4095C}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">2.13855316e-08 2.75376397e-08 0 0</Data>
+          <Data id="vector">0 0 0 0</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{2453A4C7-B1F9-4CFA-A7AD-370C467E3776}" type="{7454B3C5-E34C-4400-ADFA-3083415563BD}" name="Rotate Using Euler Angles" refreshmode="function">
@@ -2587,7 +2587,7 @@
           <Connection conn="1" subconn="0" chipid="{EADB5ABC-11AA-497B-A628-20ABA0A195F3}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">2.09368043e-08 2.63058411e-08 9.23664079e-09 -1.66533454e-16</Data>
+          <Data id="vector">0 0 0 0</Data>
           <Data id="ot">50</Data>
         </ChipData>
       </Chip>
@@ -2637,7 +2637,7 @@
           <Connection conn="1" subconn="0" chipid="{28FAA8F7-549F-4EC5-A927-C14AB804B891}"/>
         </Connections>
         <ChipData>
-          <Data id="value">2.1385531728441376e-08</Data>
+          <Data id="value">0</Data>
           <Data id="dir">0</Data>
         </ChipData>
       </Chip>
@@ -2693,7 +2693,7 @@
           <Connection conn="1" subconn="0" chipid="{218CB3A5-D7B5-4671-AE94-750D02B7C15A}"/>
         </Connections>
         <ChipData>
-          <Data id="value">2.7537639494126224e-08</Data>
+          <Data id="value">0</Data>
           <Data id="dir">0</Data>
         </ChipData>
       </Chip>
@@ -2880,6 +2880,7 @@
         </Chips>
         <Inheritance/>
       </ClassDiagram>
+      <Publish>A PhysX example demonstrating how to create a simple rope as a chain of rigid bodies.</Publish>
       <Comments/>
       <ClassVisual extent="-24.2988434 -37.1905594 56.4353485 0.739679813">
         <Chip chipid="{97E9623B-07C5-423E-86B6-76333E37C0DC}" x="12.3394556" y="-4.7538743"/>

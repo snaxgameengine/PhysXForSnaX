@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<Document startclassid="{71C2439B-2172-4C49-BD8B-1B0D7C1104CA}" version="1.2.2.0">
-  <Class name="Default" id="{71C2439B-2172-4C49-BD8B-1B0D7C1104CA}" startchipid="{A83A24F5-709B-4C93-BC69-449CABB295E5}" version="1.0.0.0">
+<Document startclassid="{71C2439B-2172-4C49-BD8B-1B0D7C1104CA}" version="1.2.3.0">
+  <Class name="Spherical Joint" id="{71C2439B-2172-4C49-BD8B-1B0D7C1104CA}" startchipid="{A83A24F5-709B-4C93-BC69-449CABB295E5}" version="1.0.0.0">
     <Inheritance/>
     <Chips>
       <Chip chipid="{F0627820-22E6-4558-9362-BEBAD25D1AD6}" type="{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}" name="Start Your Project Here!" refreshmode="function">
@@ -390,7 +390,7 @@
                   <Ptr>
                     <Chip chipid="{68DF7299-9DEB-4688-A39A-7EC626C8463C}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="MouseX" refreshmode="function">
                       <ChipData>
-                        <Data id="value">0.020302547770700636</Data>
+                        <Data id="value">0.018312101910828025</Data>
                       </ChipData>
                     </Chip>
                   </Ptr>
@@ -414,7 +414,7 @@
                   <Ptr>
                     <Chip chipid="{EA83AC6A-8B5E-4A49-84C8-30C077508B2F}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="MouseY" refreshmode="function">
                       <ChipData>
-                        <Data id="value">1.0246913580246915</Data>
+                        <Data id="value">1.0256916996047432</Data>
                       </ChipData>
                     </Chip>
                   </Ptr>
@@ -603,7 +603,7 @@
                                                   <Ptr>
                                                     <Chip chipid="{DD52B275-DE7B-4E8E-9C22-7804AE4FE1D2}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="WidthGlobal" refreshmode="function">
                                                       <ChipData>
-                                                        <Data id="value">0.077388535031847144</Data>
+                                                        <Data id="value">0.080573248407643322</Data>
                                                       </ChipData>
                                                     </Chip>
                                                   </Ptr>
@@ -794,10 +794,10 @@
                                                             <Data id="first">{C30D494A-7EAC-4B9D-832F-943CF6E06511}</Data>
                                                             <Data id="second">
                                                             <Ptr>
-                                                            <Chip chipid="{602F7D3F-C70D-4EC1-80E8-237BA674E089}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="Default-&gt;StartCallback" refreshmode="function">
+                                                            <Chip chipid="{602F7D3F-C70D-4EC1-80E8-237BA674E089}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="Spherical Joint-&gt;StartCallback" refreshmode="function">
                                                             <ChipData>
                                                             <Data id="type">{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}</Data>
-                                                            <Data id="cg">Default</Data>
+                                                            <Data id="cg">Spherical Joint</Data>
                                                             <Data id="func">StartCallback</Data>
                                                             <Data id="cbn">false</Data>
                                                             <Data id="preload">true</Data>
@@ -977,7 +977,7 @@
                                                   <Ptr>
                                                     <Chip chipid="{81A33EB8-BD31-4CF2-92F9-F9ECAC2A406D}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="WidthGlobal" refreshmode="function">
                                                       <ChipData>
-                                                        <Data id="value">0.077388535031847144</Data>
+                                                        <Data id="value">0.080573248407643322</Data>
                                                       </ChipData>
                                                     </Chip>
                                                   </Ptr>
@@ -1168,10 +1168,10 @@
                                                             <Data id="first">{C30D494A-7EAC-4B9D-832F-943CF6E06511}</Data>
                                                             <Data id="second">
                                                             <Ptr>
-                                                            <Chip chipid="{24EE8CD7-920E-4986-B2DB-D506F8B0BDB9}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="Default-&gt;DestroyCallback" refreshmode="function">
+                                                            <Chip chipid="{24EE8CD7-920E-4986-B2DB-D506F8B0BDB9}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="Spherical Joint-&gt;DestroyCallback" refreshmode="function">
                                                             <ChipData>
                                                             <Data id="type">{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}</Data>
-                                                            <Data id="cg">Default</Data>
+                                                            <Data id="cg">Spherical Joint</Data>
                                                             <Data id="func">DestroyCallback</Data>
                                                             <Data id="cbn">false</Data>
                                                             <Data id="preload">true</Data>
@@ -1351,7 +1351,7 @@
                                                   <Ptr>
                                                     <Chip chipid="{90B581CF-78B9-4831-BBC7-3BD815BC3730}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="WidthGlobal" refreshmode="function">
                                                       <ChipData>
-                                                        <Data id="value">0.077388535031847144</Data>
+                                                        <Data id="value">0.080573248407643322</Data>
                                                       </ChipData>
                                                     </Chip>
                                                   </Ptr>
@@ -1680,7 +1680,7 @@
                                                   <Ptr>
                                                     <Chip chipid="{F6BE790F-5C7A-49DA-AB22-4DD8A3AAA9B2}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="WidthGlobal" refreshmode="function">
                                                       <ChipData>
-                                                        <Data id="value">0.077388535031847144</Data>
+                                                        <Data id="value">0.080573248407643322</Data>
                                                       </ChipData>
                                                     </Chip>
                                                   </Ptr>
@@ -2211,7 +2211,7 @@
           <Connection conn="3" subconn="0" chipid="{EA4DF54D-B563-472B-A09A-F3A73E26EA38}"/>
         </Connections>
         <ChipData>
-          <Data id="matrix">0.670204401 0 0 0 0 1.73205078 0 0 0 0 1.00010002 1 0 0 -0.10001 0</Data>
+          <Data id="matrix">0.697784781 0 0 0 0 1.73205078 0 0 0 0 1.00010002 1 0 0 -0.10001 0</Data>
           <Data id="ot">4</Data>
         </ChipData>
       </Chip>
@@ -2226,7 +2226,7 @@
           <Connection conn="0" subconn="0" chipid="{533B11F7-1A89-4D44-921C-8568599CC4A6}"/>
         </Connections>
         <ChipData>
-          <Data id="value">2.5843621399176953</Data>
+          <Data id="value">2.4822134387351777</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{C460C1D2-747F-4F6A-9211-739BFB7968DC}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Z-near" refreshmode="function">
@@ -2247,7 +2247,7 @@
           <Connection conn="0" subconn="1" chipid="{F84B06BD-9FA4-45FB-9205-DAD0398B1EB1}"/>
         </Connections>
         <ChipData>
-          <Data id="value">2.5843621399176953</Data>
+          <Data id="value">2.4822134387351777</Data>
           <Data id="exp">a/b</Data>
         </ChipData>
       </Chip>
@@ -2261,7 +2261,7 @@
       <Chip chipid="{F84B06BD-9FA4-45FB-9205-DAD0398B1EB1}" type="{CB1384D9-4781-4FAD-8C71-F5A152927405}" name="Get Current Render Target Height" refreshmode="function">
         <Connections/>
         <ChipData>
-          <Data id="value">972</Data>
+          <Data id="value">1012</Data>
           <Data id="type">109</Data>
         </ChipData>
       </Chip>
@@ -2390,7 +2390,7 @@
           <Connection conn="1" subconn="0" chipid="{10ADC046-FE59-4F8B-B96F-C7C803B22007}"/>
         </Connections>
         <ChipData>
-          <Data id="value">8.1048713501439291e-42</Data>
+          <Data id="value">0</Data>
           <Data id="dir">0</Data>
         </ChipData>
       </Chip>
@@ -2445,7 +2445,7 @@
           <Connection conn="1" subconn="0" chipid="{26B2A36C-C441-406E-B073-9019A8DF9462}"/>
         </Connections>
         <ChipData>
-          <Data id="value">-3.2547570153527964e-45</Data>
+          <Data id="value">0</Data>
           <Data id="dir">0</Data>
         </ChipData>
       </Chip>
@@ -2757,6 +2757,7 @@
         </Chips>
         <Inheritance/>
       </ClassDiagram>
+      <Publish>A PhysX example showing you how to create a basic spherical joint.</Publish>
       <Comments/>
       <ClassVisual extent="-25.0539894 -39.3103485 31.9669342 0.629117668">
         <Chip chipid="{F0627820-22E6-4558-9362-BEBAD25D1AD6}" x="11.563488" y="-4.94281149"/>

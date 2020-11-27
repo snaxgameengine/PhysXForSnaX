@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<Document startclassid="{0549BEAC-538B-4B1A-AF50-E47F5A89B154}" version="1.2.2.0">
-  <Class name="Default" id="{0549BEAC-538B-4B1A-AF50-E47F5A89B154}" startchipid="{C7D788B8-7EF1-4E4F-B043-7DE27DCF0AF8}" version="1.0.0.0">
+<Document startclassid="{0549BEAC-538B-4B1A-AF50-E47F5A89B154}" version="1.2.3.0">
+  <Class name="Kinetic Balls" id="{0549BEAC-538B-4B1A-AF50-E47F5A89B154}" startchipid="{C7D788B8-7EF1-4E4F-B043-7DE27DCF0AF8}" version="1.0.0.0">
     <Inheritance/>
     <Chips>
       <Chip chipid="{E8E7D1C3-8C7B-4F85-864E-1BDC838AFB9E}" type="{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}" name="Start Your Project Here!" refreshmode="function">
@@ -139,7 +139,7 @@
           <Connection conn="0" subconn="0" chipid="{A83F1E40-24AB-4059-880B-6CEA80F2E571}"/>
         </Connections>
         <ChipData>
-          <Data id="value">0</Data>
+          <Data id="value">1</Data>
           <Data id="cmd">2</Data>
         </ChipData>
       </Chip>
@@ -1515,7 +1515,7 @@
                   <Ptr>
                     <Chip chipid="{8B41EF64-19C4-40BD-A2EB-D193E5501C7D}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="MouseX" refreshmode="function">
                       <ChipData>
-                        <Data id="value">0.011544585987261146</Data>
+                        <Data id="value">0.021496815286624203</Data>
                       </ChipData>
                     </Chip>
                   </Ptr>
@@ -1539,7 +1539,7 @@
                   <Ptr>
                     <Chip chipid="{069E9521-268E-4D67-AC71-D7032205BD27}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="MouseY" refreshmode="function">
                       <ChipData>
-                        <Data id="value">1.0257201646090535</Data>
+                        <Data id="value">1.0148221343873518</Data>
                       </ChipData>
                     </Chip>
                   </Ptr>
@@ -1728,7 +1728,7 @@
                                                   <Ptr>
                                                     <Chip chipid="{EA4777BA-AF77-49B1-B6DD-DD48E7BCBC28}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="WidthGlobal" refreshmode="function">
                                                       <ChipData>
-                                                        <Data id="value">0.077388535031847144</Data>
+                                                        <Data id="value">0.080573248407643322</Data>
                                                       </ChipData>
                                                     </Chip>
                                                   </Ptr>
@@ -1919,10 +1919,10 @@
                                                             <Data id="first">{C30D494A-7EAC-4B9D-832F-943CF6E06511}</Data>
                                                             <Data id="second">
                                                             <Ptr>
-                                                            <Chip chipid="{480C1EAE-8E4C-4768-8190-966B1226FB66}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="Default-&gt;StartCallback" refreshmode="function">
+                                                            <Chip chipid="{480C1EAE-8E4C-4768-8190-966B1226FB66}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="Kinetic Balls-&gt;StartCallback" refreshmode="function">
                                                             <ChipData>
                                                             <Data id="type">{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}</Data>
-                                                            <Data id="cg">Default</Data>
+                                                            <Data id="cg">Kinetic Balls</Data>
                                                             <Data id="func">StartCallback</Data>
                                                             <Data id="cbn">false</Data>
                                                             <Data id="preload">true</Data>
@@ -2102,7 +2102,7 @@
                                                   <Ptr>
                                                     <Chip chipid="{6B1E1CA4-4AD5-4CD0-8EC0-D38807AAE29B}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="WidthGlobal" refreshmode="function">
                                                       <ChipData>
-                                                        <Data id="value">0.077388535031847144</Data>
+                                                        <Data id="value">0.080573248407643322</Data>
                                                       </ChipData>
                                                     </Chip>
                                                   </Ptr>
@@ -2293,10 +2293,10 @@
                                                             <Data id="first">{C30D494A-7EAC-4B9D-832F-943CF6E06511}</Data>
                                                             <Data id="second">
                                                             <Ptr>
-                                                            <Chip chipid="{42E47810-21B6-4CD6-BE4D-A9F601913414}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="Default-&gt;DestroyCallback" refreshmode="function">
+                                                            <Chip chipid="{42E47810-21B6-4CD6-BE4D-A9F601913414}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="Kinetic Balls-&gt;DestroyCallback" refreshmode="function">
                                                             <ChipData>
                                                             <Data id="type">{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}</Data>
-                                                            <Data id="cg">Default</Data>
+                                                            <Data id="cg">Kinetic Balls</Data>
                                                             <Data id="func">DestroyCallback</Data>
                                                             <Data id="cbn">false</Data>
                                                             <Data id="preload">true</Data>
@@ -2476,7 +2476,7 @@
                                                   <Ptr>
                                                     <Chip chipid="{4321DBFC-ECD2-4D48-A84D-6945F6414D1C}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="WidthGlobal" refreshmode="function">
                                                       <ChipData>
-                                                        <Data id="value">0.077388535031847144</Data>
+                                                        <Data id="value">0.080573248407643322</Data>
                                                       </ChipData>
                                                     </Chip>
                                                   </Ptr>
@@ -2805,7 +2805,7 @@
                                                   <Ptr>
                                                     <Chip chipid="{35E60D47-9C82-49EA-B51B-10E726A30F4C}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="WidthGlobal" refreshmode="function">
                                                       <ChipData>
-                                                        <Data id="value">0.077388535031847144</Data>
+                                                        <Data id="value">0.080573248407643322</Data>
                                                       </ChipData>
                                                     </Chip>
                                                   </Ptr>
@@ -3206,7 +3206,7 @@
                         <Data id="preload">true</Data>
                         <Data id="object">
                           <Data id="type">1</Data>
-                          <Data id="id">{776AA1D4-F2C1-4FB3-892A-1A6B869A9BE3}</Data>
+                          <Data id="id">{61A760BB-2F22-48E2-A2A1-FF4631289F61}</Data>
                           <Data id="cgid">{48CC82AE-FBFF-4271-88D9-08C13D52C4A5}</Data>
                           <Data id="filename">.\PhysX - Kinetic Balls.m3x</Data>
                         </Data>
@@ -3336,7 +3336,7 @@
           <Connection conn="3" subconn="0" chipid="{C926E6A9-AAF5-49AD-ABAD-3A655E4799C1}"/>
         </Connections>
         <ChipData>
-          <Data id="matrix">0.670204401 0 0 0 0 1.73205078 0 0 0 0 1.00010002 1 0 0 -0.10001 0</Data>
+          <Data id="matrix">0.697784781 0 0 0 0 1.73205078 0 0 0 0 1.00010002 1 0 0 -0.10001 0</Data>
           <Data id="ot">4</Data>
         </ChipData>
       </Chip>
@@ -3351,7 +3351,7 @@
           <Connection conn="0" subconn="0" chipid="{AFD47D54-9A04-40F4-B86C-B809795D540C}"/>
         </Connections>
         <ChipData>
-          <Data id="value">2.5843621399176953</Data>
+          <Data id="value">2.4822134387351777</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{BE4F28C3-A241-431A-B29C-03CC4DEF5503}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Z-near" refreshmode="function">
@@ -3372,7 +3372,7 @@
           <Connection conn="0" subconn="1" chipid="{D82E80DB-CD33-43C9-8A4B-4E4356224DF2}"/>
         </Connections>
         <ChipData>
-          <Data id="value">2.5843621399176953</Data>
+          <Data id="value">2.4822134387351777</Data>
           <Data id="exp">a/b</Data>
         </ChipData>
       </Chip>
@@ -3386,7 +3386,7 @@
       <Chip chipid="{D82E80DB-CD33-43C9-8A4B-4E4356224DF2}" type="{CB1384D9-4781-4FAD-8C71-F5A152927405}" name="Get Current Render Target Height" refreshmode="function">
         <Connections/>
         <ChipData>
-          <Data id="value">972</Data>
+          <Data id="value">1012</Data>
           <Data id="type">109</Data>
         </ChipData>
       </Chip>
@@ -3882,6 +3882,7 @@
         </Chips>
         <Inheritance/>
       </ClassDiagram>
+      <Publish>A PhysX example implementing the Newton's cradle.</Publish>
       <Comments/>
       <ClassVisual extent="-43.2140503 -57.9860344 168.094223 0.510974348">
         <Chip chipid="{E8E7D1C3-8C7B-4F85-864E-1BDC838AFB9E}" x="12.226284" y="-4.7995429"/>
