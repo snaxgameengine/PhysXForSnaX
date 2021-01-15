@@ -4847,7 +4847,7 @@ Simulation Delay: </Data>
         </Chips>
         <Inheritance/>
       </ClassDiagram>
-      <Description/>
+      <Description>A PhysX-example implementing a wrecking ball and a stack of boxes. Uses the Simple Render Framework for rendering the scene with lights and shadows.</Description>
       <Comments/>
       <ClassVisual extent="-36.0196686 -76.3751984 55.2954025 0.886870146">
         <Chip chipid="{819EAF43-3B19-40B9-9C17-D2E872B1FA7E}" x="-6.31835222" y="-11.8359461"/>
@@ -7857,7 +7857,7 @@ uint ropeElements;
       </ClassDiagram>
       <Description/>
       <Comments/>
-      <ClassVisual extent="-30.434967 -22.8507996 23.4239407 0.543195426">
+      <ClassVisual extent="-30.7849674 -22.8507996 23.4239407 0.543195426">
         <Chip chipid="{607D272B-AF52-428C-ADD5-12D5EDB0DDD8}" x="-14.761528" y="-2.48569274"/>
         <Chip chipid="{C39F956D-D80B-4B69-AB88-EE47D1151666}" x="-25.5267334" y="-8.45098686"/>
         <Chip chipid="{42EA7C10-B995-45C1-B223-87C51AE81872}" x="-26.2769394" y="-6.202034"/>
@@ -8349,7 +8349,7 @@ uint ropeElements;
       <Chip chipid="{9A5AC9C7-264C-48E7-AB23-D42F4F073B61}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="Rope-&gt;OrthoVector" refreshmode="function">
         <Connections>
           <Connection conn="1" subconn="0" chipid="{4A1D2F21-FE00-4906-A66C-EE53A7A63C2C}"/>
-          <Connection conn="2" subconn="0" chipid="{E69B1072-5CD3-4CAA-97CA-D8D66150CB5E}"/>
+          <Connection conn="1" subconn="1" chipid="{E69B1072-5CD3-4CAA-97CA-D8D66150CB5E}"/>
         </Connections>
         <ChipData>
           <Data id="type">{32071A76-E9A2-4DF6-94F0-8B913F40C892}</Data>

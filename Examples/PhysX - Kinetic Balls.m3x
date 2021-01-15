@@ -3882,7 +3882,7 @@
         </Chips>
         <Inheritance/>
       </ClassDiagram>
-      <Description/>
+      <Description>A simple PhysX-example demonstrating the Newton Cradle.</Description>
       <Comments/>
       <ClassVisual extent="-43.2140503 -57.9860344 168.094223 0.510974348">
         <Chip chipid="{E8E7D1C3-8C7B-4F85-864E-1BDC838AFB9E}" x="12.226284" y="-4.7995429"/>

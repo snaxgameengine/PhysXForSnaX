@@ -2880,7 +2880,7 @@
         </Chips>
         <Inheritance/>
       </ClassDiagram>
-      <Description/>
+      <Description>A PhysX-example demonstrating how to create a simple rope/chain.</Description>
       <Comments/>
       <ClassVisual extent="-24.2988434 -37.1905594 56.4353485 0.739679813">
         <Chip chipid="{97E9623B-07C5-423E-86B6-76333E37C0DC}" x="12.3394556" y="-4.7538743"/>

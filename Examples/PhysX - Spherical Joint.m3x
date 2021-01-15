@@ -2757,7 +2757,7 @@
         </Chips>
         <Inheritance/>
       </ClassDiagram>
-      <Description/>
+      <Description>A PhysX-example demonstrating how to create a simple spherical joint.</Description>
       <Comments/>
       <ClassVisual extent="-25.0539894 -39.3103485 31.9669342 0.629117668">
         <Chip chipid="{F0627820-22E6-4558-9362-BEBAD25D1AD6}" x="11.563488" y="-4.94281149"/>
