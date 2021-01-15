@@ -59,6 +59,7 @@ public:
 	virtual const List<PxJoint*> &GetJoints() const { return _joints; }
 
 protected:
+	virtual void OnRelease() { DestroyRope(); }
 
 	List<PxRigidDynamic*> _actors;
 	List<PxJoint*> _joints;
