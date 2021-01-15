@@ -27,7 +27,7 @@
 
 #include "Exports.h"
 #include "M3DEngine/Chip.h"
-#include <physx/extensions\PxExtensionsAPI.h>
+#include <extensions\PxExtensionsAPI.h>
 //#include <task\PxTask.h>
 
 using namespace physx;

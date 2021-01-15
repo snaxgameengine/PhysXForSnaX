@@ -31,8 +31,8 @@
 // Windows Header Files:
 #include <windows.h>
 #include <assert.h>
-#include <PhysX/PxPhysicsAPI.h>
-#include <physx/extensions\PxDefaultSimulationFilterShader.h>
+#include <PxPhysicsAPI.h>
+#include <extensions\PxDefaultSimulationFilterShader.h>
 #include "M3DCore/MMath.h"
 
 #pragma warning(disable:4251)

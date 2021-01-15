@@ -33,8 +33,8 @@
 #include <windows.h>
 #include <assert.h>
 #include "M3DCore/MMath.h"
-#include <PhysX/PxPhysicsAPI.h>
-#include <physx/extensions\PxDefaultSimulationFilterShader.h>
+#include <PxPhysicsAPI.h>
+#include <extensions\PxDefaultSimulationFilterShader.h>
 #include <process.h>
 #include <chrono>
 

@@ -29,7 +29,7 @@
 #include "PhysXConvexMesh.h"
 #include "GraphicsChips/StdGeometry.h"
 #include "StdChips/MatrixChip.h"
-#include <PhysX/cooking/PxCooking.h> 
+#include <cooking/PxCooking.h> 
 #include "PhysXSDK.h"
 
 
