@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Document startclassid="{E950DA68-8506-48C2-9AAA-C050C10E3D47}" version="1.2.5.0">
-  <Class name="Default" id="{E950DA68-8506-48C2-9AAA-C050C10E3D47}" startchipid="{9FB388AD-E07C-4638-A1F9-8D94288BBF38}" version="1.0.0.0">
+  <Class name="PhysX - Simple Rope" id="{E950DA68-8506-48C2-9AAA-C050C10E3D47}" startchipid="{9FB388AD-E07C-4638-A1F9-8D94288BBF38}" version="1.0.0.0">
     <Inheritance/>
     <Chips>
       <Chip chipid="{97E9623B-07C5-423E-86B6-76333E37C0DC}" type="{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}" name="Start Your Project Here!" refreshmode="function">
@@ -931,10 +931,10 @@
                                                             <Data id="first">{C30D494A-7EAC-4B9D-832F-943CF6E06511}</Data>
                                                             <Data id="second">
                                                             <Ptr>
-                                                            <Chip chipid="{06BA4470-EEA2-4BF4-A94E-D04CA87AA03F}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="Default-&gt;StartCallback" refreshmode="function">
+                                                            <Chip chipid="{06BA4470-EEA2-4BF4-A94E-D04CA87AA03F}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="PhysX - Simple Rope-&gt;StartCallback" refreshmode="function">
                                                             <ChipData>
                                                             <Data id="type">{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}</Data>
-                                                            <Data id="cg">Default</Data>
+                                                            <Data id="cg">PhysX - Simple Rope</Data>
                                                             <Data id="func">StartCallback</Data>
                                                             <Data id="cbn">false</Data>
                                                             <Data id="preload">true</Data>
@@ -1305,10 +1305,10 @@
                                                             <Data id="first">{C30D494A-7EAC-4B9D-832F-943CF6E06511}</Data>
                                                             <Data id="second">
                                                             <Ptr>
-                                                            <Chip chipid="{AA175189-9491-4872-83C4-AE5FBD8D2256}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="Default-&gt;DestroyCallback" refreshmode="function">
+                                                            <Chip chipid="{AA175189-9491-4872-83C4-AE5FBD8D2256}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="PhysX - Simple Rope-&gt;DestroyCallback" refreshmode="function">
                                                             <ChipData>
                                                             <Data id="type">{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}</Data>
-                                                            <Data id="cg">Default</Data>
+                                                            <Data id="cg">PhysX - Simple Rope</Data>
                                                             <Data id="func">DestroyCallback</Data>
                                                             <Data id="cbn">false</Data>
                                                             <Data id="preload">true</Data>

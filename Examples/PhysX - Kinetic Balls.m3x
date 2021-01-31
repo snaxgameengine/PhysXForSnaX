@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Document startclassid="{0549BEAC-538B-4B1A-AF50-E47F5A89B154}" version="1.2.5.0">
-  <Class name="Default" id="{0549BEAC-538B-4B1A-AF50-E47F5A89B154}" startchipid="{C7D788B8-7EF1-4E4F-B043-7DE27DCF0AF8}" version="1.0.0.0">
+  <Class name="PhysX - Kinetic Balls" id="{0549BEAC-538B-4B1A-AF50-E47F5A89B154}" startchipid="{C7D788B8-7EF1-4E4F-B043-7DE27DCF0AF8}" version="1.0.0.0">
     <Inheritance/>
     <Chips>
       <Chip chipid="{E8E7D1C3-8C7B-4F85-864E-1BDC838AFB9E}" type="{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}" name="Start Your Project Here!" refreshmode="function">
@@ -1919,10 +1919,10 @@
                                                             <Data id="first">{C30D494A-7EAC-4B9D-832F-943CF6E06511}</Data>
                                                             <Data id="second">
                                                             <Ptr>
-                                                            <Chip chipid="{480C1EAE-8E4C-4768-8190-966B1226FB66}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="Default-&gt;StartCallback" refreshmode="function">
+                                                            <Chip chipid="{480C1EAE-8E4C-4768-8190-966B1226FB66}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="PhysX - Kinetic Balls-&gt;StartCallback" refreshmode="function">
                                                             <ChipData>
                                                             <Data id="type">{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}</Data>
-                                                            <Data id="cg">Default</Data>
+                                                            <Data id="cg">PhysX - Kinetic Balls</Data>
                                                             <Data id="func">StartCallback</Data>
                                                             <Data id="cbn">false</Data>
                                                             <Data id="preload">true</Data>
@@ -2293,10 +2293,10 @@
                                                             <Data id="first">{C30D494A-7EAC-4B9D-832F-943CF6E06511}</Data>
                                                             <Data id="second">
                                                             <Ptr>
-                                                            <Chip chipid="{42E47810-21B6-4CD6-BE4D-A9F601913414}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="Default-&gt;DestroyCallback" refreshmode="function">
+                                                            <Chip chipid="{42E47810-21B6-4CD6-BE4D-A9F601913414}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="PhysX - Kinetic Balls-&gt;DestroyCallback" refreshmode="function">
                                                             <ChipData>
                                                             <Data id="type">{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}</Data>
-                                                            <Data id="cg">Default</Data>
+                                                            <Data id="cg">PhysX - Kinetic Balls</Data>
                                                             <Data id="func">DestroyCallback</Data>
                                                             <Data id="cbn">false</Data>
                                                             <Data id="preload">true</Data>
@@ -3882,7 +3882,7 @@
         </Chips>
         <Inheritance/>
       </ClassDiagram>
-      <Description>A simple PhysX-example demonstrating the Newton Cradle.</Description>
+      <Description>A PhysX-example demonstrating how to implement the Newton Cradle.</Description>
       <Comments/>
       <ClassVisual extent="-43.2140503 -57.9860344 168.094223 0.510974348">
         <Chip chipid="{E8E7D1C3-8C7B-4F85-864E-1BDC838AFB9E}" x="12.226284" y="-4.7995429"/>

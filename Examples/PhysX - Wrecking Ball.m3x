@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Document startclassid="{30D3279C-2103-4975-99DD-38CE3D26E5CB}" version="1.2.5.0">
-  <Class name="Default" id="{30D3279C-2103-4975-99DD-38CE3D26E5CB}" startchipid="{8C51E14D-D30C-432A-A5FF-466CA481B82F}" version="1.0.0.0">
+  <Class name="PhysX - Wrecking Ball" id="{30D3279C-2103-4975-99DD-38CE3D26E5CB}" startchipid="{8C51E14D-D30C-432A-A5FF-466CA481B82F}" version="1.0.0.0">
     <Inheritance/>
     <Chips>
       <Chip chipid="{819EAF43-3B19-40B9-9C17-D2E872B1FA7E}" type="{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}" name="Update" refreshmode="function">
@@ -630,8 +630,8 @@
         </Connections>
         <ChipData>
           <Data id="text">Real-Time Index:1
-Simulation Index: 0.056003999999999998
-Simulation Delay: 5.7000000000000002</Data>
+Simulation Index: 0.065164
+Simulation Delay: 6.5999999999999996</Data>
           <Data id="ot">2</Data>
         </ChipData>
       </Chip>
@@ -685,7 +685,7 @@ Simulation Index: </Data>
           <Connection conn="0" subconn="0" chipid="{C6D3B481-18B8-4FCB-90A7-66F68E5E9340}"/>
         </Connections>
         <ChipData>
-          <Data id="text">0.056003999999999998</Data>
+          <Data id="text">0.065164</Data>
           <Data id="ot">6</Data>
         </ChipData>
       </Chip>
@@ -694,7 +694,7 @@ Simulation Index: </Data>
           <Connection conn="0" subconn="0" chipid="{4855B344-35EC-48B1-89C1-CDE9E1DEBEA0}"/>
         </Connections>
         <ChipData>
-          <Data id="value">0.056003999999999998</Data>
+          <Data id="value">0.065164</Data>
           <Data id="cmd">5</Data>
         </ChipData>
       </Chip>
@@ -716,7 +716,7 @@ Simulation Delay: </Data>
           <Connection conn="0" subconn="0" chipid="{E6D36DC2-BEF4-4949-B96E-16400E219C35}"/>
         </Connections>
         <ChipData>
-          <Data id="text">5.7000000000000002</Data>
+          <Data id="text">6.5999999999999996</Data>
           <Data id="ot">6</Data>
         </ChipData>
       </Chip>
@@ -725,7 +725,7 @@ Simulation Delay: </Data>
           <Connection conn="0" subconn="0" chipid="{5AB3AF71-0704-46A1-AB8F-881CCD43040E}"/>
         </Connections>
         <ChipData>
-          <Data id="value">5.7000000000000002</Data>
+          <Data id="value">6.5999999999999996</Data>
           <Data id="cmd">6</Data>
         </ChipData>
       </Chip>
@@ -823,7 +823,7 @@ Simulation Delay: </Data>
                   <Ptr>
                     <Chip chipid="{8106751E-4FDB-46E8-81CD-6812F3BD1ECD}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="MouseX" refreshmode="function">
                       <ChipData>
-                        <Data id="value">0.024283439490445861</Data>
+                        <Data id="value">0.01194267515923567</Data>
                       </ChipData>
                     </Chip>
                   </Ptr>
@@ -847,7 +847,7 @@ Simulation Delay: </Data>
                   <Ptr>
                     <Chip chipid="{C0139E52-CEBD-411D-B88E-CB2A7E0CA45F}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="MouseY" refreshmode="function">
                       <ChipData>
-                        <Data id="value">1.0273396424815984</Data>
+                        <Data id="value">1.0231335436382756</Data>
                       </ChipData>
                     </Chip>
                   </Ptr>
@@ -1227,10 +1227,10 @@ Simulation Delay: </Data>
                                                             <Data id="first">{C30D494A-7EAC-4B9D-832F-943CF6E06511}</Data>
                                                             <Data id="second">
                                                             <Ptr>
-                                                            <Chip chipid="{82954497-6303-4CB6-A3EC-5E92F191C0CC}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="Default-&gt;StartCallback" refreshmode="function">
+                                                            <Chip chipid="{82954497-6303-4CB6-A3EC-5E92F191C0CC}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="PhysX - Wrecking Ball-&gt;StartCallback" refreshmode="function">
                                                             <ChipData>
                                                             <Data id="type">{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}</Data>
-                                                            <Data id="cg">Default</Data>
+                                                            <Data id="cg">PhysX - Wrecking Ball</Data>
                                                             <Data id="func">StartCallback</Data>
                                                             <Data id="cbn">false</Data>
                                                             <Data id="preload">true</Data>
@@ -1601,10 +1601,10 @@ Simulation Delay: </Data>
                                                             <Data id="first">{C30D494A-7EAC-4B9D-832F-943CF6E06511}</Data>
                                                             <Data id="second">
                                                             <Ptr>
-                                                            <Chip chipid="{111ED483-6F44-4B51-B78A-49E49B881A1F}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="Default-&gt;DestroyCallback" refreshmode="function">
+                                                            <Chip chipid="{111ED483-6F44-4B51-B78A-49E49B881A1F}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="PhysX - Wrecking Ball-&gt;DestroyCallback" refreshmode="function">
                                                             <ChipData>
                                                             <Data id="type">{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}</Data>
-                                                            <Data id="cg">Default</Data>
+                                                            <Data id="cg">PhysX - Wrecking Ball</Data>
                                                             <Data id="func">DestroyCallback</Data>
                                                             <Data id="cbn">false</Data>
                                                             <Data id="preload">true</Data>
@@ -2648,12 +2648,72 @@ Simulation Delay: </Data>
                           <Data id="id">{997C558C-F188-4236-87FD-258CD7DB6823}</Data>
                           <Data id="cgid">{AEC60AF4-AFAC-4806-9163-1E31521EF3E7}</Data>
                           <Data id="data">
-                            <Data id="count">3</Data>
+                            <Data id="count">9</Data>
                             <Data id="d0">
+                              <Data id="first">{2B86840C-A71A-47D8-BCB5-4F5921A8C337}</Data>
+                              <Data id="second">
+                                <Ptr>
+                                  <Chip chipid="{D3B37DD5-AAED-41EF-8307-650F240B9CFC}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Maximum Distance" refreshmode="function">
+                                    <ChipData>
+                                      <Data id="value">50</Data>
+                                    </ChipData>
+                                  </Chip>
+                                </Ptr>
+                              </Data>
+                            </Data>
+                            <Data id="d1">
                               <Data id="first">{647DBF15-D336-4A61-BD59-7CCAA969AA17}</Data>
                               <Data id="second">
                                 <Ptr>
                                   <Chip chipid="{8022B317-9127-421E-ABB2-82B2F92AD63E}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Wheel Sensitivity" refreshmode="function">
+                                    <ChipData>
+                                      <Data id="value">0.10000000000000001</Data>
+                                    </ChipData>
+                                  </Chip>
+                                </Ptr>
+                              </Data>
+                            </Data>
+                            <Data id="d2">
+                              <Data id="first">{C4E7E31F-BA69-46F3-82F4-15FE0DD62FCD}</Data>
+                              <Data id="second">
+                                <Ptr>
+                                  <Chip chipid="{4EF63278-4188-4CE2-A87F-4EBBDC130B7F}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Camera Distance" refreshmode="function">
+                                    <ChipData>
+                                      <Data id="value">50</Data>
+                                    </ChipData>
+                                  </Chip>
+                                </Ptr>
+                              </Data>
+                            </Data>
+                            <Data id="d3">
+                              <Data id="first">{1B0CE957-E0D3-4B56-89BB-A593A11E2527}</Data>
+                              <Data id="second">
+                                <Ptr>
+                                  <Chip chipid="{6F7C93A1-ECC5-46CA-B134-D31D4688D7D7}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Minimum Distance" refreshmode="function">
+                                    <ChipData>
+                                      <Data id="value">1</Data>
+                                    </ChipData>
+                                  </Chip>
+                                </Ptr>
+                              </Data>
+                            </Data>
+                            <Data id="d4">
+                              <Data id="first">{4914F894-D3AA-483C-A41E-904A1A7CE3CE}</Data>
+                              <Data id="second">
+                                <Ptr>
+                                  <Chip chipid="{B8F0A157-0CB7-41F7-8885-BAE8251F1EF8}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Yaw" refreshmode="function">
+                                    <ChipData>
+                                      <Data id="value">197.2064645825925</Data>
+                                    </ChipData>
+                                  </Chip>
+                                </Ptr>
+                              </Data>
+                            </Data>
+                            <Data id="d5">
+                              <Data id="first">{C6D3569B-A234-4846-9239-C01C5EC01C2B}</Data>
+                              <Data id="second">
+                                <Ptr>
+                                  <Chip chipid="{F4A8AB88-3611-4F95-9D02-D01143D88F56}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Smoothness" refreshmode="function">
                                     <ChipData>
                                       <Data id="value">0.29999999999999999</Data>
                                     </ChipData>
@@ -2661,25 +2721,37 @@ Simulation Delay: </Data>
                                 </Ptr>
                               </Data>
                             </Data>
-                            <Data id="d1">
+                            <Data id="d6">
                               <Data id="first">{60A4C5A7-BB35-410E-8015-5246D083C85C}</Data>
                               <Data id="second">
                                 <Ptr>
                                   <Chip chipid="{ADCCA7FB-6D84-49D2-81FE-F81F72530287}" type="{32071A76-E9A2-4DF6-94F0-8B913F40C892}" name="Focus Point" refreshmode="function">
                                     <ChipData>
-                                      <Data id="vector">0 0 0 1</Data>
+                                      <Data id="vector">-17.9553661 18.6496181 -1.94160426 0.999998093</Data>
                                     </ChipData>
                                   </Chip>
                                 </Ptr>
                               </Data>
                             </Data>
-                            <Data id="d2">
+                            <Data id="d7">
                               <Data id="first">{DF837DEE-B0F8-41A7-80A7-1A5AE113AF7E}</Data>
                               <Data id="second">
                                 <Ptr>
                                   <Chip chipid="{437324AD-C2E6-4D3A-802B-C32DECF1FB0F}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Mouse Sensitivity" refreshmode="function">
                                     <ChipData>
-                                      <Data id="value">0.02</Data>
+                                      <Data id="value">0.20000000000000001</Data>
+                                    </ChipData>
+                                  </Chip>
+                                </Ptr>
+                              </Data>
+                            </Data>
+                            <Data id="d8">
+                              <Data id="first">{985645F2-30E2-40F9-8D78-96353C64B86F}</Data>
+                              <Data id="second">
+                                <Ptr>
+                                  <Chip chipid="{44F7A2D4-EDCD-42DC-B2F2-A5172A68BDEC}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Pitch" refreshmode="function">
+                                    <ChipData>
+                                      <Data id="value">29.203457178429396</Data>
                                     </ChipData>
                                   </Chip>
                                 </Ptr>
@@ -3843,7 +3915,7 @@ Simulation Delay: </Data>
                       <ChipData>
                         <Data id="array">
                           <Data id="count">400</Data>
-                          <Data id="array">MDo9twEAAAA=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</Data>
+                          <Data id="array">zlcc+QEAAAA=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</Data>
                         </Data>
                       </ChipData>
                     </Chip>
@@ -4176,7 +4248,7 @@ Simulation Delay: </Data>
           <Connection conn="1" subconn="0" chipid="{EBEE82AA-E525-427D-8481-8FD93CBF9526}"/>
         </Connections>
         <ChipData>
-          <Data id="matrix">0.950905502 0.23141028 0.205494359 0 -0.235776499 0.971801579 -0.00332711451 0 -0.200469688 -0.0452869609 0.978652596 0 -31.6935425 16.1989422 -0.0314126834 1</Data>
+          <Data id="matrix">1 -6.41081925e-08 0 0 6.41081925e-08 1 0 0 0 0 1 0 1.78543519e-06 2.9313395 0 1</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{69EA1483-30AB-43D1-89C4-2CC7F4DB3281}" type="{FEB44C6A-C40E-4510-8C7C-CA2B44FE39AF}" name="Get Matrix" refreshmode="function">
@@ -4184,13 +4256,13 @@ Simulation Delay: </Data>
           <Connection conn="0" subconn="0" chipid="{551A110D-FB75-4F1A-B583-46E156BFA8BE}"/>
         </Connections>
         <ChipData>
-          <Data id="matrix">0.950905502 0.23141028 0.205494359 0 -0.235776499 0.971801579 -0.00332711451 0 -0.200469688 -0.0452869609 0.978652596 0 -31.6935425 16.1989422 -0.0314126834 1</Data>
+          <Data id="matrix">1 -6.41081925e-08 0 0 6.41081925e-08 1 0 0 0 0 1 0 1.78543519e-06 2.9313395 0 1</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{EBEE82AA-E525-427D-8481-8FD93CBF9526}" type="{01466AAB-80E4-447C-9662-089B79485231}" name="BallMatrix" refreshmode="function">
         <Connections/>
         <ChipData>
-          <Data id="matrix">0.950905502 0.23141028 0.205494359 0 -0.235776499 0.971801579 -0.00332711451 0 -0.200469688 -0.0452869609 0.978652596 0 -31.6935425 16.1989422 -0.0314126834 1</Data>
+          <Data id="matrix">1 -6.41081925e-08 0 0 6.41081925e-08 1 0 0 0 0 1 0 1.78543519e-06 2.9313395 0 1</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{14EEB379-6303-4FF1-BBFB-6EA6B6714B16}" type="{E899C774-3E4D-404E-B0C3-CEAEA37CECEC}" name="Ball" refreshmode="always">
@@ -4477,7 +4549,7 @@ Simulation Delay: </Data>
                       <ChipData>
                         <Data id="array">
                           <Data id="count">28</Data>
-                          <Data id="array">0 0 0 0 -0.672724068 0.523183644 0.523183644 0 -0.642794847 0.559013486 0.523754537 0 -0.625613272 0.578021646 0.523926497 0 -0.587399065 0.616166532 0.524691463 0 -0.579806149 0.623292744 0.524719894 0 -0.568896294 0.633218884 0.524776995 0 -0.568048358 0.63397938 0.524777353 0 -0.56777513 0.634224057 0.524777412 0 -0.557592809 0.643155038 0.524825513 0 -0.557101727 0.643580437 0.524825692 0 -0.552179396 0.647799611 0.524836719 0 -0.559357405 0.641592562 0.524860322 0 -0.5681656 0.633775532 0.524896562 0 -0.576930642 0.625776529 0.524933159 0 -0.596662819 0.606823444 0.52512747 0 -0.618678331 0.584131062 0.52538377 0 -0.645887554 0.553495109 0.525806427 0 -0.646266699 0.553052843 0.52580601 0 -0.669746876 0.524071753 0.526106358 0 -0.701202929 0.480655819 0.526578009 0 -0.679197848 0.510560751 0.527274191 0 -0.665651917 0.52795577 0.527418375 0 -0.680095971 0.509124935 0.527504802 0 -0.757190108 0.376764864 0.533583581 0 -0.749209583 -0.17957744 0.637524068 0 -0.749209583 -0.17957747 0.637524068 0 0 0 0 0</Data>
+                          <Data id="array">0 0 0 0 -1 1.1920929e-07 -1.1920929e-07 0 -1 5.74444528e-08 -1.1920929e-07 0 -1 8.54083453e-08 -1.1920929e-07 0 -1 2.90846778e-08 -1.1920929e-07 0 -1 -7.79601805e-09 -1.1920929e-07 0 -1 4.24897522e-08 -1.1920929e-07 0 -1 -1.33911499e-07 -1.1920929e-07 0 -1 -1.01749983e-07 -1.1920929e-07 0 -1 -1.40224358e-07 -1.1920929e-07 0 -1 -1.53434854e-07 -1.1920929e-07 0 -1 6.5723782e-08 -1.1920929e-07 0 -1 6.79367318e-09 -1.1920929e-07 0 -1 3.8809155e-08 -1.1920929e-07 0 -1 1.10419762e-07 -1.1920929e-07 0 -1 2.5517636e-07 -1.1920929e-07 0 -1 -1.551997e-07 -1.1920929e-07 0 -1 6.03958057e-08 -1.1920929e-07 0 -1 -4.12825329e-10 -1.1920929e-07 0 -1 2.53460684e-07 -1.1920929e-07 0 -1 -3.20056671e-07 -1.1920929e-07 0 -1 -3.85953513e-07 -1.1920929e-07 0 -1 4.9213611e-09 -1.1920929e-07 0 -1 2.77485697e-08 -1.1920929e-07 0 -1 -4.08181876e-07 -1.1920929e-07 0 -1 -1.79865822e-07 -1.1920929e-07 0 -1 -1.79865879e-07 -1.1920929e-07 0 0 0 0 0</Data>
                         </Data>
                       </ChipData>
                     </Chip>
@@ -4528,7 +4600,7 @@ Simulation Delay: </Data>
                       <ChipData>
                         <Data id="array">
                           <Data id="count">28</Data>
-                          <Data id="array">1.22781467 56.5787582 1.45817559e-11 0 9.72674163e-11 55 4.17917656e-22 1 -1.22781467 53.4212418 -1.45817559e-11 1 -2.54316735 51.9087524 -7.47829715e-11 1 -3.90040517 50.4397659 -3.18269661e-10 1 -5.35114002 49.0567627 -1.23291755e-09 1 -6.81551361 47.6945572 -4.45581527e-09 1 -8.30634212 46.3551674 -1.5417136e-08 1 -9.7958889 45.0205269 -5.12076603e-08 1 -11.2889051 43.6839371 -1.65178989e-07 1 -12.8000622 42.3738174 -5.16157343e-07 1 -14.3149624 41.0624771 -1.57249315e-06 1 -15.8370495 39.7650642 -4.65162339e-06 1 -17.3471165 38.448555 -1.34081602e-05 1 -18.8363247 37.113533 -3.74511146e-05 1 -20.3090744 35.7557945 -0.000101489772 1 -21.7352486 34.3536415 -0.000264930015 1 -23.1103859 32.8975334 -0.00066411146 1 -24.4122314 31.3792458 -0.00157877384 1 -25.7151566 29.8585529 -0.00350662088 1 -26.9493713 28.2847977 -0.00702438224 1 -28.0868301 26.6370926 -0.0176787693 1 -29.2974052 25.0451698 -0.0355949812 1 -30.5421638 23.4772224 -0.0370530672 1 -31.7433548 21.8780842 -0.0422926806 1 -32.6363907 20.086874 -0.0447906591 1 -32.1648407 18.1432629 -0.0381069817 1 -31.6932907 16.1996517 -0.0314233042 0</Data>
+                          <Data id="array">2.38418579e-07 57 0 0 -8.28041516e-16 55 0 1 -2.38418579e-07 53 0 1 -3.53722953e-07 50.9927673 0 1 -5.24539644e-07 48.9927673 0 1 -5.82914481e-07 46.9857025 0 1 -5.67322445e-07 44.9857025 0 1 -6.52590302e-07 42.9789162 0 1 -3.84767333e-07 40.9789162 0 1 -1.80611011e-07 38.9724655 0 1 9.98377061e-08 36.9724655 0 1 4.07645075e-07 34.9663544 0 1 2.76197511e-07 32.9663544 0 1 2.62571007e-07 30.9605904 0 1 1.84952626e-07 28.9605885 0 1 -3.64860853e-08 26.955162 0 1 -5.46838805e-07 24.955162 0 1 -2.35649622e-07 22.9500732 0 1 -3.56441234e-07 20.9500732 0 1 -3.55613622e-07 18.9453259 0 1 -8.62534989e-07 16.9453259 0 1 -2.21010879e-07 14.940918 0 1 5.50896459e-07 12.940917 0 1 5.41033728e-07 10.9368486 0 1 4.85536589e-07 8.93684864 0 1 1.30342244e-06 6.93311977 0 1 1.66315408e-06 4.93311977 0 1 2.02288584e-06 2.93311977 0 0</Data>
                         </Data>
                       </ChipData>
                     </Chip>
@@ -5089,7 +5161,7 @@ Simulation Delay: </Data>
           <Connection conn="0" subconn="0" chipid="{D5AFA58B-F5B3-4494-93A9-D3B0BBD3A189}"/>
         </Connections>
         <ChipData>
-          <Data id="matrix">0.994211435 -0.0657950118 -0.0849388093 0 0.0576341078 0.99378866 -0.0951961428 0 0.0906746686 0.0897497237 0.991828144 0 -29.5998707 39.1422501 7.82995939 1</Data>
+          <Data id="matrix">0.99990499 -0.0137836505 8.34500534e-05 0 0.0137838013 0.999855876 -0.00991306733 0 5.32002305e-05 0.00991327595 0.999950886 0 -29.6405087 38.9510994 7.94536018 1</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{0759D709-6159-462A-9E15-AF26D37187BE}" type="{5A1470EF-802F-46FD-A8F7-6E79B6F5D3B7}" name="BoxId" refreshmode="function">
@@ -5122,7 +5194,7 @@ Simulation Delay: </Data>
           <Connection conn="1" subconn="0" chipid="{5CC718F4-6BBD-4C49-A5ED-82A401CE33C1}"/>
         </Connections>
         <ChipData>
-          <Data id="matrix">0.994211435 -0.0657950118 -0.0849388093 0 0.0576341078 0.99378866 -0.0951961428 0 0.0906746686 0.0897497237 0.991828144 0 -29.5998707 39.1422501 7.82995939 1</Data>
+          <Data id="matrix">0.99990499 -0.0137836505 8.34500534e-05 0 0.0137838013 0.999855876 -0.00991306733 0 5.32002305e-05 0.00991327595 0.999950886 0 -29.6405087 38.9510994 7.94536018 1</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{5CC718F4-6BBD-4C49-A5ED-82A401CE33C1}" type="{F6CF0930-A3EF-4182-9318-3D770F1198A5}" name="Matrix Array Element" refreshmode="function">
@@ -5131,7 +5203,7 @@ Simulation Delay: </Data>
           <Connection conn="1" subconn="0" chipid="{0759D709-6159-462A-9E15-AF26D37187BE}"/>
         </Connections>
         <ChipData>
-          <Data id="matrix">0.994211435 -0.0657950118 -0.0849388093 0 0.0576341078 0.99378866 -0.0951961428 0 0.0906746686 0.0897497237 0.991828144 0 -29.5998707 39.1422501 7.82995939 1</Data>
+          <Data id="matrix">0.99990499 -0.0137836505 8.34500534e-05 0 0.0137838013 0.999855876 -0.00991306733 0 5.32002305e-05 0.00991327595 0.999950886 0 -29.6405087 38.9510994 7.94536018 1</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{AD1BFE65-84F2-4509-B687-7D8533338F35}" type="{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}" name="Init" refreshmode="function">
@@ -7857,7 +7929,7 @@ uint ropeElements;
       </ClassDiagram>
       <Description/>
       <Comments/>
-      <ClassVisual extent="-30.7849674 -22.8507996 23.4239407 0.543195426">
+      <ClassVisual extent="-30.434967 -22.8507996 23.4239407 0.543195426">
         <Chip chipid="{607D272B-AF52-428C-ADD5-12D5EDB0DDD8}" x="-14.761528" y="-2.48569274"/>
         <Chip chipid="{C39F956D-D80B-4B69-AB88-EE47D1151666}" x="-25.5267334" y="-8.45098686"/>
         <Chip chipid="{42EA7C10-B995-45C1-B223-87C51AE81872}" x="-26.2769394" y="-6.202034"/>
@@ -8112,7 +8184,7 @@ uint ropeElements;
           <Connection conn="0" subconn="0" chipid="{D2357037-5ED5-49A9-9C93-A9DE9D878C21}"/>
         </Connections>
         <ChipData>
-          <Data id="matrix">0.235776424 -0.971801698 0.00332712382 0 0.950905621 0.231410205 0.205494404 0 -0.200469702 -0.0452869609 0.978652656 0 -32.6363945 20.0868664 -0.0447612293 1</Data>
+          <Data id="matrix">-1.1920929e-07 -1.00000012 0 0 1.00000012 -1.1920929e-07 0 0 0 0 1 0 1.90157266e-06 6.93311977 0 1</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{552C70F0-DD32-4271-9EB1-F61E4FA91603}" type="{C508E715-8A6D-4245-B967-951AB3BFF38C}" name="Vector Array Element" refreshmode="always">
@@ -8121,7 +8193,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{680FAFFA-78FC-4162-966B-3DB15D769C8A}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">-32.1648407 18.1432629 -0.0381069817 1</Data>
+          <Data id="vector">1.66315408e-06 4.93311977 0 1</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{95F0F62E-8241-48A4-8CE5-731C0CBEACE5}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Current Value" refreshmode="function">
@@ -8136,7 +8208,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{552C70F0-DD32-4271-9EB1-F61E4FA91603}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">-32.1648407 18.1432629 -0.0381069817 1</Data>
+          <Data id="vector">1.66315408e-06 4.93311977 0 1</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{680FAFFA-78FC-4162-966B-3DB15D769C8A}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="a+2" refreshmode="always">
@@ -8154,7 +8226,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{0F78C7D7-4325-4DC5-BB2E-B8FA8079286C}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">-32.1648407 18.1432629 -0.0381069817 1</Data>
+          <Data id="vector">1.66315408e-06 4.93311977 0 1</Data>
           <Data id="ot">53</Data>
         </ChipData>
       </Chip>
@@ -8183,7 +8255,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{CF9E0EF8-8A69-43E9-95A2-0F114E8F3DCF}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">-1.22781467 53.4212418 -1.45817559e-11 1</Data>
+          <Data id="vector">-2.38418579e-07 53 0 1</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{CF9E0EF8-8A69-43E9-95A2-0F114E8F3DCF}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Array Index" refreshmode="function">
@@ -8198,7 +8270,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{2AA8B1D3-364E-45B0-B157-C617E382DB4C}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">9.72674163e-11 55 4.17917656e-22 1</Data>
+          <Data id="vector">-8.28041516e-16 55 0 1</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{2AA8B1D3-364E-45B0-B157-C617E382DB4C}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Array Index" refreshmode="function">
@@ -8213,7 +8285,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{87C64553-746E-4398-89AA-C6B016E701F0}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">-1.22781467 -1.57875824 -1.45817559e-11 0</Data>
+          <Data id="vector">-2.38418579e-07 -2 0 0</Data>
           <Data id="ot">3</Data>
         </ChipData>
       </Chip>
@@ -8222,7 +8294,7 @@ uint ropeElements;
           <Connection conn="0" subconn="0" chipid="{81ABAE07-8115-41ED-BCD2-68F983D05660}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">-1.57875824 1.22781467 1.22781467 1</Data>
+          <Data id="vector">-2 2.38418579e-07 -2.38418579e-07 1</Data>
           <Data id="ot">104</Data>
         </ChipData>
       </Chip>
@@ -8231,7 +8303,7 @@ uint ropeElements;
           <Connection conn="0" subconn="0" chipid="{3B9EEFEA-0969-45E4-9DB3-4FF094FBFEE7}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">-0.672724068 0.523183644 0.523183644 0</Data>
+          <Data id="vector">-1 1.1920929e-07 -1.1920929e-07 0</Data>
           <Data id="ot">101</Data>
         </ChipData>
       </Chip>
@@ -8241,7 +8313,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{54CAA298-D7AD-495C-9D86-CA8596832E0F}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">-0.672724068 0.523183644 0.523183644 0</Data>
+          <Data id="vector">-1 1.1920929e-07 -1.1920929e-07 0</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{54CAA298-D7AD-495C-9D86-CA8596832E0F}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Array Index" refreshmode="function">
@@ -8256,7 +8328,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{7F3AFC6D-E978-4748-853D-B3B1DDBE4DAE}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">-0.672724068 0.523183644 0.523183644 0</Data>
+          <Data id="vector">-1 1.1920929e-07 -1.1920929e-07 0</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{8C28EF04-833C-44F0-8D14-D659BCF175A8}" type="{8A21ED60-3163-41E8-8CED-D3F322CCA6CD}" name="For Loop" refreshmode="function">
@@ -8279,7 +8351,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{1A47EFFC-506B-49BB-BF5F-948F9F3006AE}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">-31.6932907 16.1996517 -0.0314233042 0</Data>
+          <Data id="vector">2.02288584e-06 2.93311977 0 0</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{1AF4DF6F-01FB-42EB-A904-50E8971A7808}" type="{C508E715-8A6D-4245-B967-951AB3BFF38C}" name="Vector Array Element" refreshmode="always">
@@ -8288,7 +8360,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{39C24A32-7AED-4318-8162-EB7F37C2575E}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">-32.1648407 18.1432629 -0.0381069817 1</Data>
+          <Data id="vector">1.66315408e-06 4.93311977 0 1</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{4A1D2F21-FE00-4906-A66C-EE53A7A63C2C}" type="{7454B3C5-E34C-4400-ADFA-3083415563BD}" name="Subtract Vectors" refreshmode="always">
@@ -8297,7 +8369,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{1AF4DF6F-01FB-42EB-A904-50E8971A7808}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">0.471549988 -1.94361115 0.00668367743 -1</Data>
+          <Data id="vector">3.59731757e-07 -2 0 -1</Data>
           <Data id="ot">3</Data>
         </ChipData>
       </Chip>
@@ -8337,7 +8409,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{5E6107B5-F22D-45A5-A6A9-836879AE1991}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">-0.749209583 -0.17957744 0.637524068 0</Data>
+          <Data id="vector">-1 -1.79865822e-07 -1.1920929e-07 0</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{5EA45BEB-C04A-424E-A36D-E83BF8C5B0A3}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="Current Value" refreshmode="function">
@@ -8349,7 +8421,7 @@ uint ropeElements;
       <Chip chipid="{9A5AC9C7-264C-48E7-AB23-D42F4F073B61}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="Rope-&gt;OrthoVector" refreshmode="function">
         <Connections>
           <Connection conn="1" subconn="0" chipid="{4A1D2F21-FE00-4906-A66C-EE53A7A63C2C}"/>
-          <Connection conn="1" subconn="1" chipid="{E69B1072-5CD3-4CAA-97CA-D8D66150CB5E}"/>
+          <Connection conn="2" subconn="0" chipid="{E69B1072-5CD3-4CAA-97CA-D8D66150CB5E}"/>
         </Connections>
         <ChipData>
           <Data id="type">{32071A76-E9A2-4DF6-94F0-8B913F40C892}</Data>
@@ -8366,7 +8438,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{EFABAD47-36CB-4D51-8A2A-FC85036599C6}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">-0.749209583 -0.17957747 0.637524068 0</Data>
+          <Data id="vector">-1 -1.79865879e-07 -1.1920929e-07 0</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{EFABAD47-36CB-4D51-8A2A-FC85036599C6}" type="{C508E715-8A6D-4245-B967-951AB3BFF38C}" name="Vector Array Element" refreshmode="always">
@@ -8375,7 +8447,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{7DAAC83D-6B3B-445A-96C8-3DADD0996AC2}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">-0.749209583 -0.17957747 0.637524068 0</Data>
+          <Data id="vector">-1 -1.79865879e-07 -1.1920929e-07 0</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{7DAAC83D-6B3B-445A-96C8-3DADD0996AC2}" type="{EAE881A6-83B5-4EEF-AE7E-CB183C083962}" name="a+2" refreshmode="function">
@@ -8389,7 +8461,7 @@ uint ropeElements;
           <Connection conn="0" subconn="0" chipid="{9A5AC9C7-264C-48E7-AB23-D42F4F073B61}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">-0.749209583 -0.17957747 0.637524068 0</Data>
+          <Data id="vector">-1 -1.79865879e-07 -1.1920929e-07 0</Data>
           <Data id="ot">101</Data>
         </ChipData>
       </Chip>
@@ -8399,7 +8471,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{41C3C9FC-1AB2-44CC-BD6A-AB191975B4E4}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">9.72674163e-11 55 4.17917656e-22 1</Data>
+          <Data id="vector">-8.28041516e-16 55 0 1</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{5292AC25-29AB-43C5-84D3-853E113A789E}" type="{739A253A-B545-41A5-9559-F850B372D4B9}" name="First" refreshmode="function">
@@ -8415,7 +8487,7 @@ uint ropeElements;
           <Connection conn="0" subconn="0" chipid="{5292AC25-29AB-43C5-84D3-853E113A789E}"/>
         </Connections>
         <ChipData>
-          <Data id="matrix">-0.613907337 -0.789378226 -7.29087797e-12 0 0.789378226 -0.613907337 -7.39900762e-14 0 -4.41751713e-12 -5.80068285e-12 1 0 9.72674163e-11 55 4.17917656e-22 1</Data>
+          <Data id="matrix">-1.1920929e-07 -1.00000012 0 0 1.00000012 -1.1920929e-07 0 0 0 0 1 0 -8.28041516e-16 55 0 1</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{55DDD0C1-A6B7-4215-9A1D-B5CB716229C9}" type="{7454B3C5-E34C-4400-ADFA-3083415563BD}" name="Transform Coord" refreshmode="function">
@@ -8424,7 +8496,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{53CB0DB4-1728-4A94-97F6-240337647DC3}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">9.72674163e-11 55 4.17917656e-22 1</Data>
+          <Data id="vector">-8.28041516e-16 55 0 1</Data>
           <Data id="ot">53</Data>
         </ChipData>
       </Chip>
@@ -8446,7 +8518,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{096CFDF3-B987-46D8-93E9-98A4F5606B90}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">9.72674163e-11 55 4.17917656e-22 1</Data>
+          <Data id="vector">-8.28041516e-16 55 0 1</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{C37AA120-2BF0-45BC-8D45-15708BDA1B76}" type="{C508E715-8A6D-4245-B967-951AB3BFF38C}" name="Vector Array Element" refreshmode="function">
@@ -8455,7 +8527,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{1C7E0725-BDDC-46E7-BC72-4479B08D7647}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">-32.1648407 18.1432629 -0.0381069817 1</Data>
+          <Data id="vector">1.66315408e-06 4.93311977 0 1</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{3BD2202E-DCA3-4858-B6CD-299682EBC1A0}" type="{7454B3C5-E34C-4400-ADFA-3083415563BD}" name="Multiply Vectors" refreshmode="function">
@@ -8464,7 +8536,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{95DFCA07-629F-4814-A024-38B9F2B23FA6}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">-64.3296814 36.2865257 -0.0762139633 1</Data>
+          <Data id="vector">3.32630816e-06 9.86623955 0 1</Data>
           <Data id="ot">4</Data>
         </ChipData>
       </Chip>
@@ -8480,7 +8552,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{D3F5B3B2-2C5A-4F55-BF96-FCFCA20F9FCB}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">-31.6932907 16.1996517 -0.0314233042 0</Data>
+          <Data id="vector">2.02288584e-06 2.93311977 0 0</Data>
           <Data id="ot">3</Data>
         </ChipData>
       </Chip>
@@ -8490,7 +8562,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{55D61AAE-8442-48D6-83E7-AF6306702225}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">-32.6363907 20.086874 -0.0447906591 1</Data>
+          <Data id="vector">1.30342244e-06 6.93311977 0 1</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{82D90F1E-C542-49C8-9E1C-95ACB8C77ACC}" type="{C508E715-8A6D-4245-B967-951AB3BFF38C}" name="Vector Array Element" refreshmode="function">
@@ -8499,7 +8571,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{5BDBE50A-EEAA-4196-B32B-DC3DF303BEAE}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">-31.6932907 16.1996517 -0.0314233042 0</Data>
+          <Data id="vector">2.02288584e-06 2.93311977 0 0</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{99BA76D7-A25C-4629-9886-E0191CAD2B3B}" type="{F6287BCB-FF0E-425D-9107-A3FF8AC52677}" name="Set Vector" refreshmode="function">
@@ -8508,7 +8580,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{82D90F1E-C542-49C8-9E1C-95ACB8C77ACC}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">-31.6932907 16.1996517 -0.0314233042 0</Data>
+          <Data id="vector">2.02288584e-06 2.93311977 0 0</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{0B486E49-14A9-4AE8-ADD0-A202DB0CF62D}" type="{C508E715-8A6D-4245-B967-951AB3BFF38C}" name="Vector Array Element" refreshmode="function">
@@ -8517,7 +8589,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{0D84265E-AFF9-41FB-9F69-6FAADB1F7AD3}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">9.72674163e-11 55 4.17917656e-22 1</Data>
+          <Data id="vector">-8.28041516e-16 55 0 1</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{0D84265E-AFF9-41FB-9F69-6FAADB1F7AD3}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Array Index" refreshmode="function">
@@ -8532,7 +8604,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{CD401515-EAA5-470C-84A0-713144CC896B}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">1.94534833e-10 110 8.35835313e-22 1</Data>
+          <Data id="vector">-1.65608303e-15 110 0 1</Data>
           <Data id="ot">4</Data>
         </ChipData>
       </Chip>
@@ -8548,7 +8620,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{6400A3EE-09E6-4620-8303-B1B55E39E282}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">1.22781467 56.5787582 1.45817559e-11 0</Data>
+          <Data id="vector">2.38418579e-07 57 0 0</Data>
           <Data id="ot">3</Data>
         </ChipData>
       </Chip>
@@ -8558,7 +8630,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{2F5F179D-16AF-4229-A167-C1729A64365B}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">-1.22781467 53.4212418 -1.45817559e-11 1</Data>
+          <Data id="vector">-2.38418579e-07 53 0 1</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{2F5F179D-16AF-4229-A167-C1729A64365B}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Array Index" refreshmode="function">
@@ -8573,7 +8645,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{0BB3FA1D-3886-4D9B-9D2B-5837F8BAD0C1}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">1.22781467 56.5787582 1.45817559e-11 0</Data>
+          <Data id="vector">2.38418579e-07 57 0 0</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{0BB3FA1D-3886-4D9B-9D2B-5837F8BAD0C1}" type="{418C3585-C883-4CED-8A68-9C2204DEE395}" name="Array Index" refreshmode="function">
@@ -8588,7 +8660,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{8EAAC04D-21F2-4C8B-A401-99C8AA94A851}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">1.22781467 56.5787582 1.45817559e-11 0</Data>
+          <Data id="vector">2.38418579e-07 57 0 0</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{5BDBE50A-EEAA-4196-B32B-DC3DF303BEAE}" type="{49124CAB-7D79-4819-BE81-EE8BA96A4A70}" name="a+2" refreshmode="function">
@@ -8768,7 +8840,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{15ED5B31-A4DA-40A9-B963-C7BDDCFCBF84}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">-0.749209583 -0.17957747 0.637524068 0</Data>
+          <Data id="vector">-1 -1.79865879e-07 -1.1920929e-07 0</Data>
           <Data id="ot">3</Data>
         </ChipData>
       </Chip>
@@ -8778,7 +8850,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{C4A0F8BB-46E1-43D4-B172-1DFC8DD72EDD}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">-8.39897307e-09 3.46184663e-08 -1.19045759e-10 0</Data>
+          <Data id="vector">-1.02241915e-20 5.68434189e-14 0 0</Data>
           <Data id="ot">4</Data>
         </ChipData>
       </Chip>
@@ -8789,7 +8861,7 @@ uint ropeElements;
           <Connection conn="2" subconn="0" chipid="{596535D6-4D1F-4D8E-8A1F-291394272E26}"/>
         </Connections>
         <ChipData>
-          <Data id="vector">-1.78114163e-08 -1.78114163e-08 -1.78114163e-08 0</Data>
+          <Data id="vector">-2.84217094e-14 -2.84217094e-14 -2.84217094e-14 0</Data>
         </ChipData>
       </Chip>
       <Chip chipid="{03E49869-4433-4A26-97F4-1412643E8401}" type="{9C9FE924-E3DB-40F3-A11C-C75A3B14D261}" name="Get Vector Dot 3 Product" refreshmode="function">
@@ -8798,7 +8870,7 @@ uint ropeElements;
           <Connection conn="1" subconn="0" chipid="{BD39E48C-D935-41DA-9AC9-CDF0ED111C10}"/>
         </Connections>
         <ChipData>
-          <Data id="value">-7.1246176958084106e-08</Data>
+          <Data id="value">-1.1368683772161603e-13</Data>
           <Data id="ot">121</Data>
         </ChipData>
       </Chip>
@@ -8807,7 +8879,7 @@ uint ropeElements;
           <Connection conn="0" subconn="0" chipid="{BD39E48C-D935-41DA-9AC9-CDF0ED111C10}"/>
         </Connections>
         <ChipData>
-          <Data id="value">2.000007152557373</Data>
+          <Data id="value">2</Data>
           <Data id="ot">111</Data>
         </ChipData>
       </Chip>
@@ -8817,7 +8889,7 @@ uint ropeElements;
           <Connection conn="0" subconn="1" chipid="{A9D4D1B6-BB92-44F8-9B2A-C4D1CC2B028F}"/>
         </Connections>
         <ChipData>
-          <Data id="value">-1.7811416842112364e-08</Data>
+          <Data id="value">-2.8421709430404007e-14</Data>
           <Data id="exp">a/(b*b)</Data>
         </ChipData>
       </Chip>

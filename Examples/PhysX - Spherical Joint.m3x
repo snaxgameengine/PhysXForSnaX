@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Document startclassid="{71C2439B-2172-4C49-BD8B-1B0D7C1104CA}" version="1.2.5.0">
-  <Class name="Default" id="{71C2439B-2172-4C49-BD8B-1B0D7C1104CA}" startchipid="{A83A24F5-709B-4C93-BC69-449CABB295E5}" version="1.0.0.0">
+  <Class name="PhysX - Spherical Joint" id="{71C2439B-2172-4C49-BD8B-1B0D7C1104CA}" startchipid="{A83A24F5-709B-4C93-BC69-449CABB295E5}" version="1.0.0.0">
     <Inheritance/>
     <Chips>
       <Chip chipid="{F0627820-22E6-4558-9362-BEBAD25D1AD6}" type="{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}" name="Start Your Project Here!" refreshmode="function">
@@ -794,10 +794,10 @@
                                                             <Data id="first">{C30D494A-7EAC-4B9D-832F-943CF6E06511}</Data>
                                                             <Data id="second">
                                                             <Ptr>
-                                                            <Chip chipid="{602F7D3F-C70D-4EC1-80E8-237BA674E089}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="Default-&gt;StartCallback" refreshmode="function">
+                                                            <Chip chipid="{602F7D3F-C70D-4EC1-80E8-237BA674E089}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="PhysX - Spherical Joint-&gt;StartCallback" refreshmode="function">
                                                             <ChipData>
                                                             <Data id="type">{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}</Data>
-                                                            <Data id="cg">Default</Data>
+                                                            <Data id="cg">PhysX - Spherical Joint</Data>
                                                             <Data id="func">StartCallback</Data>
                                                             <Data id="cbn">false</Data>
                                                             <Data id="preload">true</Data>
@@ -1168,10 +1168,10 @@
                                                             <Data id="first">{C30D494A-7EAC-4B9D-832F-943CF6E06511}</Data>
                                                             <Data id="second">
                                                             <Ptr>
-                                                            <Chip chipid="{24EE8CD7-920E-4986-B2DB-D506F8B0BDB9}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="Default-&gt;DestroyCallback" refreshmode="function">
+                                                            <Chip chipid="{24EE8CD7-920E-4986-B2DB-D506F8B0BDB9}" type="{6E91C75A-B487-41B1-9056-BEBB06828B47}" name="PhysX - Spherical Joint-&gt;DestroyCallback" refreshmode="function">
                                                             <ChipData>
                                                             <Data id="type">{BBDD5F96-D8B6-4D33-AEA7-C6C99EDFA7CD}</Data>
-                                                            <Data id="cg">Default</Data>
+                                                            <Data id="cg">PhysX - Spherical Joint</Data>
                                                             <Data id="func">DestroyCallback</Data>
                                                             <Data id="cbn">false</Data>
                                                             <Data id="preload">true</Data>
